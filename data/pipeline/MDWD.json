@@ -1,0 +1,14 @@
+{
+  "ticker": "MDWD",
+  "modalities": [],
+  "therapeutic_areas": [],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {},
+  "filing_filed": null,
+  "filing_url": null,
+  "source_text_len": 0,
+  "fetched_at": "2026-05-01T05:09:32.223848+00:00",
+  "method": "lexicon",
+  "status": "no_10k_text"
+}

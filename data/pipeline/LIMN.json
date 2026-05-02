@@ -1,0 +1,30 @@
+{
+  "ticker": "LIMN",
+  "modalities": [
+    "Monoclonal antibody",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Metabolic/Obesity",
+    "Hematology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 34,
+    "CAR-T cell therapy": 2,
+    "Vaccine": 1
+  },
+  "ta_counts": {
+    "Oncology": 97,
+    "Metabolic/Obesity": 5,
+    "Ophthalmology": 1,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1971387/000110465926037933/limn-20251231x10k.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:14:20.352583+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

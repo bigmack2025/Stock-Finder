@@ -1,0 +1,35 @@
+{
+  "ticker": "VYGR",
+  "modalities": [
+    "Gene therapy",
+    "Monoclonal antibody",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Oncology"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 3,
+    "Gene therapy": 98,
+    "Cell therapy (other)": 2,
+    "RNAi/siRNA": 1,
+    "Antisense oligonucleotide": 2,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Neurology/CNS": 25,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 26
+  },
+  "filing_filed": "2026-03-09",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1640266/000110465926025197/vygr-20251231x10k.htm",
+  "source_text_len": 193722,
+  "fetched_at": "2026-05-01T05:09:33.624784+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

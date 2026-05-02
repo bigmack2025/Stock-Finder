@@ -1,0 +1,28 @@
+{
+  "ticker": "SPRO",
+  "modalities": [
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Infectious disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Cell therapy (other)",
+  "modality_counts": {
+    "Cell therapy (other)": 2,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 45,
+    "Infectious disease": 5
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1701108/000119312526126192/spro-20251231.htm",
+  "source_text_len": 161053,
+  "fetched_at": "2026-05-01T05:11:17.794084+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

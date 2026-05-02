@@ -1,0 +1,33 @@
+{
+  "ticker": "LGVN",
+  "modalities": [
+    "Cell therapy (other)",
+    "Vaccine",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Rare disease",
+    "Cardiovascular"
+  ],
+  "primary_modality": "Cell therapy (other)",
+  "modality_counts": {
+    "Antibody-drug conjugate": 1,
+    "Gene therapy": 2,
+    "Cell therapy (other)": 11,
+    "Vaccine": 3
+  },
+  "ta_counts": {
+    "Neurology/CNS": 14,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 3,
+    "Cardiovascular": 4,
+    "Rare disease": 10
+  },
+  "filing_filed": "2026-03-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1721484/000119312526110664/lgvn-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:14:21.107150+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

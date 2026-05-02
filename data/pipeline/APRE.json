@@ -1,0 +1,27 @@
+{
+  "ticker": "APRE",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Antibody-drug conjugate": 8,
+    "Small molecule": 4,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 108,
+    "Rare disease": 41
+  },
+  "filing_filed": "2026-03-16",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1781983/000110465926028068/apre-20251231x10k.htm",
+  "source_text_len": 158869,
+  "fetched_at": "2026-05-01T05:14:41.907857+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

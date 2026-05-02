@@ -1,0 +1,30 @@
+{
+  "ticker": "LCTX",
+  "modalities": [
+    "Cell therapy (other)",
+    "Small molecule",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Cell therapy (other)",
+  "modality_counts": {
+    "Gene editing": 1,
+    "Cell therapy (other)": 7,
+    "Small molecule": 2,
+    "Diagnostics/devices": 2
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Rare disease": 23,
+    "Infectious disease": 7
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/876343/000119312526093992/lctx-20251231.htm",
+  "source_text_len": 269863,
+  "fetched_at": "2026-05-01T05:07:21.273830+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

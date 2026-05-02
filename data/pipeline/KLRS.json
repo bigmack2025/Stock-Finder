@@ -1,0 +1,36 @@
+{
+  "ticker": "KLRS",
+  "modalities": [
+    "Small molecule",
+    "Gene therapy",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Ophthalmology",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "Bispecific antibody": 2,
+    "Gene therapy": 3,
+    "Cell therapy (other)": 1,
+    "Small molecule": 4,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 10,
+    "Metabolic/Obesity": 8,
+    "Ophthalmology": 97,
+    "Rare disease": 13,
+    "Infectious disease": 1,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1754068/000119312526110659/klrs-20251231.htm",
+  "source_text_len": 207267,
+  "fetched_at": "2026-05-01T05:09:46.103078+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

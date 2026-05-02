@@ -1,0 +1,36 @@
+{
+  "ticker": "PDSB",
+  "modalities": [
+    "Vaccine",
+    "Antibody-drug conjugate",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Antibody-drug conjugate": 3,
+    "Cell therapy (other)": 3,
+    "Vaccine": 31,
+    "Small molecule": 3,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 245,
+    "Immunology/I&I": 2,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 43,
+    "Infectious disease": 14,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1472091/000114036126012030/ef20060644_10k.htm",
+  "source_text_len": 206416,
+  "fetched_at": "2026-05-01T05:13:09.027248+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

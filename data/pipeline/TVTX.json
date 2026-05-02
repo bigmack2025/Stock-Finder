@@ -1,0 +1,28 @@
+{
+  "ticker": "TVTX",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Metabolic/Obesity",
+    "Cardiovascular"
+  ],
+  "primary_modality": null,
+  "modality_counts": {
+    "Antisense oligonucleotide": 1,
+    "Microbiome": 1,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Metabolic/Obesity": 6,
+    "Cardiovascular": 2,
+    "Rare disease": 78,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-02-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1438533/000143853326000014/tvtx-20251231.htm",
+  "source_text_len": 148869,
+  "fetched_at": "2026-05-01T05:03:51.903356+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,9 @@
+{
+  "ticker": "ZZZZZZNONEXISTENT",
+  "flagged": false,
+  "evidence": null,
+  "filing_url": null,
+  "filed": null,
+  "fetched_at": "2026-05-01T04:55:43.158710+00:00",
+  "status": "no_cik"
+}

@@ -1,0 +1,36 @@
+{
+  "ticker": "OABI",
+  "modalities": [
+    "Monoclonal antibody",
+    "Bispecific antibody",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Metabolic/Obesity",
+    "Infectious disease"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 15,
+    "Bispecific antibody": 8,
+    "Antibody-drug conjugate": 3,
+    "CAR-T cell therapy": 2,
+    "Gene editing": 1,
+    "Vaccine": 5,
+    "Small molecule": 5,
+    "Radiotherapeutic": 1
+  },
+  "ta_counts": {
+    "Oncology": 5,
+    "Neurology/CNS": 1,
+    "Metabolic/Obesity": 3,
+    "Infectious disease": 2
+  },
+  "filing_filed": "2026-03-04",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1846253/000184625326000009/ck0001846253-20251231.htm",
+  "source_text_len": 71255,
+  "fetched_at": "2026-05-01T05:08:18.189523+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,27 @@
+{
+  "ticker": "GNLX",
+  "modalities": [
+    "Oncolytic virus"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Oncolytic virus",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Antibody-drug conjugate": 1,
+    "Vaccine": 1,
+    "Oncolytic virus": 4
+  },
+  "ta_counts": {
+    "Oncology": 69,
+    "Rare disease": 4
+  },
+  "filing_filed": "2026-03-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1231457/000149315226011616/form10-k.htm",
+  "source_text_len": 108053,
+  "fetched_at": "2026-05-01T05:11:25.214388+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

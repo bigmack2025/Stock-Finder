@@ -1,0 +1,20 @@
+{
+  "ticker": "FENC",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Oncology": 4,
+    "Rare disease": 2
+  },
+  "filing_filed": "2026-03-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1211583/000110465926036182/fencf-20251231x10k.htm",
+  "source_text_len": 115972,
+  "fetched_at": "2026-05-01T05:08:21.620752+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

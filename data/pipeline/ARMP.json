@@ -1,0 +1,31 @@
+{
+  "ticker": "ARMP",
+  "modalities": [
+    "Microbiome",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Infectious disease",
+    "Oncology"
+  ],
+  "primary_modality": "Microbiome",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Vaccine": 3,
+    "Microbiome": 11
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 21,
+    "Infectious disease": 11
+  },
+  "filing_filed": "2026-03-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/921114/000110465926034532/armp-20251231x10k.htm",
+  "source_text_len": 191595,
+  "fetched_at": "2026-05-01T05:07:37.639764+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

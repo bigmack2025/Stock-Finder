@@ -1,0 +1,25 @@
+{
+  "ticker": "TBPH",
+  "modalities": [
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Cardiovascular",
+    "Rare disease"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 3
+  },
+  "ta_counts": {
+    "Neurology/CNS": 1,
+    "Cardiovascular": 3,
+    "Rare disease": 2
+  },
+  "filing_filed": "2026-03-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1583107/000110465926033077/tbph-20251231x10k.htm",
+  "source_text_len": 69928,
+  "fetched_at": "2026-05-01T05:06:31.051718+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

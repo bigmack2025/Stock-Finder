@@ -1,0 +1,32 @@
+{
+  "ticker": "KOD",
+  "modalities": [
+    "Small molecule",
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Ophthalmology",
+    "Metabolic/Obesity",
+    "Rare disease"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Bispecific antibody": 2,
+    "Gene therapy": 1,
+    "Small molecule": 5
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Immunology/I&I": 2,
+    "Metabolic/Obesity": 16,
+    "Ophthalmology": 35,
+    "Rare disease": 7,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1468748/000119312526134887/kod-20251231.htm",
+  "source_text_len": 95972,
+  "fetched_at": "2026-05-01T05:05:32.842250+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,26 @@
+{
+  "ticker": "SRPT",
+  "modalities": [
+    "Gene therapy",
+    "RNAi/siRNA",
+    "Antisense oligonucleotide"
+  ],
+  "therapeutic_areas": [
+    "Rare disease"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 21,
+    "RNAi/siRNA": 11,
+    "Antisense oligonucleotide": 2
+  },
+  "ta_counts": {
+    "Rare disease": 4
+  },
+  "filing_filed": "2026-03-02",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/873303/000119312526084144/srpt-20251231.htm",
+  "source_text_len": 50655,
+  "fetched_at": "2026-05-01T05:04:55.538621+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

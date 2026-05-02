@@ -1,0 +1,34 @@
+{
+  "ticker": "KYMR",
+  "modalities": [
+    "Small molecule",
+    "Protein degrader",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Immunology/I&I",
+    "Oncology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 2,
+    "Small molecule": 13,
+    "Protein degrader": 9
+  },
+  "ta_counts": {
+    "Oncology": 10,
+    "Immunology/I&I": 12,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 39,
+    "Infectious disease": 1,
+    "Dermatology": 3
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1815442/000119312526073395/kymr-20251231.htm",
+  "source_text_len": 131495,
+  "fetched_at": "2026-05-01T05:02:56.853705+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

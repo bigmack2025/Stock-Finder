@@ -1,0 +1,20 @@
+{
+  "ticker": "EQ",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Immunology/I&I"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Oncology": 1,
+    "Immunology/I&I": 8,
+    "Dermatology": 1
+  },
+  "filing_filed": "2026-03-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1746466/000119312526124143/eq-20251231.htm",
+  "source_text_len": 91915,
+  "fetched_at": "2026-05-01T05:11:34.722641+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,9 @@
+{
+  "ticker": "VRTX",
+  "flagged": false,
+  "evidence": null,
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/875320/000087532026000056/vrtx-20251231.htm",
+  "filed": "2026-02-13",
+  "fetched_at": "2026-05-01T04:47:52.664767+00:00",
+  "status": "ok"
+}

@@ -1,0 +1,31 @@
+{
+  "ticker": "MBIO",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Oncolytic virus",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "CAR-T cell therapy": 49,
+    "Gene therapy": 6,
+    "Cell therapy (other)": 3,
+    "Oncolytic virus": 18
+  },
+  "ta_counts": {
+    "Oncology": 49,
+    "Neurology/CNS": 3,
+    "Rare disease": 34
+  },
+  "filing_filed": "2026-03-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1680048/000110465926032063/tmb-20251231x10k.htm",
+  "source_text_len": 79589,
+  "fetched_at": "2026-05-01T05:14:38.154450+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

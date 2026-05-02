@@ -1,0 +1,30 @@
+{
+  "ticker": "ZNTL",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Antibody-drug conjugate": 1,
+    "Gene therapy": 1,
+    "Small molecule": 1,
+    "Diagnostics/devices": 6
+  },
+  "ta_counts": {
+    "Oncology": 44,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 21,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1725160/000172516026000014/zntl-20251231.htm",
+  "source_text_len": 100669,
+  "fetched_at": "2026-05-01T05:11:01.177090+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

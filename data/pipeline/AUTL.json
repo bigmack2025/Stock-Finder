@@ -1,0 +1,36 @@
+{
+  "ticker": "AUTL",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Monoclonal antibody",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Immunology/I&I",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 7,
+    "Antibody-drug conjugate": 1,
+    "CAR-T cell therapy": 82,
+    "Gene therapy": 4,
+    "Cell therapy (other)": 3
+  },
+  "ta_counts": {
+    "Oncology": 112,
+    "Neurology/CNS": 8,
+    "Immunology/I&I": 49,
+    "Cardiovascular": 3,
+    "Rare disease": 3,
+    "Infectious disease": 1,
+    "Hematology": 6
+  },
+  "filing_filed": "2026-03-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1730463/000173046326000038/autl-20251231.htm",
+  "source_text_len": 173434,
+  "fetched_at": "2026-05-01T05:07:32.379094+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

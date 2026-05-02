@@ -1,0 +1,23 @@
+{
+  "ticker": "PVLA",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Dermatology",
+    "Oncology"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Oncology": 3,
+    "Cardiovascular": 1,
+    "Rare disease": 26,
+    "Dermatology": 7
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1583648/000119312526133372/pvla-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:04:49.076036+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

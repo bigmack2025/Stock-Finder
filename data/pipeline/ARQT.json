@@ -1,0 +1,23 @@
+{
+  "ticker": "ARQT",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Immunology/I&I",
+    "Rare disease",
+    "Dermatology"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Oncology": 3,
+    "Immunology/I&I": 67,
+    "Rare disease": 23,
+    "Dermatology": 20
+  },
+  "filing_filed": "2026-02-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1787306/000178730626000018/arqt-20251231.htm",
+  "source_text_len": 158313,
+  "fetched_at": "2026-05-01T05:03:40.083557+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

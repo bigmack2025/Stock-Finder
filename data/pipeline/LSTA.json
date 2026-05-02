@@ -1,0 +1,22 @@
+{
+  "ticker": "LSTA",
+  "modalities": [
+    "Antibody-drug conjugate"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Antibody-drug conjugate": 2
+  },
+  "ta_counts": {
+    "Oncology": 16
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/320017/000032001726000023/lsta-20251231.htm",
+  "source_text_len": 9272,
+  "fetched_at": "2026-05-01T05:13:07.240449+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

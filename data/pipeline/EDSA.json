@@ -1,0 +1,30 @@
+{
+  "ticker": "EDSA",
+  "modalities": [
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Dermatology",
+    "Oncology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 8,
+    "Cell therapy (other)": 1,
+    "Vaccine": 1
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Immunology/I&I": 2,
+    "Rare disease": 24,
+    "Infectious disease": 4,
+    "Dermatology": 6
+  },
+  "filing_filed": "2025-12-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1540159/000117184325007914/edsa20250930_10k.htm",
+  "source_text_len": 90251,
+  "fetched_at": "2026-05-01T05:12:38.254085+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,32 @@
+{
+  "ticker": "LGND",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Metabolic/Obesity",
+    "Cardiovascular"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 1,
+    "Cell therapy (other)": 1,
+    "Vaccine": 14
+  },
+  "ta_counts": {
+    "Oncology": 22,
+    "Metabolic/Obesity": 9,
+    "Cardiovascular": 5,
+    "Rare disease": 4,
+    "Infectious disease": 3,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-02-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/886163/000088616326000006/lgnd-20251231.htm",
+  "source_text_len": 59670,
+  "fetched_at": "2026-05-01T05:03:26.718935+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

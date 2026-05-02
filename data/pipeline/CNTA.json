@@ -1,0 +1,30 @@
+{
+  "ticker": "CNTA",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Metabolic/Obesity",
+    "Oncology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 6
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Neurology/CNS": 2,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 3,
+    "Cardiovascular": 1,
+    "Rare disease": 42,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1847903/000184790326000025/cnta-20251231.htm",
+  "source_text_len": 157293,
+  "fetched_at": "2026-05-01T05:03:29.423489+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

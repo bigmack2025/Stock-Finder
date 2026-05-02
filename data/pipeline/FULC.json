@@ -1,0 +1,36 @@
+{
+  "ticker": "FULC",
+  "modalities": [
+    "Small molecule",
+    "Gene therapy",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Hematology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 2,
+    "Gene editing": 2,
+    "Cell therapy (other)": 2,
+    "Small molecule": 10,
+    "Radiotherapeutic": 1
+  },
+  "ta_counts": {
+    "Oncology": 8,
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 1,
+    "Rare disease": 53,
+    "Infectious disease": 1,
+    "Hematology": 8
+  },
+  "filing_filed": "2026-02-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1680581/000119312526065197/fulc-20251231.htm",
+  "source_text_len": 146166,
+  "fetched_at": "2026-05-01T05:06:51.763918+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,29 @@
+{
+  "ticker": "CAMP",
+  "modalities": [
+    "Antisense oligonucleotide"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Antisense oligonucleotide",
+  "modality_counts": {
+    "Antisense oligonucleotide": 33,
+    "mRNA therapeutic": 1
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Neurology/CNS": 13,
+    "Metabolic/Obesity": 3,
+    "Rare disease": 41,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1736730/000173673026000016/camp-20251231.htm",
+  "source_text_len": 143751,
+  "fetched_at": "2026-05-01T05:09:32.554156+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "SLDB",
+  "modalities": [
+    "Gene therapy",
+    "Small molecule",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Cardiovascular",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 72,
+    "Gene editing": 3,
+    "Cell therapy (other)": 3,
+    "Antisense oligonucleotide": 1,
+    "Small molecule": 4
+  },
+  "ta_counts": {
+    "Neurology/CNS": 1,
+    "Metabolic/Obesity": 3,
+    "Cardiovascular": 5,
+    "Ophthalmology": 1,
+    "Rare disease": 54
+  },
+  "filing_filed": "2026-03-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1707502/000119312526115928/sldb-20251231.htm",
+  "source_text_len": 211818,
+  "fetched_at": "2026-05-01T05:06:55.875439+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

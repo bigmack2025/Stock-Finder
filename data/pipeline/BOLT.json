@@ -1,0 +1,25 @@
+{
+  "ticker": "BOLT",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 4,
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 6
+  },
+  "ta_counts": {
+    "Oncology": 57
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1641281/000119312526104121/bolt-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:14:28.077545+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

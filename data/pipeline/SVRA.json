@@ -1,0 +1,27 @@
+{
+  "ticker": "SVRA",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Immunology/I&I",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Diagnostics/devices": 2
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Immunology/I&I": 75,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 30
+  },
+  "filing_filed": "2026-03-13",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1160308/000119312526105076/svra-20251231.htm",
+  "source_text_len": 115102,
+  "fetched_at": "2026-05-01T05:05:44.260643+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

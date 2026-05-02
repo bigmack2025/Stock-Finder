@@ -1,0 +1,31 @@
+{
+  "ticker": "CELU",
+  "modalities": [
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Cell therapy (other)",
+  "modality_counts": {
+    "Gene editing": 1,
+    "Cell therapy (other)": 5,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 16,
+    "Immunology/I&I": 6,
+    "Metabolic/Obesity": 3,
+    "Ophthalmology": 1,
+    "Rare disease": 18,
+    "Infectious disease": 2
+  },
+  "filing_filed": "2026-04-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1752828/000149315226020424/form10-k.htm",
+  "source_text_len": 73496,
+  "fetched_at": "2026-05-01T05:13:10.902603+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

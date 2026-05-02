@@ -1,0 +1,38 @@
+{
+  "ticker": "ALLO",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Gene editing",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Immunology/I&I",
+    "Rare disease"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 4,
+    "Bispecific antibody": 2,
+    "Antibody-drug conjugate": 4,
+    "CAR-T cell therapy": 94,
+    "Gene therapy": 1,
+    "Gene editing": 13,
+    "Cell therapy (other)": 3,
+    "Small molecule": 2,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 81,
+    "Immunology/I&I": 41,
+    "Cardiovascular": 1,
+    "Rare disease": 19,
+    "Hematology": 4
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1737287/000162828026017242/allo-20251231.htm",
+  "source_text_len": 171687,
+  "fetched_at": "2026-05-01T05:06:56.897444+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

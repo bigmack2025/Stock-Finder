@@ -1,0 +1,27 @@
+{
+  "ticker": "TCRX",
+  "modalities": [
+    "TCR cell therapy",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "TCR cell therapy",
+  "modality_counts": {
+    "TCR cell therapy": 7,
+    "Gene therapy": 5,
+    "Cell therapy (other)": 1
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Rare disease": 25
+  },
+  "filing_filed": "2026-03-04",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1783328/000119312526089884/tcrx-20251231.htm",
+  "source_text_len": 244123,
+  "fetched_at": "2026-05-01T05:12:26.077870+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

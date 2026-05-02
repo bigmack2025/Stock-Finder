@@ -1,0 +1,27 @@
+{
+  "ticker": "TCRT",
+  "modalities": [
+    "TCR cell therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Oncology"
+  ],
+  "primary_modality": "TCR cell therapy",
+  "modality_counts": {
+    "TCR cell therapy": 6,
+    "Small molecule": 6
+  },
+  "ta_counts": {
+    "Oncology": 5,
+    "Neurology/CNS": 1,
+    "Metabolic/Obesity": 41
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1107421/000119312526134720/tcrt-20251231.htm",
+  "source_text_len": 19006,
+  "fetched_at": "2026-05-01T05:14:29.728052+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

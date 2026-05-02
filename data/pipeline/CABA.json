@@ -1,0 +1,35 @@
+{
+  "ticker": "CABA",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Cell therapy (other)",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Immunology/I&I",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Bispecific antibody": 1,
+    "CAR-T cell therapy": 31,
+    "Cell therapy (other)": 4,
+    "Vaccine": 2,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 6,
+    "Neurology/CNS": 1,
+    "Immunology/I&I": 67,
+    "Cardiovascular": 2,
+    "Rare disease": 40,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1759138/000175913826000011/caba-20251231.htm",
+  "source_text_len": 158457,
+  "fetched_at": "2026-05-01T05:08:12.526325+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,29 @@
+{
+  "ticker": "LONA",
+  "modalities": [
+    "Small molecule",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Oncology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Cell therapy (other)": 2,
+    "Small molecule": 15
+  },
+  "ta_counts": {
+    "Oncology": 39,
+    "Neurology/CNS": 87,
+    "Metabolic/Obesity": 5
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1620463/000119312526134565/lona-20251231.htm",
+  "source_text_len": 122167,
+  "fetched_at": "2026-05-01T05:12:43.682964+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

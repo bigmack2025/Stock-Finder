@@ -1,0 +1,22 @@
+{
+  "ticker": "NVCT",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 6
+  },
+  "ta_counts": {
+    "Oncology": 33
+  },
+  "filing_filed": "2026-02-11",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1875558/000110465926013044/tmb-20251231x10k.htm",
+  "source_text_len": 47737,
+  "fetched_at": "2026-05-01T05:09:26.555199+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

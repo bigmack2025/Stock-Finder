@@ -1,0 +1,31 @@
+{
+  "ticker": "RLYB",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Immunology/I&I",
+    "Oncology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Small molecule": 1,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Immunology/I&I": 6,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 37,
+    "Infectious disease": 1,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-16",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1739410/000162828026018261/rlyb-20251231.htm",
+  "source_text_len": 139110,
+  "fetched_at": "2026-05-01T05:12:34.939845+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

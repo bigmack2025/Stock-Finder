@@ -1,0 +1,30 @@
+{
+  "ticker": "IMNN",
+  "modalities": [
+    "Vaccine",
+    "Gene therapy",
+    "mRNA therapeutic"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Gene therapy": 3,
+    "mRNA therapeutic": 2,
+    "Vaccine": 81
+  },
+  "ta_counts": {
+    "Oncology": 142,
+    "Rare disease": 37,
+    "Infectious disease": 9
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/749647/000149315226013850/form10-k.htm",
+  "source_text_len": 143915,
+  "fetched_at": "2026-05-01T05:14:18.667716+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

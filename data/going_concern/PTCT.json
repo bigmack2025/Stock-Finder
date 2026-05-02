@@ -1,0 +1,9 @@
+{
+  "ticker": "PTCT",
+  "flagged": false,
+  "evidence": null,
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1070081/000110465926017575/tmb-20251231x10k.htm",
+  "filed": "2026-02-19",
+  "fetched_at": "2026-05-01T04:56:50.895769+00:00",
+  "status": "ok"
+}

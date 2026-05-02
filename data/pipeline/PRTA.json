@@ -1,0 +1,29 @@
+{
+  "ticker": "PRTA",
+  "modalities": [
+    "Monoclonal antibody",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Rare disease"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 9,
+    "Cell therapy (other)": 1,
+    "Vaccine": 6,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Neurology/CNS": 96,
+    "Cardiovascular": 1,
+    "Rare disease": 23
+  },
+  "filing_filed": "2026-02-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1559053/000155905326000008/prta-20251231.htm",
+  "source_text_len": 101866,
+  "fetched_at": "2026-05-01T05:06:57.857245+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

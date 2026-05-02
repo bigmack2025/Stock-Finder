@@ -1,0 +1,26 @@
+{
+  "ticker": "MDXG",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Oncology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Cell therapy (other)": 1,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Metabolic/Obesity": 9,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-02-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1376339/000137633926000011/mdxg-20251231.htm",
+  "source_text_len": 70246,
+  "fetched_at": "2026-05-01T05:06:39.569715+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

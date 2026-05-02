@@ -1,0 +1,25 @@
+{
+  "ticker": "DYN",
+  "modalities": [
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 2,
+    "Cell therapy (other)": 1
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Rare disease": 31
+  },
+  "filing_filed": "2026-03-02",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1818794/000119312526084178/dyn-20251231.htm",
+  "source_text_len": 222467,
+  "fetched_at": "2026-05-01T05:03:53.948159+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

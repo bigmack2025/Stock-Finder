@@ -1,0 +1,32 @@
+{
+  "ticker": "PRAX",
+  "modalities": [
+    "Antisense oligonucleotide",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Antisense oligonucleotide",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Antisense oligonucleotide": 14,
+    "Small molecule": 7
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Neurology/CNS": 46,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 35,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-02-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1689548/000168954826000029/prax-20251231.htm",
+  "source_text_len": 129152,
+  "fetched_at": "2026-05-01T05:02:46.907401+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

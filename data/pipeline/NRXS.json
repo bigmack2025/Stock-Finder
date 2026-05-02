@@ -1,0 +1,24 @@
+{
+  "ticker": "NRXS",
+  "modalities": [
+    "Diagnostics/devices",
+    "Microbiome"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Microbiome": 2,
+    "Diagnostics/devices": 43
+  },
+  "ta_counts": {
+    "Neurology/CNS": 2
+  },
+  "filing_filed": "2026-03-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1933567/000149315226011505/form10-k.htm",
+  "source_text_len": 132134,
+  "fetched_at": "2026-05-01T05:12:29.767223+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

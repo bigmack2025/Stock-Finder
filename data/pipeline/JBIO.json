@@ -1,0 +1,32 @@
+{
+  "ticker": "JBIO",
+  "modalities": [
+    "Monoclonal antibody",
+    "Gene therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Immunology/I&I",
+    "Oncology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 20,
+    "Gene therapy": 3,
+    "Small molecule": 3
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Immunology/I&I": 25,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 42,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-06",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1798749/000119312526096550/ck0001798749-20251231.htm",
+  "source_text_len": 168893,
+  "fetched_at": "2026-05-01T05:06:42.558282+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

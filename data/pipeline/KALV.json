@@ -1,0 +1,22 @@
+{
+  "ticker": "KALV",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 2
+  },
+  "ta_counts": {
+    "Rare disease": 53
+  },
+  "filing_filed": "2025-07-10",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1348911/000095017025095011/kalv-20250430.htm",
+  "source_text_len": 265395,
+  "fetched_at": "2026-05-01T05:06:19.795645+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,36 @@
+{
+  "ticker": "REGN",
+  "modalities": [
+    "RNAi/siRNA",
+    "Gene therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Ophthalmology"
+  ],
+  "primary_modality": "RNAi/siRNA",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Bispecific antibody": 2,
+    "Antibody-drug conjugate": 1,
+    "CAR-T cell therapy": 2,
+    "Gene therapy": 3,
+    "RNAi/siRNA": 4,
+    "Small molecule": 3
+  },
+  "ta_counts": {
+    "Oncology": 5,
+    "Immunology/I&I": 1,
+    "Ophthalmology": 2,
+    "Rare disease": 10,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-02-04",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000008/regn-20251231.htm",
+  "source_text_len": 202591,
+  "fetched_at": "2026-05-01T05:02:30.501353+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,32 @@
+{
+  "ticker": "IMRX",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Hematology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Gene editing": 1,
+    "RNAi/siRNA": 1,
+    "Small molecule": 2
+  },
+  "ta_counts": {
+    "Oncology": 253,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 42,
+    "Infectious disease": 1,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-06",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1790340/000179034026000042/imrx-20251231.htm",
+  "source_text_len": 155943,
+  "fetched_at": "2026-05-01T05:07:46.910842+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

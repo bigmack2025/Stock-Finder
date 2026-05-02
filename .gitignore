@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+pytest-cache-files-*/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+
+# User-data caches we don't want in git
+data/users/
+data/_users_index.json
+
+# Cache strategy — calibrated for repo-size vs cold-start speed:
+#
+# COMMIT (small, painful to rebuild):
+#   data/pipeline/                  2.4MB — 10-min rebuild, lots of tickers
+#   data/delisted/                  16KB  — built from EDGAR scrape
+#   data/going_concern/             ~150KB — built per-ticker on demand
+#   data/current_universe.parquet   128KB — quick to rebuild but cheap to keep
+#   data/valuations.parquet         20KB  — saves 10 min of yfinance on cold start
+#   data/delisted_universe.parquet  trivial
+#
+# IGNORE (too large or per-user):
+#   data/historical/                196MB — XBRL JSON. Lazy-fills per ticker on demand.
+#   data/users/                     per-user state, never share
+#   data/calibration/labels_*.json  per-user grading sessions
+
+data/historical/
+data/users/
+data/_users_index.json
+data/calibration/labels_*.json
+
+# Backtest scratch — keep the canonical results, drop the scratch parquets
+data/backtest/scored_*.parquet
+data/backtest/_sample_tickers.json
+
+# Health & build artifacts
+data/_refresh_health.json
+data/pipeline/_todo.json

@@ -1,0 +1,30 @@
+{
+  "ticker": "ABEO",
+  "modalities": [
+    "Gene therapy",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Ophthalmology",
+    "Dermatology"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 85,
+    "Cell therapy (other)": 2,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Ophthalmology": 18,
+    "Rare disease": 53,
+    "Dermatology": 2
+  },
+  "filing_filed": "2026-03-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/318306/000149315226010413/form10-k.htm",
+  "source_text_len": 115378,
+  "fetched_at": "2026-05-01T05:08:22.645512+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

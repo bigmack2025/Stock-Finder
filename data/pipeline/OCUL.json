@@ -1,0 +1,35 @@
+{
+  "ticker": "OCUL",
+  "modalities": [
+    "Diagnostics/devices",
+    "Gene therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Ophthalmology",
+    "Metabolic/Obesity",
+    "Rare disease"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Gene therapy": 3,
+    "Cell therapy (other)": 1,
+    "Small molecule": 2,
+    "Radiotherapeutic": 1,
+    "Diagnostics/devices": 18
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 39,
+    "Cardiovascular": 1,
+    "Ophthalmology": 90,
+    "Rare disease": 10
+  },
+  "filing_filed": "2026-02-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1393434/000110465926010664/ocul-20251231x10k.htm",
+  "source_text_len": 282233,
+  "fetched_at": "2026-05-01T05:03:58.554386+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

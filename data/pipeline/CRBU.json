@@ -1,0 +1,34 @@
+{
+  "ticker": "CRBU",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Gene editing",
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Hematology",
+    "Rare disease"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Bispecific antibody": 5,
+    "CAR-T cell therapy": 121,
+    "Gene therapy": 4,
+    "Gene editing": 29,
+    "Cell therapy (other)": 1
+  },
+  "ta_counts": {
+    "Oncology": 17,
+    "Neurology/CNS": 1,
+    "Immunology/I&I": 2,
+    "Rare disease": 4,
+    "Hematology": 7
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1619856/000161985626000008/crbu-20251231.htm",
+  "source_text_len": 57653,
+  "fetched_at": "2026-05-01T05:09:55.564662+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

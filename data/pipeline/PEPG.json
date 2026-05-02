@@ -1,0 +1,38 @@
+{
+  "ticker": "PEPG",
+  "modalities": [
+    "Antisense oligonucleotide",
+    "RNAi/siRNA",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Oncology"
+  ],
+  "primary_modality": "Antisense oligonucleotide",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 1,
+    "Gene editing": 2,
+    "RNAi/siRNA": 4,
+    "Antisense oligonucleotide": 8,
+    "mRNA therapeutic": 1,
+    "Small molecule": 3
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Neurology/CNS": 5,
+    "Metabolic/Obesity": 2,
+    "Ophthalmology": 1,
+    "Rare disease": 44,
+    "Infectious disease": 1,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-04",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1835597/000119312526091536/pepg-20251231.htm",
+  "source_text_len": 152426,
+  "fetched_at": "2026-05-01T05:07:35.859302+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

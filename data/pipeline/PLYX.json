@@ -1,0 +1,31 @@
+{
+  "ticker": "PLYX",
+  "modalities": [
+    "Small molecule",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Gene therapy": 18,
+    "Small molecule": 20
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Neurology/CNS": 4,
+    "Metabolic/Obesity": 3,
+    "Ophthalmology": 3,
+    "Rare disease": 88,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/2075320/000121390026033064/ea0281719-10k_polaryx.htm",
+  "source_text_len": 229090,
+  "fetched_at": "2026-05-01T05:11:16.762895+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

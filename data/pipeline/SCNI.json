@@ -1,0 +1,30 @@
+{
+  "ticker": "SCNI",
+  "modalities": [
+    "Vaccine",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Immunology/I&I",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 4,
+    "Vaccine": 6,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Immunology/I&I": 5,
+    "Ophthalmology": 1,
+    "Rare disease": 3,
+    "Infectious disease": 2
+  },
+  "filing_filed": "2023-04-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1611747/000121390023030228/f10k2022_biondvax.htm",
+  "source_text_len": 89852,
+  "fetched_at": "2026-05-01T05:15:18.120720+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

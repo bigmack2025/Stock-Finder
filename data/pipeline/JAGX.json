@@ -1,0 +1,29 @@
+{
+  "ticker": "JAGX",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Infectious disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Vaccine": 2,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 33,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 3,
+    "Rare disease": 56,
+    "Infectious disease": 23
+  },
+  "filing_filed": "2026-04-07",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1585608/000119312526144470/jagx-20251231.htm",
+  "source_text_len": 121922,
+  "fetched_at": "2026-05-01T05:15:20.694756+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,31 @@
+{
+  "ticker": "PTN",
+  "modalities": [
+    "Small molecule",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Immunology/I&I",
+    "Rare disease"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "Small molecule": 7,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Immunology/I&I": 19,
+    "Metabolic/Obesity": 45,
+    "Ophthalmology": 3,
+    "Rare disease": 5
+  },
+  "filing_filed": "2025-09-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/911216/000165495425011030/ptn_10k.htm",
+  "source_text_len": 64964,
+  "fetched_at": "2026-05-01T05:12:59.157710+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

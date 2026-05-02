@@ -1,0 +1,19 @@
+{
+  "ticker": "RNTX",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Rare disease"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Rare disease": 5,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1420565/000119312526126385/rntx-20251231.htm",
+  "source_text_len": 25841,
+  "fetched_at": "2026-05-01T05:13:15.262767+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,32 @@
+{
+  "ticker": "SMMT",
+  "modalities": [
+    "Bispecific antibody",
+    "Monoclonal antibody",
+    "Antibody-drug conjugate"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Bispecific antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 3,
+    "Bispecific antibody": 7,
+    "Antibody-drug conjugate": 2,
+    "Cell therapy (other)": 1,
+    "Small molecule": 1,
+    "Radiotherapeutic": 1,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 55,
+    "Rare disease": 34
+  },
+  "filing_filed": "2026-02-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000015/smmt-20251231.htm",
+  "source_text_len": 154583,
+  "fetched_at": "2026-05-01T05:02:42.077102+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,32 @@
+{
+  "ticker": "LXEO",
+  "modalities": [
+    "Gene therapy",
+    "Diagnostics/devices",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Rare disease",
+    "Cardiovascular"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 65,
+    "Cell therapy (other)": 4,
+    "RNAi/siRNA": 1,
+    "Diagnostics/devices": 7
+  },
+  "ta_counts": {
+    "Neurology/CNS": 31,
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 7,
+    "Rare disease": 30
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1907108/000119312526132085/lxeo-20251231.htm",
+  "source_text_len": 165281,
+  "fetched_at": "2026-05-01T05:07:05.074537+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

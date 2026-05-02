@@ -1,0 +1,35 @@
+{
+  "ticker": "PRME",
+  "modalities": [
+    "Gene editing",
+    "Gene therapy",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Hematology",
+    "Oncology"
+  ],
+  "primary_modality": "Gene editing",
+  "modality_counts": {
+    "Gene therapy": 12,
+    "Gene editing": 122,
+    "Cell therapy (other)": 4,
+    "Antisense oligonucleotide": 1,
+    "mRNA therapeutic": 1,
+    "Small molecule": 2
+  },
+  "ta_counts": {
+    "Oncology": 5,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 51,
+    "Infectious disease": 1,
+    "Hematology": 7
+  },
+  "filing_filed": "2026-03-03",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1894562/000162828026013569/prme-20251231.htm",
+  "source_text_len": 169905,
+  "fetched_at": "2026-05-01T05:06:27.602420+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

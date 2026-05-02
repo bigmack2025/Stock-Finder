@@ -1,0 +1,30 @@
+{
+  "ticker": "SNSE",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Bispecific antibody": 1,
+    "Small molecule": 1,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 144,
+    "Metabolic/Obesity": 6,
+    "Rare disease": 19,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1829802/000119312526132014/snse-20251231.htm",
+  "source_text_len": 159101,
+  "fetched_at": "2026-05-01T05:13:04.448878+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

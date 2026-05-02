@@ -1,0 +1,26 @@
+{
+  "ticker": "PTCT",
+  "modalities": [
+    "Gene therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 7,
+    "Small molecule": 3
+  },
+  "ta_counts": {
+    "Neurology/CNS": 2,
+    "Rare disease": 53
+  },
+  "filing_filed": "2026-02-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1070081/000110465926017575/tmb-20251231x10k.htm",
+  "source_text_len": 187342,
+  "fetched_at": "2026-05-01T05:03:06.843928+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

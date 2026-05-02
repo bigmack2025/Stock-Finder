@@ -1,0 +1,34 @@
+{
+  "ticker": "STRO",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Vaccine",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 3,
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 123,
+    "CAR-T cell therapy": 1,
+    "Vaccine": 14,
+    "Small molecule": 3,
+    "Diagnostics/devices": 3
+  },
+  "ta_counts": {
+    "Oncology": 136,
+    "Rare disease": 19,
+    "Infectious disease": 6
+  },
+  "filing_filed": "2026-03-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1382101/000119312526119873/stro-20251231.htm",
+  "source_text_len": 139971,
+  "fetched_at": "2026-05-01T05:07:27.947951+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

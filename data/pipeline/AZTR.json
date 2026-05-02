@@ -1,0 +1,33 @@
+{
+  "ticker": "AZTR",
+  "modalities": [
+    "Microbiome",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Dermatology",
+    "Oncology"
+  ],
+  "primary_modality": "Microbiome",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Small molecule": 2,
+    "Microbiome": 10
+  },
+  "ta_counts": {
+    "Oncology": 19,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 1,
+    "Rare disease": 45,
+    "Infectious disease": 2,
+    "Dermatology": 21
+  },
+  "filing_filed": "2026-02-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1701478/000170147826000013/aztr-20251231.htm",
+  "source_text_len": 153483,
+  "fetched_at": "2026-05-01T05:15:17.220678+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

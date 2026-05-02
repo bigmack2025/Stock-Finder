@@ -1,0 +1,35 @@
+{
+  "ticker": "NUVL",
+  "modalities": [
+    "Small molecule",
+    "Diagnostics/devices",
+    "Antibody-drug conjugate"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Antibody-drug conjugate": 4,
+    "Cell therapy (other)": 2,
+    "Small molecule": 6,
+    "Diagnostics/devices": 6
+  },
+  "ta_counts": {
+    "Oncology": 70,
+    "Neurology/CNS": 12,
+    "Immunology/I&I": 2,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 54,
+    "Infectious disease": 1,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1861560/000119312526073317/nuvl-20251231.htm",
+  "source_text_len": 215740,
+  "fetched_at": "2026-05-01T05:02:53.560636+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

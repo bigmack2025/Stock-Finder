@@ -1,0 +1,28 @@
+{
+  "ticker": "EVMN",
+  "modalities": [
+    "Monoclonal antibody",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 5,
+    "Small molecule": 4
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Neurology/CNS": 1,
+    "Immunology/I&I": 5,
+    "Metabolic/Obesity": 1,
+    "Dermatology": 1
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/2044725/000119312526093932/evmn-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:06:18.136938+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

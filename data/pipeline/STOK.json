@@ -1,0 +1,31 @@
+{
+  "ticker": "STOK",
+  "modalities": [
+    "Antisense oligonucleotide",
+    "Gene therapy",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Ophthalmology"
+  ],
+  "primary_modality": "Antisense oligonucleotide",
+  "modality_counts": {
+    "Gene therapy": 2,
+    "Gene editing": 2,
+    "Antisense oligonucleotide": 49
+  },
+  "ta_counts": {
+    "Neurology/CNS": 15,
+    "Immunology/I&I": 1,
+    "Ophthalmology": 9,
+    "Rare disease": 55
+  },
+  "filing_filed": "2026-03-16",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1623526/000119312526108362/stok-20251231.htm",
+  "source_text_len": 149717,
+  "fetched_at": "2026-05-01T05:04:37.862500+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

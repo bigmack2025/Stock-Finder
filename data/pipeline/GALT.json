@@ -1,0 +1,30 @@
+{
+  "ticker": "GALT",
+  "modalities": [
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Oncology",
+    "Cardiovascular"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "Small molecule": 1,
+    "Protein degrader": 1
+  },
+  "ta_counts": {
+    "Oncology": 33,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 67,
+    "Cardiovascular": 22,
+    "Dermatology": 1
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1133416/000114036126012155/ef20060823_10k.htm",
+  "source_text_len": 57647,
+  "fetched_at": "2026-05-01T05:09:41.197988+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

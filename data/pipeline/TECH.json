@@ -1,0 +1,28 @@
+{
+  "ticker": "TECH",
+  "modalities": [
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 3,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 7,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 2,
+    "Cardiovascular": 1,
+    "Hematology": 1
+  },
+  "filing_filed": "2025-08-22",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/842023/000155837025011716/tech-20250630x10k.htm",
+  "source_text_len": 15367,
+  "fetched_at": "2026-05-01T05:02:49.110314+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,24 @@
+{
+  "ticker": "CYCN",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Oncology": 1,
+    "Neurology/CNS": 7,
+    "Metabolic/Obesity": 5,
+    "Cardiovascular": 2,
+    "Rare disease": 15
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1755237/000119312526132193/cycn-20251231.htm",
+  "source_text_len": 66632,
+  "fetched_at": "2026-05-01T05:14:47.235060+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

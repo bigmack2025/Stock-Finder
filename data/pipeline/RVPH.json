@@ -1,0 +1,31 @@
+{
+  "ticker": "RVPH",
+  "modalities": [
+    "Radiotherapeutic"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Metabolic/Obesity",
+    "Cardiovascular"
+  ],
+  "primary_modality": "Radiotherapeutic",
+  "modality_counts": {
+    "Radiotherapeutic": 2
+  },
+  "ta_counts": {
+    "Oncology": 6,
+    "Neurology/CNS": 4,
+    "Immunology/I&I": 5,
+    "Metabolic/Obesity": 17,
+    "Cardiovascular": 7,
+    "Rare disease": 26,
+    "Infectious disease": 1,
+    "Hematology": 3
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1742927/000143774926010126/rvph20251231_10k.htm",
+  "source_text_len": 132050,
+  "fetched_at": "2026-05-01T05:13:45.009777+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

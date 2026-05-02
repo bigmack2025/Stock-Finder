@@ -1,0 +1,40 @@
+{
+  "ticker": "RNAZ",
+  "modalities": [
+    "RNAi/siRNA",
+    "Vaccine",
+    "Antisense oligonucleotide"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "RNAi/siRNA",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 3,
+    "CAR-T cell therapy": 4,
+    "Gene therapy": 1,
+    "RNAi/siRNA": 15,
+    "Antisense oligonucleotide": 5,
+    "Vaccine": 15,
+    "Small molecule": 5,
+    "Radiotherapeutic": 3,
+    "Diagnostics/devices": 5
+  },
+  "ta_counts": {
+    "Oncology": 330,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 4,
+    "Rare disease": 46,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-04-15",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1829635/000110465926043810/rnaz-20251231x10k.htm",
+  "source_text_len": 202434,
+  "fetched_at": "2026-05-01T05:14:25.569248+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

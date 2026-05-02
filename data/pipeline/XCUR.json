@@ -1,0 +1,20 @@
+{
+  "ticker": "XCUR",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": null,
+  "modality_counts": {
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 2
+  },
+  "filing_filed": "2026-03-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1698530/000169853026000028/xcur-20251231.htm",
+  "source_text_len": 13493,
+  "fetched_at": "2026-05-01T05:13:34.902525+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

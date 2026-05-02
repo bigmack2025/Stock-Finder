@@ -1,0 +1,39 @@
+{
+  "ticker": "HCWB",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Bispecific antibody",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Immunology/I&I",
+    "Rare disease"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Bispecific antibody": 10,
+    "Antibody-drug conjugate": 1,
+    "CAR-T cell therapy": 24,
+    "Gene therapy": 1,
+    "Cell therapy (other)": 5,
+    "Vaccine": 2,
+    "Radiotherapeutic": 1
+  },
+  "ta_counts": {
+    "Oncology": 112,
+    "Neurology/CNS": 10,
+    "Immunology/I&I": 29,
+    "Metabolic/Obesity": 5,
+    "Rare disease": 11,
+    "Infectious disease": 10,
+    "Dermatology": 1,
+    "Hematology": 4
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1828673/000119312526134934/hcwb-20251231.htm",
+  "source_text_len": 164554,
+  "fetched_at": "2026-05-01T05:15:13.778384+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "CLDI",
+  "modalities": [
+    "Oncolytic virus",
+    "Diagnostics/devices",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Oncolytic virus",
+  "modality_counts": {
+    "Bispecific antibody": 1,
+    "Gene therapy": 2,
+    "Cell therapy (other)": 1,
+    "Vaccine": 3,
+    "Oncolytic virus": 14,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 65,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 43,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1855485/000149315226013242/form10-k.htm",
+  "source_text_len": 156995,
+  "fetched_at": "2026-05-01T05:15:21.950293+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

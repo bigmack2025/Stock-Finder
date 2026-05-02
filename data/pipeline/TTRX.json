@@ -1,0 +1,27 @@
+{
+  "ticker": "TTRX",
+  "modalities": [
+    "Vaccine",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Dermatology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Vaccine": 29,
+    "Diagnostics/devices": 21
+  },
+  "ta_counts": {
+    "Neurology/CNS": 1,
+    "Metabolic/Obesity": 4,
+    "Dermatology": 14
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/2023016/000121390026037505/ea0281342-10k_turntherap.htm",
+  "source_text_len": 73473,
+  "fetched_at": "2026-05-01T05:11:38.109383+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

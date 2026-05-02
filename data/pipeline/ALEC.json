@@ -1,0 +1,33 @@
+{
+  "ticker": "ALEC",
+  "modalities": [
+    "RNAi/siRNA",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Oncology"
+  ],
+  "primary_modality": "RNAi/siRNA",
+  "modality_counts": {
+    "Monoclonal antibody": 3,
+    "Gene editing": 1,
+    "Cell therapy (other)": 1,
+    "RNAi/siRNA": 15
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Neurology/CNS": 33,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 38,
+    "Infectious disease": 1,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-02-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1653087/000119312526071593/alec-20251231.htm",
+  "source_text_len": 122644,
+  "fetched_at": "2026-05-01T05:09:30.526410+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

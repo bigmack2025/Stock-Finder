@@ -1,0 +1,31 @@
+{
+  "ticker": "DMAC",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Cardiovascular",
+    "Metabolic/Obesity",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 1,
+    "Cell therapy (other)": 1,
+    "RNAi/siRNA": 1,
+    "Diagnostics/devices": 2
+  },
+  "ta_counts": {
+    "Neurology/CNS": 2,
+    "Metabolic/Obesity": 9,
+    "Cardiovascular": 17,
+    "Rare disease": 1
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1401040/000143774926010342/dmtp20251231_10k.htm",
+  "source_text_len": 107075,
+  "fetched_at": "2026-05-01T05:07:30.019640+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

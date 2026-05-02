@@ -1,0 +1,33 @@
+{
+  "ticker": "MCRB",
+  "modalities": [
+    "Microbiome",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Microbiome",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "CAR-T cell therapy": 3,
+    "Gene therapy": 1,
+    "Vaccine": 1,
+    "Microbiome": 91
+  },
+  "ta_counts": {
+    "Oncology": 29,
+    "Immunology/I&I": 9,
+    "Metabolic/Obesity": 11,
+    "Rare disease": 35,
+    "Infectious disease": 7
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1609809/000119312526103276/mcrb-20251231.htm",
+  "source_text_len": 163068,
+  "fetched_at": "2026-05-01T05:12:03.890586+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

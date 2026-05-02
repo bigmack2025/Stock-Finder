@@ -1,0 +1,37 @@
+{
+  "ticker": "ARVN",
+  "modalities": [
+    "Protein degrader",
+    "Small molecule",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Protein degrader",
+  "modality_counts": {
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 1,
+    "Gene therapy": 1,
+    "Cell therapy (other)": 2,
+    "Small molecule": 12,
+    "Protein degrader": 105,
+    "Radiotherapeutic": 1
+  },
+  "ta_counts": {
+    "Oncology": 157,
+    "Neurology/CNS": 29,
+    "Immunology/I&I": 2,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 43,
+    "Hematology": 4
+  },
+  "filing_filed": "2026-02-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1655759/000162828026011226/arvn-20251231.htm",
+  "source_text_len": 269259,
+  "fetched_at": "2026-05-01T05:06:13.714803+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

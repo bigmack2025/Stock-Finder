@@ -1,0 +1,25 @@
+{
+  "ticker": "MRVI",
+  "modalities": [
+    "Vaccine",
+    "Gene therapy",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 8,
+    "Gene editing": 3,
+    "Vaccine": 9
+  },
+  "ta_counts": {
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1823239/000182323926000011/mrvi-20251231.htm",
+  "source_text_len": 29284,
+  "fetched_at": "2026-05-01T05:06:08.156503+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

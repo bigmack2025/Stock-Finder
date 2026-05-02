@@ -1,0 +1,32 @@
+{
+  "ticker": "XNCR",
+  "modalities": [
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Immunology/I&I",
+    "Rare disease"
+  ],
+  "primary_modality": "Bispecific antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Bispecific antibody": 42,
+    "Antibody-drug conjugate": 1,
+    "RNAi/siRNA": 1
+  },
+  "ta_counts": {
+    "Oncology": 72,
+    "Neurology/CNS": 1,
+    "Immunology/I&I": 27,
+    "Rare disease": 23,
+    "Infectious disease": 2,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-02-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1326732/000132673226000015/xncr-20251231.htm",
+  "source_text_len": 116803,
+  "fetched_at": "2026-05-01T04:50:42.596021+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

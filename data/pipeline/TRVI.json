@@ -1,0 +1,25 @@
+{
+  "ticker": "TRVI",
+  "modalities": [
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease"
+  ],
+  "primary_modality": "Cell therapy (other)",
+  "modality_counts": {
+    "Cell therapy (other)": 3,
+    "Small molecule": 1,
+    "Radiotherapeutic": 1
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Rare disease": 8
+  },
+  "filing_filed": "2026-03-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1563880/000119312526110783/trvi-20251231.htm",
+  "source_text_len": 169695,
+  "fetched_at": "2026-05-01T05:05:00.231410+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

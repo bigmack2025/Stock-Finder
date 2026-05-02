@@ -1,0 +1,23 @@
+{
+  "ticker": "IMA",
+  "modalities": [
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 4
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Immunology/I&I": 1
+  },
+  "filing_filed": "2026-03-10",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1835579/000119312526099434/ima-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:12:28.176792+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

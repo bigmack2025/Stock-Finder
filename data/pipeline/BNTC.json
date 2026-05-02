@@ -1,0 +1,22 @@
+{
+  "ticker": "BNTC",
+  "modalities": [
+    "RNAi/siRNA",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [],
+  "primary_modality": "RNAi/siRNA",
+  "modality_counts": {
+    "Gene therapy": 5,
+    "RNAi/siRNA": 9
+  },
+  "ta_counts": {
+    "Rare disease": 1
+  },
+  "filing_filed": "2025-09-22",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1808898/000119312525211361/d57150d10k.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:07:36.835150+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

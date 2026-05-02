@@ -1,0 +1,34 @@
+{
+  "ticker": "AGIO",
+  "modalities": [
+    "RNAi/siRNA",
+    "Small molecule",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Hematology",
+    "Oncology"
+  ],
+  "primary_modality": "RNAi/siRNA",
+  "modality_counts": {
+    "Gene therapy": 2,
+    "Gene editing": 3,
+    "Cell therapy (other)": 2,
+    "RNAi/siRNA": 5,
+    "Small molecule": 4
+  },
+  "ta_counts": {
+    "Oncology": 15,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 5,
+    "Rare disease": 53,
+    "Hematology": 24
+  },
+  "filing_filed": "2026-02-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1439222/000143922226000025/agio-20251231.htm",
+  "source_text_len": 192827,
+  "fetched_at": "2026-05-01T05:05:13.159002+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "HUMA",
+  "modalities": [
+    "Cell therapy (other)",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Rare disease"
+  ],
+  "primary_modality": "Cell therapy (other)",
+  "modality_counts": {
+    "Cell therapy (other)": 5,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 44,
+    "Cardiovascular": 1,
+    "Rare disease": 24,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1818382/000181838226000004/huma-20251231.htm",
+  "source_text_len": 203251,
+  "fetched_at": "2026-05-01T05:09:34.645738+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

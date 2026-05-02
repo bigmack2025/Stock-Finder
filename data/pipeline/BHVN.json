@@ -1,0 +1,34 @@
+{
+  "ticker": "BHVN",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Small molecule",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Oncology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Antibody-drug conjugate": 27,
+    "Cell therapy (other)": 3,
+    "Small molecule": 7
+  },
+  "ta_counts": {
+    "Oncology": 42,
+    "Neurology/CNS": 58,
+    "Immunology/I&I": 6,
+    "Metabolic/Obesity": 28,
+    "Rare disease": 8,
+    "Dermatology": 1
+  },
+  "filing_filed": "2026-03-02",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1935979/000193597926000020/bhvn-20251231.htm",
+  "source_text_len": 201350,
+  "fetched_at": "2026-05-01T05:05:34.620096+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

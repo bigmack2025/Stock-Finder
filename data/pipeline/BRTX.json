@@ -1,0 +1,24 @@
+{
+  "ticker": "BRTX",
+  "modalities": [
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Cell therapy (other)",
+  "modality_counts": {
+    "Cell therapy (other)": 6,
+    "Small molecule": 1,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Metabolic/Obesity": 5
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1505497/000149315226012925/form10-k.htm",
+  "source_text_len": 117197,
+  "fetched_at": "2026-05-01T05:15:06.404431+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

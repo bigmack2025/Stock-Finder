@@ -1,0 +1,26 @@
+{
+  "ticker": "LXRX",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Rare disease",
+    "Cardiovascular"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 8
+  },
+  "ta_counts": {
+    "Metabolic/Obesity": 22,
+    "Cardiovascular": 15,
+    "Rare disease": 18
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1062822/000106282226000050/lxrx-20251231.htm",
+  "source_text_len": 75170,
+  "fetched_at": "2026-05-01T05:06:26.661239+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,27 @@
+{
+  "ticker": "RARE",
+  "modalities": [
+    "Gene therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 32,
+    "Cell therapy (other)": 1,
+    "Small molecule": 6
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Rare disease": 27
+  },
+  "filing_filed": "2026-02-18",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1515673/000119312526057329/rare-20251231.htm",
+  "source_text_len": 158502,
+  "fetched_at": "2026-05-01T05:04:35.885407+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

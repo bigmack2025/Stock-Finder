@@ -1,0 +1,18 @@
+{
+  "ticker": "CBUS",
+  "modalities": [
+    "Gene editing"
+  ],
+  "therapeutic_areas": [],
+  "primary_modality": "Gene editing",
+  "modality_counts": {
+    "Gene editing": 70
+  },
+  "ta_counts": {},
+  "filing_filed": "2026-03-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1705843/000162828026018815/cbus-20251231.htm",
+  "source_text_len": 105548,
+  "fetched_at": "2026-05-01T05:09:35.759054+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

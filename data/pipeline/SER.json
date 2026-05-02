@@ -1,0 +1,35 @@
+{
+  "ticker": "SER",
+  "modalities": [
+    "Vaccine",
+    "Antibody-drug conjugate",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Antibody-drug conjugate": 7,
+    "Gene therapy": 1,
+    "Cell therapy (other)": 2,
+    "RNAi/siRNA": 1,
+    "Vaccine": 9,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Neurology/CNS": 47,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 19,
+    "Infectious disease": 5
+  },
+  "filing_filed": "2026-03-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1708599/000170859926000016/ser-20251231.htm",
+  "source_text_len": 99584,
+  "fetched_at": "2026-05-01T05:13:54.427812+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

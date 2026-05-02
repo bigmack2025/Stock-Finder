@@ -1,0 +1,31 @@
+{
+  "ticker": "FTRE",
+  "modalities": [
+    "Diagnostics/devices",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Rare disease"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Gene therapy": 4,
+    "Diagnostics/devices": 8
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 3,
+    "Ophthalmology": 1,
+    "Rare disease": 2,
+    "Infectious disease": 1,
+    "Dermatology": 1
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1965040/000162828026012244/ftre-20251231.htm",
+  "source_text_len": 16784,
+  "fetched_at": "2026-05-01T05:06:09.137921+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

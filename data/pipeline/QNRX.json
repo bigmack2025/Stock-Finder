@@ -1,0 +1,26 @@
+{
+  "ticker": "QNRX",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Immunology/I&I"
+  ],
+  "primary_modality": null,
+  "modality_counts": {
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Immunology/I&I": 2,
+    "Rare disease": 42,
+    "Infectious disease": 1,
+    "Dermatology": 1
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1671502/000110465926035251/qnrx-20251231x10k.htm",
+  "source_text_len": 75905,
+  "fetched_at": "2026-05-01T05:13:56.795409+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

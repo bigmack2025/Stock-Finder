@@ -1,0 +1,30 @@
+{
+  "ticker": "EXEL",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Small molecule",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 8,
+    "Bispecific antibody": 3,
+    "Antibody-drug conjugate": 20,
+    "Small molecule": 14
+  },
+  "ta_counts": {
+    "Oncology": 119,
+    "Cardiovascular": 1,
+    "Rare disease": 25
+  },
+  "filing_filed": "2026-02-10",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/939767/000093976726000021/exel-20260102.htm",
+  "source_text_len": 125195,
+  "fetched_at": "2026-05-01T05:02:43.965786+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

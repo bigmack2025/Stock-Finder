@@ -1,0 +1,31 @@
+{
+  "ticker": "IMNM",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Radiotherapeutic",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Hematology"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Antibody-drug conjugate": 85,
+    "Small molecule": 1,
+    "Radiotherapeutic": 14,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 179,
+    "Rare disease": 28,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-03",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1472012/000119312526088172/imnm-20251231.htm",
+  "source_text_len": 134290,
+  "fetched_at": "2026-05-01T05:03:55.824318+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

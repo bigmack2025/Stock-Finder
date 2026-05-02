@@ -1,0 +1,34 @@
+{
+  "ticker": "UPB",
+  "modalities": [
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Dermatology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 15,
+    "Gene therapy": 1,
+    "Small molecule": 1,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Metabolic/Obesity": 2,
+    "Cardiovascular": 1,
+    "Ophthalmology": 1,
+    "Rare disease": 48,
+    "Infectious disease": 1,
+    "Dermatology": 3,
+    "Hematology": 3
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/2022626/000119312526126188/upb-20251231.htm",
+  "source_text_len": 206175,
+  "fetched_at": "2026-05-01T05:07:28.955676+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "MAIA",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Hematology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 1,
+    "Vaccine": 1,
+    "Small molecule": 4
+  },
+  "ta_counts": {
+    "Oncology": 365,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 28,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1878313/000149315226012088/form10-k.htm",
+  "source_text_len": 211680,
+  "fetched_at": "2026-05-01T05:11:58.491278+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

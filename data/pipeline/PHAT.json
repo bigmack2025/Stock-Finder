@@ -1,0 +1,29 @@
+{
+  "ticker": "PHAT",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Small molecule": 3
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 3,
+    "Infectious disease": 3
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1783183/000119312526073379/phat-20251231.htm",
+  "source_text_len": 114317,
+  "fetched_at": "2026-05-01T05:06:16.077071+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

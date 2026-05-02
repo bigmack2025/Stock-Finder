@@ -1,0 +1,35 @@
+{
+  "ticker": "CNSP",
+  "modalities": [
+    "Gene therapy",
+    "Antibody-drug conjugate",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Neurology/CNS",
+    "Rare disease"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 2,
+    "CAR-T cell therapy": 2,
+    "Gene therapy": 4,
+    "Vaccine": 1,
+    "Radiotherapeutic": 2,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 67,
+    "Neurology/CNS": 55,
+    "Rare disease": 12,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1729427/000168316826002550/cns_i10k-123125.htm",
+  "source_text_len": 70135,
+  "fetched_at": "2026-05-01T05:15:31.555431+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,30 @@
+{
+  "ticker": "SANA",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Gene therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "CAR-T cell therapy": 3,
+    "Gene therapy": 2,
+    "Small molecule": 2
+  },
+  "ta_counts": {
+    "Oncology": 11,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 1,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-03",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1770121/000119312526088215/sana-20251231.htm",
+  "source_text_len": 272149,
+  "fetched_at": "2026-05-01T05:06:16.947744+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

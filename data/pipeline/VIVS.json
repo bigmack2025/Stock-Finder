@@ -1,0 +1,16 @@
+{
+  "ticker": "VIVS",
+  "modalities": [],
+  "therapeutic_areas": [],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Immunology/I&I": 1
+  },
+  "filing_filed": "2025-06-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1497253/000095017025082312/vivs-20250331.htm",
+  "source_text_len": 15375,
+  "fetched_at": "2026-05-01T05:15:03.410396+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

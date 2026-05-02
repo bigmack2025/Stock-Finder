@@ -1,0 +1,36 @@
+{
+  "ticker": "CLRB",
+  "modalities": [
+    "Small molecule",
+    "Radiotherapeutic",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Hematology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "Antibody-drug conjugate": 1,
+    "Gene therapy": 2,
+    "RNAi/siRNA": 1,
+    "Small molecule": 5,
+    "Radiotherapeutic": 4
+  },
+  "ta_counts": {
+    "Oncology": 218,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 4,
+    "Rare disease": 50,
+    "Infectious disease": 3,
+    "Hematology": 14
+  },
+  "filing_filed": "2026-03-04",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1279704/000110465926023167/clrb-20251231x10k.htm",
+  "source_text_len": 172374,
+  "fetched_at": "2026-05-01T05:14:14.622267+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

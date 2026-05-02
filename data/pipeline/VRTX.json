@@ -1,0 +1,34 @@
+{
+  "ticker": "VRTX",
+  "modalities": [
+    "Gene editing",
+    "Small molecule",
+    "mRNA therapeutic"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Hematology",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Gene editing",
+  "modality_counts": {
+    "Gene therapy": 2,
+    "Gene editing": 27,
+    "Cell therapy (other)": 2,
+    "mRNA therapeutic": 5,
+    "Small molecule": 7,
+    "Peptide therapeutic": 1
+  },
+  "ta_counts": {
+    "Immunology/I&I": 3,
+    "Metabolic/Obesity": 10,
+    "Rare disease": 2,
+    "Hematology": 4
+  },
+  "filing_filed": "2026-02-13",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/875320/000087532026000056/vrtx-20251231.htm",
+  "source_text_len": 68254,
+  "fetched_at": "2026-05-01T04:50:37.540335+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

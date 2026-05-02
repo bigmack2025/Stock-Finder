@@ -1,0 +1,40 @@
+{
+  "ticker": "BBIO",
+  "modalities": [
+    "Small molecule",
+    "Gene therapy",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Cardiovascular"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 3,
+    "Gene editing": 1,
+    "Cell therapy (other)": 3,
+    "RNAi/siRNA": 1,
+    "Antisense oligonucleotide": 1,
+    "Small molecule": 10,
+    "Diagnostics/devices": 3
+  },
+  "ta_counts": {
+    "Oncology": 10,
+    "Neurology/CNS": 2,
+    "Metabolic/Obesity": 2,
+    "Cardiovascular": 3,
+    "Rare disease": 63,
+    "Infectious disease": 1,
+    "Dermatology": 1,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-02-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1743881/000174388126000009/bbio-20251231.htm",
+  "source_text_len": 234179,
+  "fetched_at": "2026-05-01T05:02:39.110906+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

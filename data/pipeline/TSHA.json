@@ -1,0 +1,33 @@
+{
+  "ticker": "TSHA",
+  "modalities": [
+    "Gene therapy",
+    "Cell therapy (other)",
+    "Antisense oligonucleotide"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Oncology"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 22,
+    "Cell therapy (other)": 5,
+    "RNAi/siRNA": 2,
+    "Antisense oligonucleotide": 4
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Neurology/CNS": 13,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 47,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1806310/000119312526115202/tsha-20251231.htm",
+  "source_text_len": 134627,
+  "fetched_at": "2026-05-01T05:05:47.539036+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

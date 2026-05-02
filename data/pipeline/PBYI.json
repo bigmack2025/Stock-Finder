@@ -1,0 +1,29 @@
+{
+  "ticker": "PBYI",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Small molecule": 3
+  },
+  "ta_counts": {
+    "Oncology": 225,
+    "Neurology/CNS": 13,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 37,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1401667/000143774926005891/pbyi20251231_10k.htm",
+  "source_text_len": 203809,
+  "fetched_at": "2026-05-01T05:08:11.464872+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,35 @@
+{
+  "ticker": "LYEL",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Bispecific antibody",
+    "Antibody-drug conjugate"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Hematology"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Bispecific antibody": 3,
+    "Antibody-drug conjugate": 2,
+    "CAR-T cell therapy": 129,
+    "Gene therapy": 1,
+    "Gene editing": 1,
+    "Cell therapy (other)": 2
+  },
+  "ta_counts": {
+    "Oncology": 138,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 13,
+    "Hematology": 10
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1806952/000162828026017253/lyel-20251231.htm",
+  "source_text_len": 139024,
+  "fetched_at": "2026-05-01T05:07:08.379137+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

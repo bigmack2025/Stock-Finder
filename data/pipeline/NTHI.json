@@ -1,0 +1,34 @@
+{
+  "ticker": "NTHI",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Monoclonal antibody",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 3,
+    "CAR-T cell therapy": 5,
+    "Gene therapy": 2,
+    "Small molecule": 2,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 218,
+    "Neurology/CNS": 30,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 39,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1979414/000182912626002860/neonctechnologies_10k.htm",
+  "source_text_len": 194955,
+  "fetched_at": "2026-05-01T05:09:44.493080+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

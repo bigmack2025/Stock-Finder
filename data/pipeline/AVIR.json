@@ -1,0 +1,29 @@
+{
+  "ticker": "AVIR",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Infectious disease",
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "mRNA therapeutic": 1,
+    "Vaccine": 3
+  },
+  "ta_counts": {
+    "Oncology": 6,
+    "Rare disease": 3,
+    "Infectious disease": 225,
+    "Dermatology": 1,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1593899/000119312526094159/avir-20251231.htm",
+  "source_text_len": 131619,
+  "fetched_at": "2026-05-01T05:07:09.279800+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

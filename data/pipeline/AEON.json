@@ -1,0 +1,14 @@
+{
+  "ticker": "AEON",
+  "modalities": [],
+  "therapeutic_areas": [],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {},
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1837607/000183760726000019/aeon-20251231x10k.htm",
+  "source_text_len": 99969,
+  "fetched_at": "2026-05-01T05:13:33.871729+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,29 @@
+{
+  "ticker": "CRIS",
+  "modalities": [
+    "Small molecule",
+    "Diagnostics/devices",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Cell therapy (other)": 2,
+    "Small molecule": 8,
+    "Diagnostics/devices": 7
+  },
+  "ta_counts": {
+    "Oncology": 38,
+    "Rare disease": 51,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1108205/000110820526000043/cris-20251231.htm",
+  "source_text_len": 199727,
+  "fetched_at": "2026-05-01T05:13:58.458796+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,29 @@
+{
+  "ticker": "GLSI",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 1,
+    "CAR-T cell therapy": 1,
+    "Vaccine": 9
+  },
+  "ta_counts": {
+    "Oncology": 92,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 1,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2025-04-15",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1799788/000164117225004819/form10-k.htm",
+  "source_text_len": 74763,
+  "fetched_at": "2026-05-01T05:08:08.044044+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

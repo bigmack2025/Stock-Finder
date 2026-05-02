@@ -1,0 +1,33 @@
+{
+  "ticker": "MBX",
+  "modalities": [
+    "Peptide therapeutic",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Peptide therapeutic",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Small molecule": 3,
+    "Peptide therapeutic": 8
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 120,
+    "Cardiovascular": 2,
+    "Rare disease": 27,
+    "Infectious disease": 1,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1776111/000119312526103121/mbx-20251231.htm",
+  "source_text_len": 163091,
+  "fetched_at": "2026-05-01T05:05:37.644242+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

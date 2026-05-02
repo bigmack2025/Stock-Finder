@@ -1,0 +1,24 @@
+{
+  "ticker": "ACHV",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Diagnostics/devices": 3
+  },
+  "ta_counts": {
+    "Oncology": 5,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1
+  },
+  "filing_filed": "2026-03-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/949858/000119312526120690/achv-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:09:28.529081+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

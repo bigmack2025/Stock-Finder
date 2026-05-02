@@ -1,0 +1,33 @@
+{
+  "ticker": "DTIL",
+  "modalities": [
+    "Gene editing",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Infectious disease",
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Gene editing",
+  "modality_counts": {
+    "CAR-T cell therapy": 1,
+    "Gene therapy": 14,
+    "Gene editing": 16,
+    "Cell therapy (other)": 1
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 2,
+    "Infectious disease": 4,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1357874/000162828026017019/dtil-20251231.htm",
+  "source_text_len": 17083,
+  "fetched_at": "2026-05-01T05:11:33.750474+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

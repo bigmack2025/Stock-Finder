@@ -1,0 +1,24 @@
+{
+  "ticker": "COCP",
+  "modalities": [
+    "Vaccine",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Infectious disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Vaccine": 11,
+    "Small molecule": 2
+  },
+  "ta_counts": {
+    "Infectious disease": 54
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1412486/000149315226013838/form10-k.htm",
+  "source_text_len": 37535,
+  "fetched_at": "2026-05-01T05:13:57.665416+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

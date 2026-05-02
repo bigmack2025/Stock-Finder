@@ -1,0 +1,36 @@
+{
+  "ticker": "PMN",
+  "modalities": [
+    "Vaccine",
+    "Monoclonal antibody",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 33,
+    "Cell therapy (other)": 1,
+    "Vaccine": 43,
+    "Small molecule": 1,
+    "Peptide therapeutic": 2,
+    "Diagnostics/devices": 3
+  },
+  "ta_counts": {
+    "Oncology": 6,
+    "Neurology/CNS": 68,
+    "Ophthalmology": 1,
+    "Rare disease": 20,
+    "Infectious disease": 2,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1374339/000110465926034554/pmn-20251231x10k.htm",
+  "source_text_len": 161691,
+  "fetched_at": "2026-05-01T05:09:37.583939+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

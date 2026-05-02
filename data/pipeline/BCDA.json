@@ -1,0 +1,29 @@
+{
+  "ticker": "BCDA",
+  "modalities": [
+    "Diagnostics/devices",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Cardiovascular",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Gene therapy": 3,
+    "Cell therapy (other)": 1,
+    "Diagnostics/devices": 7
+  },
+  "ta_counts": {
+    "Metabolic/Obesity": 2,
+    "Cardiovascular": 45,
+    "Rare disease": 5
+  },
+  "filing_filed": "2026-03-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/925741/000143774926009587/bcda20251231_10k.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:14:10.490671+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

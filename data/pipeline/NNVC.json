@@ -1,0 +1,29 @@
+{
+  "ticker": "NNVC",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Infectious disease",
+    "Rare disease",
+    "Ophthalmology"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Vaccine": 46
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Neurology/CNS": 1,
+    "Ophthalmology": 7,
+    "Rare disease": 23,
+    "Infectious disease": 147
+  },
+  "filing_filed": "2025-09-29",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1379006/000110465925094527/nnvc-20250630x10k.htm",
+  "source_text_len": 252305,
+  "fetched_at": "2026-05-01T05:13:46.049024+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,28 @@
+{
+  "ticker": "SGP",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Ophthalmology",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Small molecule": 1,
+    "Diagnostics/devices": 5
+  },
+  "ta_counts": {
+    "Metabolic/Obesity": 3,
+    "Cardiovascular": 3,
+    "Ophthalmology": 42,
+    "Rare disease": 8
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1778922/000177892226000020/sgp-20251231.htm",
+  "source_text_len": 164193,
+  "fetched_at": "2026-05-01T05:06:11.041021+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

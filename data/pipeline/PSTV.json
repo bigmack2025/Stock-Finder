@@ -1,0 +1,29 @@
+{
+  "ticker": "PSTV",
+  "modalities": [
+    "Diagnostics/devices",
+    "Radiotherapeutic"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Radiotherapeutic": 3,
+    "Diagnostics/devices": 19
+  },
+  "ta_counts": {
+    "Oncology": 91,
+    "Neurology/CNS": 8,
+    "Rare disease": 26
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1095981/000119312526104258/pstv-20251231.htm",
+  "source_text_len": 123293,
+  "fetched_at": "2026-05-01T05:12:41.861413+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

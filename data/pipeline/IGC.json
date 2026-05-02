@@ -1,0 +1,21 @@
+{
+  "ticker": "IGC",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Neurology/CNS": 75,
+    "Metabolic/Obesity": 7,
+    "Cardiovascular": 1
+  },
+  "filing_filed": "2025-06-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1326205/000118518525000706/igc10k033125.htm",
+  "source_text_len": 49621,
+  "fetched_at": "2026-05-01T05:13:24.545849+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

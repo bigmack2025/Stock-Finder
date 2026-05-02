@@ -1,0 +1,34 @@
+{
+  "ticker": "DCOY",
+  "modalities": [
+    "Vaccine",
+    "Protein degrader",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Infectious disease",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "CAR-T cell therapy": 1,
+    "Vaccine": 16,
+    "Small molecule": 4,
+    "Protein degrader": 7
+  },
+  "ta_counts": {
+    "Oncology": 13,
+    "Metabolic/Obesity": 2,
+    "Cardiovascular": 3,
+    "Rare disease": 24,
+    "Infectious disease": 37
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1615219/000119312526134897/dcoy-20251231.htm",
+  "source_text_len": 133706,
+  "fetched_at": "2026-05-01T05:15:10.151179+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

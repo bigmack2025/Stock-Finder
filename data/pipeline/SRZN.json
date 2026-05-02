@@ -1,0 +1,26 @@
+{
+  "ticker": "SRZN",
+  "modalities": [
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Ophthalmology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Bispecific antibody",
+  "modality_counts": {
+    "Bispecific antibody": 3,
+    "Vaccine": 1
+  },
+  "ta_counts": {
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 16,
+    "Ophthalmology": 69
+  },
+  "filing_filed": "2026-03-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1824893/000119312526119818/srzn-20251231.htm",
+  "source_text_len": 116859,
+  "fetched_at": "2026-05-01T05:08:25.947430+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

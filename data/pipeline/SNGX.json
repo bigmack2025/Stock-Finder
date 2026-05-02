@@ -1,0 +1,32 @@
+{
+  "ticker": "SNGX",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Immunology/I&I",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Vaccine": 124,
+    "Small molecule": 1,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 37,
+    "Immunology/I&I": 54,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 38,
+    "Infectious disease": 8,
+    "Dermatology": 8
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/812796/000110465926037701/sngx-20251231x10k.htm",
+  "source_text_len": 144239,
+  "fetched_at": "2026-05-01T05:14:13.521408+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

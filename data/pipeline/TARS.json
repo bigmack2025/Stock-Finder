@@ -1,0 +1,34 @@
+{
+  "ticker": "TARS",
+  "modalities": [
+    "Vaccine",
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Ophthalmology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Bispecific antibody": 4,
+    "mRNA therapeutic": 1,
+    "Vaccine": 7,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Metabolic/Obesity": 1,
+    "Ophthalmology": 9,
+    "Rare disease": 3,
+    "Infectious disease": 2,
+    "Dermatology": 2
+  },
+  "filing_filed": "2026-02-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1819790/000181979026000019/tars-20251231.htm",
+  "source_text_len": 153825,
+  "fetched_at": "2026-05-01T05:03:38.262625+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

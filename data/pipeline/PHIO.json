@@ -1,0 +1,23 @@
+{
+  "ticker": "PHIO",
+  "modalities": [
+    "RNAi/siRNA"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "RNAi/siRNA",
+  "modality_counts": {
+    "RNAi/siRNA": 10,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 34
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1533040/000143774926007078/phio20251231_10k.htm",
+  "source_text_len": 25921,
+  "fetched_at": "2026-05-01T05:14:11.505284+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

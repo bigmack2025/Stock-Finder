@@ -1,0 +1,30 @@
+{
+  "ticker": "SXTP",
+  "modalities": [
+    "Diagnostics/devices",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Infectious disease",
+    "Oncology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Bispecific antibody": 1,
+    "Small molecule": 3,
+    "Diagnostics/devices": 5
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 31,
+    "Infectious disease": 18
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1946563/000155485526000467/sxtp-20251231.htm",
+  "source_text_len": 187852,
+  "fetched_at": "2026-05-01T05:15:23.008746+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

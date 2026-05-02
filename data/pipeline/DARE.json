@@ -1,0 +1,22 @@
+{
+  "ticker": "DARE",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Diagnostics/devices": 5
+  },
+  "ta_counts": {
+    "Oncology": 7
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1401914/000140191426000004/dare-20251231.htm",
+  "source_text_len": 270673,
+  "fetched_at": "2026-05-01T05:13:42.824008+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

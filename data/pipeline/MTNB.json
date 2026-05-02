@@ -1,0 +1,27 @@
+{
+  "ticker": "MTNB",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Infectious disease",
+    "Oncology"
+  ],
+  "primary_modality": null,
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Vaccine": 1,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 6,
+    "Immunology/I&I": 1,
+    "Rare disease": 30,
+    "Infectious disease": 8
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1582554/000149315226014132/form10-k.htm",
+  "source_text_len": 106762,
+  "fetched_at": "2026-05-01T05:15:11.078501+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

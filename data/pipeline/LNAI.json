@@ -1,0 +1,32 @@
+{
+  "ticker": "LNAI",
+  "modalities": [
+    "Vaccine",
+    "Diagnostics/devices",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Neurology/CNS",
+    "Rare disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Gene therapy": 2,
+    "Vaccine": 4,
+    "Small molecule": 2,
+    "Diagnostics/devices": 3
+  },
+  "ta_counts": {
+    "Oncology": 96,
+    "Neurology/CNS": 4,
+    "Rare disease": 2,
+    "Infectious disease": 2
+  },
+  "filing_filed": "2025-09-29",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1527728/000173112225001316/e6882_10-k.htm",
+  "source_text_len": 72600,
+  "fetched_at": "2026-05-01T05:14:45.390525+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

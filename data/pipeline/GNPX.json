@@ -1,0 +1,30 @@
+{
+  "ticker": "GNPX",
+  "modalities": [
+    "Gene therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Metabolic/Obesity",
+    "Rare disease"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 57,
+    "RNAi/siRNA": 1,
+    "Small molecule": 3
+  },
+  "ta_counts": {
+    "Oncology": 323,
+    "Immunology/I&I": 2,
+    "Metabolic/Obesity": 90,
+    "Rare disease": 4
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1595248/000143774926010346/gnpx20251231_10k.htm",
+  "source_text_len": 127688,
+  "fetched_at": "2026-05-01T05:15:07.277809+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "PYXS",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Monoclonal antibody",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 16,
+    "Bispecific antibody": 2,
+    "Antibody-drug conjugate": 95,
+    "Vaccine": 3,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 265,
+    "Immunology/I&I": 1,
+    "Rare disease": 15,
+    "Infectious disease": 1,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1782223/000119312526118532/pyxs-20251231.htm",
+  "source_text_len": 186584,
+  "fetched_at": "2026-05-01T05:12:01.746020+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

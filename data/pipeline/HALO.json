@@ -1,0 +1,32 @@
+{
+  "ticker": "HALO",
+  "modalities": [
+    "Monoclonal antibody",
+    "Bispecific antibody",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Immunology/I&I",
+    "Infectious disease"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 6,
+    "Bispecific antibody": 2,
+    "Diagnostics/devices": 2
+  },
+  "ta_counts": {
+    "Oncology": 15,
+    "Neurology/CNS": 1,
+    "Immunology/I&I": 4,
+    "Metabolic/Obesity": 1,
+    "Infectious disease": 2
+  },
+  "filing_filed": "2026-02-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1159036/000115903626000024/halo-20251231.htm",
+  "source_text_len": 71922,
+  "fetched_at": "2026-05-01T05:02:52.723133+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

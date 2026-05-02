@@ -1,0 +1,29 @@
+{
+  "ticker": "OLMA",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Small molecule": 6
+  },
+  "ta_counts": {
+    "Oncology": 188,
+    "Neurology/CNS": 9,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 20
+  },
+  "filing_filed": "2026-03-16",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1750284/000119312526107169/olma-20251231.htm",
+  "source_text_len": 182553,
+  "fetched_at": "2026-05-01T05:05:04.068084+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

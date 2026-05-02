@@ -1,0 +1,35 @@
+{
+  "ticker": "CELZ",
+  "modalities": [
+    "Cell therapy (other)",
+    "Diagnostics/devices",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Neurology/CNS",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Cell therapy (other)",
+  "modality_counts": {
+    "CAR-T cell therapy": 2,
+    "Gene editing": 1,
+    "Cell therapy (other)": 27,
+    "Diagnostics/devices": 5
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Neurology/CNS": 4,
+    "Immunology/I&I": 3,
+    "Metabolic/Obesity": 25,
+    "Cardiovascular": 1,
+    "Rare disease": 2,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-20",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1187953/000147793226001517/celz_10k.htm",
+  "source_text_len": 75177,
+  "fetched_at": "2026-05-01T05:14:37.264200+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

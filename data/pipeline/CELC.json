@@ -1,0 +1,27 @@
+{
+  "ticker": "CELC",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Small molecule": 1,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 100,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 1,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1603454/000149315226012801/form10-k.htm",
+  "source_text_len": 110786,
+  "fetched_at": "2026-05-01T05:03:02.395172+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

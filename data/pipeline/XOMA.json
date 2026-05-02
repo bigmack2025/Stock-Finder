@@ -1,0 +1,35 @@
+{
+  "ticker": "XOMA",
+  "modalities": [
+    "Bispecific antibody",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Bispecific antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Bispecific antibody": 2,
+    "Gene therapy": 2,
+    "Cell therapy (other)": 1,
+    "Vaccine": 1
+  },
+  "ta_counts": {
+    "Oncology": 14,
+    "Neurology/CNS": 1,
+    "Immunology/I&I": 4,
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 2,
+    "Ophthalmology": 2,
+    "Rare disease": 7
+  },
+  "filing_filed": "2026-03-18",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/791908/000110465926030872/xoma-20251231x10k.htm",
+  "source_text_len": 39874,
+  "fetched_at": "2026-05-01T05:08:10.611311+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

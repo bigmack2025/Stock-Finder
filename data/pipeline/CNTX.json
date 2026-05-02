@@ -1,0 +1,31 @@
+{
+  "ticker": "CNTX",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "CAR-T cell therapy",
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Bispecific antibody": 3,
+    "Antibody-drug conjugate": 9,
+    "CAR-T cell therapy": 4,
+    "Small molecule": 1,
+    "Diagnostics/devices": 2
+  },
+  "ta_counts": {
+    "Oncology": 76,
+    "Rare disease": 11,
+    "Dermatology": 1
+  },
+  "filing_filed": "2026-03-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1842952/000162828026020498/cntx-20251231.htm",
+  "source_text_len": 78750,
+  "fetched_at": "2026-05-01T05:08:17.129752+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,27 @@
+{
+  "ticker": "ADCT",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Bispecific antibody",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Bispecific antibody": 2,
+    "Antibody-drug conjugate": 8,
+    "CAR-T cell therapy": 2
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-10",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1771910/000162828026016491/adc-20251231.htm",
+  "source_text_len": 69977,
+  "fetched_at": "2026-05-01T05:07:01.285690+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

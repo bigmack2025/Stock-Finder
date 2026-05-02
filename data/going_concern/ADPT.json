@@ -1,0 +1,9 @@
+{
+  "ticker": "ADPT",
+  "flagged": false,
+  "evidence": null,
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1478320/000119312526076902/adpt-20251231.htm",
+  "filed": "2026-02-26",
+  "fetched_at": "2026-05-01T05:19:24.612628+00:00",
+  "status": "ok"
+}

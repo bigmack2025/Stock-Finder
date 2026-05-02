@@ -1,0 +1,20 @@
+{
+  "ticker": "VRCA",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Oncology",
+    "Dermatology"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Oncology": 37,
+    "Dermatology": 5
+  },
+  "filing_filed": "2026-03-11",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1660334/000166033426000008/vrca-20251231.htm",
+  "source_text_len": 107948,
+  "fetched_at": "2026-05-01T05:12:02.919529+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

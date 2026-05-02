@@ -1,0 +1,37 @@
+{
+  "ticker": "SGMO",
+  "modalities": [
+    "Gene therapy",
+    "Gene editing",
+    "RNAi/siRNA"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "CAR-T cell therapy": 1,
+    "Gene therapy": 54,
+    "Gene editing": 9,
+    "Cell therapy (other)": 1,
+    "RNAi/siRNA": 2,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Neurology/CNS": 36,
+    "Immunology/I&I": 2,
+    "Metabolic/Obesity": 5,
+    "Rare disease": 22,
+    "Infectious disease": 2,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1001233/000162828026022029/sgmo-20251231.htm",
+  "source_text_len": 157189,
+  "fetched_at": "2026-05-01T05:11:11.757097+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

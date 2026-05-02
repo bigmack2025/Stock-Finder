@@ -1,0 +1,30 @@
+{
+  "ticker": "FDMT",
+  "modalities": [
+    "Gene therapy",
+    "Cell therapy (other)",
+    "RNAi/siRNA"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Ophthalmology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 34,
+    "Cell therapy (other)": 4,
+    "RNAi/siRNA": 4
+  },
+  "ta_counts": {
+    "Metabolic/Obesity": 9,
+    "Ophthalmology": 28,
+    "Rare disease": 31
+  },
+  "filing_filed": "2026-03-18",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1650648/000119312526114075/fdmt-20251231.htm",
+  "source_text_len": 110170,
+  "fetched_at": "2026-05-01T05:07:26.137470+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

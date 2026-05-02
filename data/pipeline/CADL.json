@@ -1,0 +1,34 @@
+{
+  "ticker": "CADL",
+  "modalities": [
+    "Vaccine",
+    "Gene therapy",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Gene therapy": 5,
+    "Cell therapy (other)": 3,
+    "Vaccine": 6,
+    "Small molecule": 1,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 364,
+    "Neurology/CNS": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 59,
+    "Infectious disease": 2
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1841387/000119312526103134/cadl-20251231.htm",
+  "source_text_len": 239215,
+  "fetched_at": "2026-05-01T05:07:43.091293+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,35 @@
+{
+  "ticker": "OMER",
+  "modalities": [
+    "Small molecule",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 3,
+    "Antibody-drug conjugate": 1,
+    "Small molecule": 14
+  },
+  "ta_counts": {
+    "Oncology": 16,
+    "Neurology/CNS": 7,
+    "Immunology/I&I": 2,
+    "Metabolic/Obesity": 2,
+    "Ophthalmology": 2,
+    "Rare disease": 16,
+    "Infectious disease": 6,
+    "Dermatology": 3,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1285819/000143774926010636/omer20251231_10k.htm",
+  "source_text_len": 100167,
+  "fetched_at": "2026-05-01T05:06:20.860498+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

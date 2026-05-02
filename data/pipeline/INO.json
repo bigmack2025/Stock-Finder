@@ -1,0 +1,32 @@
+{
+  "ticker": "INO",
+  "modalities": [
+    "Vaccine",
+    "Monoclonal antibody",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Infectious disease",
+    "Rare disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 13,
+    "Bispecific antibody": 2,
+    "Gene therapy": 5,
+    "Vaccine": 29,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 55,
+    "Rare disease": 4,
+    "Infectious disease": 20
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1055726/000105572626000008/ino-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:11:26.204789+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

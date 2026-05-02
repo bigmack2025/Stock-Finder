@@ -1,0 +1,27 @@
+{
+  "ticker": "HOWL",
+  "modalities": [
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 1,
+    "Vaccine": 1,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 149,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1785530/000178553026000006/howl-20251231.htm",
+  "source_text_len": 79546,
+  "fetched_at": "2026-05-01T05:13:17.072498+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

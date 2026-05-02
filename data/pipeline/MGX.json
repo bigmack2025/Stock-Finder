@@ -1,0 +1,26 @@
+{
+  "ticker": "MGX",
+  "modalities": [
+    "Gene editing",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [],
+  "primary_modality": "Gene editing",
+  "modality_counts": {
+    "Gene therapy": 32,
+    "Gene editing": 33,
+    "mRNA therapeutic": 1,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Neurology/CNS": 1,
+    "Cardiovascular": 1,
+    "Rare disease": 1
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1785279/000119312526093976/mgx-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:12:36.575933+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

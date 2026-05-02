@@ -1,0 +1,24 @@
+{
+  "ticker": "CAPR",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Rare disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Vaccine": 28,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Rare disease": 2
+  },
+  "filing_filed": "2026-03-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1133869/000110465926029580/capr-20251231x10k.htm",
+  "source_text_len": 129884,
+  "fetched_at": "2026-05-01T05:05:35.865080+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

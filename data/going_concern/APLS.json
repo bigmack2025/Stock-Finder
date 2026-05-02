@@ -1,0 +1,9 @@
+{
+  "ticker": "APLS",
+  "flagged": true,
+  "evidence": "...he cross-border transfer of personal data from the European Union to countries that have not been found by the EC to offer adequate data protection legislation, such as the United States. There are ongoing concerns about the ability of companies to transfer personal data from the EU to other countries. In July 2020, the Court of Justice of the European Union, or the CJEU, invalidated the EU-U.S. Privacy Shield, one of the mechanisms used to legitimize the transfer of personal data from the EEA to the U.S. Th...",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1492422/000119312526065179/apls-20251231.htm",
+  "filed": "2026-02-24",
+  "fetched_at": "2026-05-01T04:56:55.275102+00:00",
+  "status": "ok"
+}

@@ -1,0 +1,25 @@
+{
+  "ticker": "XLO",
+  "modalities": [
+    "Monoclonal antibody",
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 7,
+    "Bispecific antibody": 2,
+    "Vaccine": 1
+  },
+  "ta_counts": {
+    "Oncology": 85
+  },
+  "filing_filed": "2026-03-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1840233/000119312526118550/xlo-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:13:01.735625+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

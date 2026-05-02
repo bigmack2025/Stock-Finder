@@ -1,0 +1,31 @@
+{
+  "ticker": "ATNM",
+  "modalities": [
+    "Radiotherapeutic",
+    "Gene therapy",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Hematology",
+    "Rare disease"
+  ],
+  "primary_modality": "Radiotherapeutic",
+  "modality_counts": {
+    "Antibody-drug conjugate": 7,
+    "CAR-T cell therapy": 8,
+    "Gene therapy": 9,
+    "Radiotherapeutic": 49
+  },
+  "ta_counts": {
+    "Oncology": 133,
+    "Rare disease": 12,
+    "Hematology": 13
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1388320/000121390026036504/ea0279291-10k_actinium.htm",
+  "source_text_len": 86138,
+  "fetched_at": "2026-05-01T05:13:05.406310+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

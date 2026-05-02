@@ -1,0 +1,29 @@
+{
+  "ticker": "ARTL",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 13
+  },
+  "ta_counts": {
+    "Oncology": 34,
+    "Neurology/CNS": 9,
+    "Immunology/I&I": 6,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 10,
+    "Dermatology": 5
+  },
+  "filing_filed": "2026-02-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1621221/000164033426000368/artl_10k.htm",
+  "source_text_len": 89673,
+  "fetched_at": "2026-05-01T05:15:23.952041+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

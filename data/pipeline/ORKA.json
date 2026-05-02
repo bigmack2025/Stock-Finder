@@ -1,0 +1,35 @@
+{
+  "ticker": "ORKA",
+  "modalities": [
+    "Monoclonal antibody",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Immunology/I&I",
+    "Dermatology",
+    "Rare disease"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 11,
+    "Gene therapy": 2,
+    "Gene editing": 1,
+    "Small molecule": 1,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Immunology/I&I": 14,
+    "Metabolic/Obesity": 4,
+    "Cardiovascular": 1,
+    "Rare disease": 5,
+    "Infectious disease": 1,
+    "Dermatology": 10
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/907654/000121390026026929/ea0273300-10k_oruka.htm",
+  "source_text_len": 163860,
+  "fetched_at": "2026-05-01T05:05:27.721748+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

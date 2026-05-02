@@ -1,0 +1,35 @@
+{
+  "ticker": "CUE",
+  "modalities": [
+    "Diagnostics/devices",
+    "Cell therapy (other)",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Antibody-drug conjugate": 1,
+    "CAR-T cell therapy": 2,
+    "Cell therapy (other)": 3,
+    "Vaccine": 1,
+    "Radiotherapeutic": 1,
+    "Diagnostics/devices": 6
+  },
+  "ta_counts": {
+    "Oncology": 30,
+    "Immunology/I&I": 19,
+    "Rare disease": 53,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-16",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1645460/000119312526108287/cue-20251231.htm",
+  "source_text_len": 179306,
+  "fetched_at": "2026-05-01T05:13:25.337131+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

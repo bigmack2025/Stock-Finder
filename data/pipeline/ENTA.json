@@ -1,0 +1,35 @@
+{
+  "ticker": "ENTA",
+  "modalities": [
+    "Vaccine",
+    "Small molecule",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Infectious disease",
+    "Oncology",
+    "Cardiovascular"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 7,
+    "RNAi/siRNA": 1,
+    "Antisense oligonucleotide": 1,
+    "Vaccine": 20,
+    "Small molecule": 8
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 2,
+    "Infectious disease": 100,
+    "Dermatology": 2
+  },
+  "filing_filed": "2025-11-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1177648/000119312525288121/enta-20250930.htm",
+  "source_text_len": 140493,
+  "fetched_at": "2026-05-01T05:07:34.730677+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

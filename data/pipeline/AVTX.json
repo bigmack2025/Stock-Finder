@@ -1,0 +1,31 @@
+{
+  "ticker": "AVTX",
+  "modalities": [
+    "Monoclonal antibody",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 6,
+    "Bispecific antibody": 1,
+    "Small molecule": 2
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Immunology/I&I": 3,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 9,
+    "Infectious disease": 1,
+    "Dermatology": 1
+  },
+  "filing_filed": "2026-03-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1534120/000153412026000011/avtx-20251231.htm",
+  "source_text_len": 82713,
+  "fetched_at": "2026-05-01T05:08:07.083813+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

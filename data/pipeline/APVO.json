@@ -1,0 +1,35 @@
+{
+  "ticker": "APVO",
+  "modalities": [
+    "Monoclonal antibody",
+    "Antibody-drug conjugate",
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Hematology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 4,
+    "Bispecific antibody": 2,
+    "Antibody-drug conjugate": 4,
+    "CAR-T cell therapy": 1,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 113,
+    "Immunology/I&I": 1,
+    "Cardiovascular": 1,
+    "Rare disease": 23,
+    "Infectious disease": 1,
+    "Hematology": 3
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1671584/000119312526126278/apvo-20251231.htm",
+  "source_text_len": 95852,
+  "fetched_at": "2026-05-01T05:14:40.690167+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

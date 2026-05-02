@@ -1,0 +1,37 @@
+{
+  "ticker": "MAZE",
+  "modalities": [
+    "Small molecule",
+    "Gene therapy",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Gene therapy": 4,
+    "Antisense oligonucleotide": 1,
+    "Small molecule": 13,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Neurology/CNS": 2,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 22,
+    "Cardiovascular": 4,
+    "Ophthalmology": 3,
+    "Rare disease": 9,
+    "Infectious disease": 1,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1842295/000119312526122778/maze-20251231.htm",
+  "source_text_len": 118927,
+  "fetched_at": "2026-05-01T05:04:31.845368+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

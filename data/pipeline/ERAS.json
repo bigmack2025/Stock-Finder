@@ -1,0 +1,34 @@
+{
+  "ticker": "ERAS",
+  "modalities": [
+    "Protein degrader",
+    "Diagnostics/devices",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Protein degrader",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "Bispecific antibody": 5,
+    "Antibody-drug conjugate": 1,
+    "Gene therapy": 1,
+    "Small molecule": 6,
+    "Protein degrader": 13,
+    "Diagnostics/devices": 8
+  },
+  "ta_counts": {
+    "Oncology": 134,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 30,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1761918/000119312526104150/eras-20251231.htm",
+  "source_text_len": 167510,
+  "fetched_at": "2026-05-01T05:03:09.324865+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

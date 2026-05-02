@@ -1,0 +1,33 @@
+{
+  "ticker": "MRKR",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Monoclonal antibody",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 3,
+    "Bispecific antibody": 1,
+    "CAR-T cell therapy": 21,
+    "Gene therapy": 1,
+    "Cell therapy (other)": 1,
+    "Vaccine": 2,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 111,
+    "Rare disease": 20,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-18",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1094038/000110465926031274/mrkr-20251231x10k.htm",
+  "source_text_len": 109091,
+  "fetched_at": "2026-05-01T05:13:41.943503+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

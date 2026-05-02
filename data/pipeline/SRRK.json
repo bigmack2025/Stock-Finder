@@ -1,0 +1,35 @@
+{
+  "ticker": "SRRK",
+  "modalities": [
+    "Monoclonal antibody",
+    "Gene therapy",
+    "Antisense oligonucleotide"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 13,
+    "Bispecific antibody": 1,
+    "Gene therapy": 4,
+    "Antisense oligonucleotide": 3,
+    "Small molecule": 3
+  },
+  "ta_counts": {
+    "Oncology": 41,
+    "Neurology/CNS": 2,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 22,
+    "Rare disease": 46,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-03",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1727196/000110465926022551/srrk-20251231x10k.htm",
+  "source_text_len": 214624,
+  "fetched_at": "2026-05-01T05:03:05.853185+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

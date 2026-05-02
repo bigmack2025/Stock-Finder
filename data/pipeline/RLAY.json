@@ -1,0 +1,27 @@
+{
+  "ticker": "RLAY",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Small molecule": 5
+  },
+  "ta_counts": {
+    "Oncology": 70,
+    "Cardiovascular": 1,
+    "Rare disease": 20,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1812364/000119312526076739/rlay-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:04:51.342863+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

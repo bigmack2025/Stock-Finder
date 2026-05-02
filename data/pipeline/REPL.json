@@ -1,0 +1,29 @@
+{
+  "ticker": "REPL",
+  "modalities": [
+    "Vaccine",
+    "Oncolytic virus",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "CAR-T cell therapy": 1,
+    "Gene therapy": 3,
+    "Vaccine": 5,
+    "Oncolytic virus": 4,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 107,
+    "Rare disease": 1
+  },
+  "filing_filed": "2025-05-22",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1737953/000173795325000009/repl-20250331.htm",
+  "source_text_len": 131097,
+  "fetched_at": "2026-05-01T05:06:40.424416+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

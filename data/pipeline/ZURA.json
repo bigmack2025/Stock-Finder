@@ -1,0 +1,29 @@
+{
+  "ticker": "ZURA",
+  "modalities": [
+    "Monoclonal antibody",
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Immunology/I&I",
+    "Metabolic/Obesity",
+    "Dermatology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 7,
+    "Bispecific antibody": 3
+  },
+  "ta_counts": {
+    "Immunology/I&I": 16,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 1,
+    "Dermatology": 2
+  },
+  "filing_filed": "2026-03-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1855644/000110465926032080/zura-20251231x10k.htm",
+  "source_text_len": 24385,
+  "fetched_at": "2026-05-01T05:06:41.554084+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

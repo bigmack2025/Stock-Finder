@@ -1,0 +1,27 @@
+{
+  "ticker": "TRAW",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 9
+  },
+  "ta_counts": {
+    "Oncology": 50,
+    "Rare disease": 31,
+    "Infectious disease": 5,
+    "Dermatology": 4
+  },
+  "filing_filed": "2026-04-15",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1130598/000110465926043832/traw-20251231x10k.htm",
+  "source_text_len": 145222,
+  "fetched_at": "2026-05-01T05:14:08.920342+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

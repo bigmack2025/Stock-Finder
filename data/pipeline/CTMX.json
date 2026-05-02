@@ -1,0 +1,33 @@
+{
+  "ticker": "CTMX",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Diagnostics/devices",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 30,
+    "Gene therapy": 2,
+    "mRNA therapeutic": 1,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 132,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 29,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-16",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1501989/000119312526107146/ctmx-20251231.htm",
+  "source_text_len": 142970,
+  "fetched_at": "2026-05-01T05:06:23.423087+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,27 @@
+{
+  "ticker": "IOVA",
+  "modalities": [
+    "Gene editing",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Gene editing",
+  "modality_counts": {
+    "Gene editing": 3,
+    "Cell therapy (other)": 3,
+    "Vaccine": 1
+  },
+  "ta_counts": {
+    "Oncology": 122,
+    "Rare disease": 23
+  },
+  "filing_filed": "2026-02-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1425205/000110465926018899/iova-20251231x10k.htm",
+  "source_text_len": 135250,
+  "fetched_at": "2026-05-01T05:04:33.583119+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

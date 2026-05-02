@@ -1,0 +1,25 @@
+{
+  "ticker": "IVVD",
+  "modalities": [
+    "Monoclonal antibody",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Infectious disease"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 51,
+    "Vaccine": 12
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Infectious disease": 6
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1832038/000119312526092547/ivvd-20251231.htm",
+  "source_text_len": 341814,
+  "fetched_at": "2026-05-01T05:07:02.133943+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

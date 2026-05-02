@@ -1,0 +1,28 @@
+{
+  "ticker": "TGTX",
+  "modalities": [
+    "Monoclonal antibody",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Immunology/I&I",
+    "Neurology/CNS",
+    "Oncology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 4,
+    "CAR-T cell therapy": 2
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Neurology/CNS": 5,
+    "Immunology/I&I": 9
+  },
+  "filing_filed": "2026-02-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1001316/000143774926006133/tgtx20251231_10k.htm",
+  "source_text_len": 34925,
+  "fetched_at": "2026-05-01T05:03:12.065541+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

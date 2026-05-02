@@ -1,0 +1,37 @@
+{
+  "ticker": "IPSC",
+  "modalities": [
+    "Cell therapy (other)",
+    "CAR-T cell therapy",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Immunology/I&I",
+    "Rare disease"
+  ],
+  "primary_modality": "Cell therapy (other)",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Bispecific antibody": 1,
+    "CAR-T cell therapy": 16,
+    "Gene editing": 13,
+    "Cell therapy (other)": 55,
+    "Vaccine": 1,
+    "Small molecule": 1,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 48,
+    "Immunology/I&I": 47,
+    "Metabolic/Obesity": 5,
+    "Rare disease": 38,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1850119/000110465926026759/ipsc-20251231x10k.htm",
+  "source_text_len": 161469,
+  "fetched_at": "2026-05-01T05:07:19.465327+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

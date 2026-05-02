@@ -1,0 +1,36 @@
+{
+  "ticker": "TVGN",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Monoclonal antibody",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Infectious disease",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 15,
+    "Bispecific antibody": 2,
+    "CAR-T cell therapy": 16,
+    "Gene therapy": 1,
+    "Vaccine": 8
+  },
+  "ta_counts": {
+    "Oncology": 70,
+    "Neurology/CNS": 1,
+    "Immunology/I&I": 3,
+    "Metabolic/Obesity": 2,
+    "Cardiovascular": 1,
+    "Infectious disease": 10,
+    "Hematology": 3
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1860871/000149315226014326/form10-k.htm",
+  "source_text_len": 146764,
+  "fetched_at": "2026-05-01T05:13:18.887643+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,35 @@
+{
+  "ticker": "IDYA",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Small molecule",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 38,
+    "CAR-T cell therapy": 1,
+    "Gene therapy": 1,
+    "Gene editing": 2,
+    "Small molecule": 17,
+    "Diagnostics/devices": 8
+  },
+  "ta_counts": {
+    "Oncology": 128,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 45,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-02-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1676725/000119312526054533/idya-20251231.htm",
+  "source_text_len": 162328,
+  "fetched_at": "2026-05-01T05:03:41.826094+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

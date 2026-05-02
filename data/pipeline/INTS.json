@@ -1,0 +1,30 @@
+{
+  "ticker": "INTS",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Antibody-drug conjugate": 1,
+    "Gene therapy": 1,
+    "Vaccine": 1,
+    "Diagnostics/devices": 2
+  },
+  "ta_counts": {
+    "Oncology": 479,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 22,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1567264/000156726426000024/intensity-20251231.htm",
+  "source_text_len": 203159,
+  "fetched_at": "2026-05-01T05:13:48.177328+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

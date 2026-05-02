@@ -1,0 +1,32 @@
+{
+  "ticker": "BCAX",
+  "modalities": [
+    "Diagnostics/devices",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Monoclonal antibody": 3,
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 1,
+    "Gene therapy": 1,
+    "Diagnostics/devices": 5
+  },
+  "ta_counts": {
+    "Oncology": 117,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 24,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/2023658/000162828026022010/bcax-20251231.htm",
+  "source_text_len": 148788,
+  "fetched_at": "2026-05-01T05:05:50.599777+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

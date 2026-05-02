@@ -1,0 +1,31 @@
+{
+  "ticker": "TECX",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Cardiovascular",
+    "Oncology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "RNAi/siRNA": 1,
+    "Vaccine": 1,
+    "Small molecule": 9
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Metabolic/Obesity": 2,
+    "Cardiovascular": 14,
+    "Rare disease": 61,
+    "Infectious disease": 1,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1681087/000119312526076793/tecx-20251231.htm",
+  "source_text_len": 412756,
+  "fetched_at": "2026-05-01T05:06:38.317239+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,31 @@
+{
+  "ticker": "GANX",
+  "modalities": [
+    "Gene therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Oncology"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 5,
+    "Small molecule": 5,
+    "Protein degrader": 1
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Neurology/CNS": 29,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 36,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1819411/000110465926035188/ganx-20251231x10k.htm",
+  "source_text_len": 114418,
+  "fetched_at": "2026-05-01T05:11:27.137326+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

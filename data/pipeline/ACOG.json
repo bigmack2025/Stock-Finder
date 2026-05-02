@@ -1,0 +1,24 @@
+{
+  "ticker": "ACOG",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": null,
+  "modality_counts": {
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Neurology/CNS": 110,
+    "Rare disease": 15
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1655923/000121390026037614/ea0280314-10k_alphacog.htm",
+  "source_text_len": 128192,
+  "fetched_at": "2026-05-01T05:11:23.242399+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

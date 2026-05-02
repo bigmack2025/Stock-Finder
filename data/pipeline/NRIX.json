@@ -1,0 +1,35 @@
+{
+  "ticker": "NRIX",
+  "modalities": [
+    "Protein degrader",
+    "Small molecule",
+    "Antibody-drug conjugate"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Protein degrader",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "Antibody-drug conjugate": 8,
+    "Small molecule": 18,
+    "Protein degrader": 32
+  },
+  "ta_counts": {
+    "Oncology": 76,
+    "Neurology/CNS": 5,
+    "Immunology/I&I": 9,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 30,
+    "Infectious disease": 1,
+    "Hematology": 5
+  },
+  "filing_filed": "2026-01-28",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1549595/000154959526000016/nrix-20251130.htm",
+  "source_text_len": 201342,
+  "fetched_at": "2026-05-01T05:05:31.888145+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

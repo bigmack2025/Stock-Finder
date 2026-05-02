@@ -1,0 +1,36 @@
+{
+  "ticker": "CGEM",
+  "modalities": [
+    "Small molecule",
+    "Monoclonal antibody",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Immunology/I&I",
+    "Oncology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 5,
+    "Bispecific antibody": 1,
+    "CAR-T cell therapy": 4,
+    "Cell therapy (other)": 1,
+    "Small molecule": 6,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 22,
+    "Immunology/I&I": 36,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 40,
+    "Infectious disease": 1,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-10",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1789972/000119312526099362/cgem-20251231.htm",
+  "source_text_len": 155439,
+  "fetched_at": "2026-05-01T05:06:06.961350+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

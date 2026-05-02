@@ -1,0 +1,38 @@
+{
+  "ticker": "TNXP",
+  "modalities": [
+    "Vaccine",
+    "Monoclonal antibody",
+    "Antibody-drug conjugate"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Infectious disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 25,
+    "Bispecific antibody": 3,
+    "Antibody-drug conjugate": 5,
+    "Cell therapy (other)": 3,
+    "mRNA therapeutic": 1,
+    "Vaccine": 104,
+    "Small molecule": 4
+  },
+  "ta_counts": {
+    "Oncology": 45,
+    "Neurology/CNS": 12,
+    "Immunology/I&I": 14,
+    "Metabolic/Obesity": 21,
+    "Cardiovascular": 1,
+    "Rare disease": 48,
+    "Infectious disease": 27
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1430306/000199937126005730/tnxp-10k_123125.htm",
+  "source_text_len": 253738,
+  "fetched_at": "2026-05-01T05:09:54.435961+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

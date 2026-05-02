@@ -1,0 +1,36 @@
+{
+  "ticker": "FATE",
+  "modalities": [
+    "Cell therapy (other)",
+    "CAR-T cell therapy",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Immunology/I&I",
+    "Rare disease"
+  ],
+  "primary_modality": "Cell therapy (other)",
+  "modality_counts": {
+    "Monoclonal antibody": 14,
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 1,
+    "CAR-T cell therapy": 64,
+    "Gene therapy": 5,
+    "Gene editing": 9,
+    "Cell therapy (other)": 77,
+    "Small molecule": 4
+  },
+  "ta_counts": {
+    "Oncology": 99,
+    "Immunology/I&I": 45,
+    "Rare disease": 26,
+    "Hematology": 5
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1434316/000119312526073699/fate-20251231.htm",
+  "source_text_len": 184253,
+  "fetched_at": "2026-05-01T05:10:59.901122+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

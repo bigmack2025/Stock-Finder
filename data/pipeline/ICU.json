@@ -1,0 +1,26 @@
+{
+  "ticker": "ICU",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Cardiovascular",
+    "Rare disease"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Diagnostics/devices": 10
+  },
+  "ta_counts": {
+    "Neurology/CNS": 1,
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 25,
+    "Rare disease": 5
+  },
+  "filing_filed": "2026-03-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1831868/000143774926009797/icu20251231_10k.htm",
+  "source_text_len": 103271,
+  "fetched_at": "2026-05-01T05:14:24.537202+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

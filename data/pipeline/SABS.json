@@ -1,0 +1,30 @@
+{
+  "ticker": "SABS",
+  "modalities": [
+    "Monoclonal antibody",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Immunology/I&I",
+    "Rare disease"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 4,
+    "Vaccine": 3
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Immunology/I&I": 21,
+    "Metabolic/Obesity": 27,
+    "Rare disease": 8,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-09",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1833214/000183321426000003/sabs-20251231.htm",
+  "source_text_len": 84473,
+  "fetched_at": "2026-05-01T05:09:48.214471+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

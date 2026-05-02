@@ -1,0 +1,30 @@
+{
+  "ticker": "AURA",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Ophthalmology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 1,
+    "Diagnostics/devices": 6
+  },
+  "ta_counts": {
+    "Oncology": 207,
+    "Metabolic/Obesity": 1,
+    "Ophthalmology": 9,
+    "Rare disease": 40,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1501796/000119312526130401/aura-20251231.htm",
+  "source_text_len": 164520,
+  "fetched_at": "2026-05-01T05:07:46.007127+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

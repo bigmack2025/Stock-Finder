@@ -1,0 +1,25 @@
+{
+  "ticker": "ANIX",
+  "modalities": [
+    "Vaccine",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "CAR-T cell therapy": 8,
+    "Vaccine": 63
+  },
+  "ta_counts": {
+    "Oncology": 149,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-01-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/715446/000149315226001845/form10-k.htm",
+  "source_text_len": 31455,
+  "fetched_at": "2026-05-01T05:11:54.825763+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

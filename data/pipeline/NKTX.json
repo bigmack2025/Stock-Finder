@@ -1,0 +1,30 @@
+{
+  "ticker": "NKTX",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Immunology/I&I",
+    "Oncology",
+    "Hematology"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "CAR-T cell therapy": 29,
+    "Gene therapy": 5,
+    "Gene editing": 1
+  },
+  "ta_counts": {
+    "Oncology": 17,
+    "Immunology/I&I": 41,
+    "Hematology": 3
+  },
+  "filing_filed": "2026-03-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1787400/000178740026000006/nktx-20251231.htm",
+  "source_text_len": 53171,
+  "fetched_at": "2026-05-01T05:09:50.027684+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

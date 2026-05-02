@@ -1,0 +1,32 @@
+{
+  "ticker": "NGNE",
+  "modalities": [
+    "Gene therapy",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 47,
+    "Gene editing": 2,
+    "Cell therapy (other)": 1,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Neurology/CNS": 4,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 70,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1404644/000140464426000019/ngne-20251231.htm",
+  "source_text_len": 176500,
+  "fetched_at": "2026-05-01T05:08:00.293481+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,29 @@
+{
+  "ticker": "ANTX",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Small molecule": 2
+  },
+  "ta_counts": {
+    "Oncology": 24,
+    "Cardiovascular": 1,
+    "Rare disease": 21,
+    "Infectious disease": 10,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1880438/000119312526110693/antx-20251231.htm",
+  "source_text_len": 89823,
+  "fetched_at": "2026-05-01T05:12:07.864743+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

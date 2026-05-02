@@ -1,0 +1,36 @@
+{
+  "ticker": "OSRH",
+  "modalities": [
+    "Vaccine",
+    "Diagnostics/devices",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 1,
+    "Gene therapy": 2,
+    "Cell therapy (other)": 1,
+    "Vaccine": 30,
+    "Small molecule": 1,
+    "Diagnostics/devices": 14
+  },
+  "ta_counts": {
+    "Oncology": 88,
+    "Neurology/CNS": 3,
+    "Immunology/I&I": 3,
+    "Rare disease": 7,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1840425/000121390026037395/ea0283154-10k_osrhold.htm",
+  "source_text_len": 115783,
+  "fetched_at": "2026-05-01T05:14:07.207948+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,31 @@
+{
+  "ticker": "KRYS",
+  "modalities": [
+    "Gene therapy",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Dermatology"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 17,
+    "Gene editing": 2,
+    "Cell therapy (other)": 1,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 37,
+    "Ophthalmology": 5,
+    "Rare disease": 7,
+    "Dermatology": 7
+  },
+  "filing_filed": "2026-02-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1711279/000171127926000016/krys-20251231.htm",
+  "source_text_len": 77620,
+  "fetched_at": "2026-05-01T05:02:55.766043+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

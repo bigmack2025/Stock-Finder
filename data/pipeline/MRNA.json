@@ -1,0 +1,32 @@
+{
+  "ticker": "MRNA",
+  "modalities": [
+    "Vaccine",
+    "mRNA therapeutic"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Bispecific antibody": 1,
+    "mRNA therapeutic": 6,
+    "Vaccine": 154
+  },
+  "ta_counts": {
+    "Oncology": 66,
+    "Neurology/CNS": 2,
+    "Immunology/I&I": 2,
+    "Metabolic/Obesity": 7,
+    "Rare disease": 37,
+    "Infectious disease": 35
+  },
+  "filing_filed": "2026-02-20",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1682852/000168285226000033/mrna-20251231.htm",
+  "source_text_len": 165703,
+  "fetched_at": "2026-05-01T04:50:40.474664+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,26 @@
+{
+  "ticker": "QURE",
+  "modalities": [
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Rare disease"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 31,
+    "Cell therapy (other)": 1,
+    "mRNA therapeutic": 1
+  },
+  "ta_counts": {
+    "Neurology/CNS": 25,
+    "Rare disease": 4
+  },
+  "filing_filed": "2026-03-02",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1590560/000110465926021898/qure-20251231x10k.htm",
+  "source_text_len": 43367,
+  "fetched_at": "2026-05-01T05:06:11.926782+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

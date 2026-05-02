@@ -1,0 +1,29 @@
+{
+  "ticker": "PASG",
+  "modalities": [
+    "Gene therapy",
+    "Small molecule",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Rare disease"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 52,
+    "Gene editing": 2,
+    "Vaccine": 1,
+    "Small molecule": 4
+  },
+  "ta_counts": {
+    "Neurology/CNS": 35,
+    "Rare disease": 22
+  },
+  "filing_filed": "2026-03-03",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1787297/000110465926022549/pasg-20251231x10k.htm",
+  "source_text_len": 125908,
+  "fetched_at": "2026-05-01T05:13:32.702881+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

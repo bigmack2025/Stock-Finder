@@ -1,0 +1,28 @@
+{
+  "ticker": "IMUX",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Neurology/CNS",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 5
+  },
+  "ta_counts": {
+    "Oncology": 8,
+    "Neurology/CNS": 12,
+    "Immunology/I&I": 10,
+    "Metabolic/Obesity": 14,
+    "Infectious disease": 8
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1280776/000128077626000005/imux-20251231.htm",
+  "source_text_len": 112895,
+  "fetched_at": "2026-05-01T05:10:57.952281+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

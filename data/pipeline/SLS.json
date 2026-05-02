@@ -1,0 +1,35 @@
+{
+  "ticker": "SLS",
+  "modalities": [
+    "Vaccine",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Hematology"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Antibody-drug conjugate": 1,
+    "Vaccine": 9,
+    "Small molecule": 4
+  },
+  "ta_counts": {
+    "Oncology": 220,
+    "Neurology/CNS": 1,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Ophthalmology": 1,
+    "Rare disease": 42,
+    "Infectious disease": 1,
+    "Hematology": 18
+  },
+  "filing_filed": "2026-03-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1390478/000139047826000003/sls-20251231.htm",
+  "source_text_len": 246168,
+  "fetched_at": "2026-05-01T05:06:05.895106+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

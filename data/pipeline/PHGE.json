@@ -1,0 +1,24 @@
+{
+  "ticker": "PHGE",
+  "modalities": [
+    "Microbiome"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Microbiome",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Microbiome": 2
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Metabolic/Obesity": 7
+  },
+  "filing_filed": "2026-02-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1739174/000121390026018231/ea0276826-10k_biomxinc.htm",
+  "source_text_len": 100183,
+  "fetched_at": "2026-05-01T05:14:19.549458+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

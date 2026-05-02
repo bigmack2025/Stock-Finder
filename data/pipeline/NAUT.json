@@ -1,0 +1,24 @@
+{
+  "ticker": "NAUT",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Diagnostics/devices": 6
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Neurology/CNS": 3
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1808805/000180880526000011/naut-20251231.htm",
+  "source_text_len": 136239,
+  "fetched_at": "2026-05-01T05:08:09.794209+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

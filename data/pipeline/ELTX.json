@@ -1,0 +1,32 @@
+{
+  "ticker": "ELTX",
+  "modalities": [
+    "CAR-T cell therapy",
+    "TCR cell therapy",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "CAR-T cell therapy": 14,
+    "TCR cell therapy": 8,
+    "Vaccine": 7
+  },
+  "ta_counts": {
+    "Oncology": 171,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 30,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1601485/000160148526000027/angn-20251231.htm",
+  "source_text_len": 189812,
+  "fetched_at": "2026-05-01T05:09:38.494583+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

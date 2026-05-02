@@ -1,0 +1,22 @@
+{
+  "ticker": "EXOZ",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 6
+  },
+  "ta_counts": {
+    "Metabolic/Obesity": 7
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/2010788/000149315226013563/form10-k.htm",
+  "source_text_len": 60042,
+  "fetched_at": "2026-05-01T05:12:29.060717+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

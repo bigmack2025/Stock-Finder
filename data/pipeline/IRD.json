@@ -1,0 +1,32 @@
+{
+  "ticker": "IRD",
+  "modalities": [
+    "Gene therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Ophthalmology",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 34,
+    "Cell therapy (other)": 1,
+    "Small molecule": 3,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Metabolic/Obesity": 20,
+    "Ophthalmology": 66,
+    "Rare disease": 40,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1228627/000114036126009247/ef20060643_10k.htm",
+  "source_text_len": 179587,
+  "fetched_at": "2026-05-01T05:08:03.202290+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,35 @@
+{
+  "ticker": "CBIO",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Bispecific antibody",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Cardiovascular"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Bispecific antibody": 4,
+    "Antibody-drug conjugate": 108,
+    "Gene therapy": 1,
+    "Small molecule": 2,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Oncology": 125,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 2,
+    "Rare disease": 38,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1253689/000162828026011983/cbio-20251231.htm",
+  "source_text_len": 224985,
+  "fetched_at": "2026-05-01T05:07:33.508029+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

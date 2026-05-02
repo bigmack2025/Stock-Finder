@@ -1,0 +1,23 @@
+{
+  "ticker": "NRXP",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Rare disease"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Oncology": 1,
+    "Neurology/CNS": 1,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 10,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1719406/000143774926009418/nrxp20251231_10k.htm",
+  "source_text_len": 102589,
+  "fetched_at": "2026-05-01T05:12:39.124283+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

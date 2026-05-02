@@ -1,0 +1,14 @@
+{
+  "ticker": "ENGN",
+  "modalities": [],
+  "therapeutic_areas": [],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {},
+  "filing_filed": "2025-12-22",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1980845/000119312525328743/engn-20251031.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:06:46.481042+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

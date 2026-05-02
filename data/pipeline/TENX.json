@@ -1,0 +1,26 @@
+{
+  "ticker": "TENX",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Cardiovascular",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 2
+  },
+  "ta_counts": {
+    "Metabolic/Obesity": 3,
+    "Cardiovascular": 27,
+    "Rare disease": 16
+  },
+  "filing_filed": "2026-03-10",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/34956/000119312526099393/tennx-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:07:25.280560+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

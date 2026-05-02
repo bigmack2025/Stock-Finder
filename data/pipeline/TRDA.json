@@ -1,0 +1,37 @@
+{
+  "ticker": "TRDA",
+  "modalities": [
+    "Gene therapy",
+    "Gene editing",
+    "Antisense oligonucleotide"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Ophthalmology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 4,
+    "Gene editing": 4,
+    "Cell therapy (other)": 1,
+    "RNAi/siRNA": 1,
+    "Antisense oligonucleotide": 3,
+    "Small molecule": 3,
+    "Peptide therapeutic": 1
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Neurology/CNS": 1,
+    "Metabolic/Obesity": 4,
+    "Ophthalmology": 12,
+    "Rare disease": 43,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1689375/000168937526000011/trda-20251231.htm",
+  "source_text_len": 166002,
+  "fetched_at": "2026-05-01T05:07:20.371149+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

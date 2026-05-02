@@ -1,0 +1,30 @@
+{
+  "ticker": "COEP",
+  "modalities": [
+    "Monoclonal antibody",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Hematology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 12,
+    "CAR-T cell therapy": 11,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 41,
+    "Neurology/CNS": 1,
+    "Immunology/I&I": 1,
+    "Infectious disease": 1,
+    "Hematology": 3
+  },
+  "filing_filed": "2026-03-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1759186/000168316826002026/coeptis_i10k-123125.htm",
+  "source_text_len": 31639,
+  "fetched_at": "2026-05-01T05:12:08.840088+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

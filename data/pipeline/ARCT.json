@@ -1,0 +1,33 @@
+{
+  "ticker": "ARCT",
+  "modalities": [
+    "Vaccine",
+    "mRNA therapeutic",
+    "CAR-T cell therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "CAR-T cell therapy": 2,
+    "RNAi/siRNA": 1,
+    "mRNA therapeutic": 12,
+    "Vaccine": 134
+  },
+  "ta_counts": {
+    "Oncology": 31,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 26,
+    "Infectious disease": 12,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-03",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1768224/000119312526088391/arct-20251231.htm",
+  "source_text_len": 105576,
+  "fetched_at": "2026-05-01T05:09:39.493482+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

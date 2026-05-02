@@ -1,0 +1,32 @@
+{
+  "ticker": "ALXO",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Hematology"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 6,
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 37,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 223,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 28,
+    "Infectious disease": 1,
+    "Hematology": 12
+  },
+  "filing_filed": "2026-03-09",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1810182/000119312526098454/alxo-20251231.htm",
+  "source_text_len": 141369,
+  "fetched_at": "2026-05-01T05:08:15.244297+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

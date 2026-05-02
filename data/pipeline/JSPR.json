@@ -1,0 +1,32 @@
+{
+  "ticker": "JSPR",
+  "modalities": [
+    "Monoclonal antibody",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Immunology/I&I",
+    "Rare disease"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 7,
+    "Cell therapy (other)": 1,
+    "Vaccine": 1,
+    "Small molecule": 4
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Immunology/I&I": 3,
+    "Rare disease": 3,
+    "Infectious disease": 1,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1788028/000121390026036426/ea0282128-10k_jasper.htm",
+  "source_text_len": 107085,
+  "fetched_at": "2026-05-01T05:13:02.775679+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

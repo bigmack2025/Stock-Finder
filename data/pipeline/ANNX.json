@@ -1,0 +1,32 @@
+{
+  "ticker": "ANNX",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Immunology/I&I",
+    "Ophthalmology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 1,
+    "RNAi/siRNA": 1,
+    "Small molecule": 6
+  },
+  "ta_counts": {
+    "Neurology/CNS": 10,
+    "Immunology/I&I": 22,
+    "Metabolic/Obesity": 1,
+    "Ophthalmology": 12,
+    "Rare disease": 32,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1528115/000119312526131782/annx-20251231.htm",
+  "source_text_len": 127369,
+  "fetched_at": "2026-05-01T05:06:25.517825+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

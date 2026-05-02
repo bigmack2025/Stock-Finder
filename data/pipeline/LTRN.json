@@ -1,0 +1,39 @@
+{
+  "ticker": "LTRN",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Small molecule",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Bispecific antibody": 1,
+    "Antibody-drug conjugate": 26,
+    "CAR-T cell therapy": 2,
+    "Gene editing": 3,
+    "Vaccine": 1,
+    "Small molecule": 14
+  },
+  "ta_counts": {
+    "Oncology": 527,
+    "Neurology/CNS": 20,
+    "Metabolic/Obesity": 4,
+    "Cardiovascular": 2,
+    "Ophthalmology": 1,
+    "Rare disease": 30,
+    "Infectious disease": 1,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1763950/000149315226013612/form10-k.htm",
+  "source_text_len": 244555,
+  "fetched_at": "2026-05-01T05:13:17.870545+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

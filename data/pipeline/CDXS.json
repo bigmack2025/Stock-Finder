@@ -1,0 +1,27 @@
+{
+  "ticker": "CDXS",
+  "modalities": [
+    "RNAi/siRNA",
+    "Small molecule",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [],
+  "primary_modality": "RNAi/siRNA",
+  "modality_counts": {
+    "Gene therapy": 2,
+    "RNAi/siRNA": 47,
+    "Antisense oligonucleotide": 1,
+    "Small molecule": 8
+  },
+  "ta_counts": {
+    "Neurology/CNS": 1,
+    "Cardiovascular": 1,
+    "Rare disease": 1
+  },
+  "filing_filed": "2026-03-11",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1200375/000120037526000006/cdxs-20251231.htm",
+  "source_text_len": 49680,
+  "fetched_at": "2026-05-01T05:11:32.728849+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

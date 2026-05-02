@@ -1,0 +1,17 @@
+{
+  "ticker": "ERNA",
+  "modalities": [],
+  "therapeutic_areas": [],
+  "primary_modality": null,
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Cell therapy (other)": 1
+  },
+  "ta_counts": {},
+  "filing_filed": "2026-03-13",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/748592/000149315226010102/form10-k.htm",
+  "source_text_len": 61167,
+  "fetched_at": "2026-05-01T05:14:31.577478+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

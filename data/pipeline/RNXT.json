@@ -1,0 +1,24 @@
+{
+  "ticker": "RNXT",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Diagnostics/devices": 2
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Rare disease": 30
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1574094/000119312526131928/rnxt-20251231.htm",
+  "source_text_len": 144235,
+  "fetched_at": "2026-05-01T05:13:20.606879+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

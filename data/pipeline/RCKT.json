@@ -1,0 +1,32 @@
+{
+  "ticker": "RCKT",
+  "modalities": [
+    "Gene therapy",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Hematology"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 63,
+    "Cell therapy (other)": 2,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 7,
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 3,
+    "Rare disease": 36,
+    "Infectious disease": 1,
+    "Hematology": 4
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1281895/000119312526076551/rckt-20251231.htm",
+  "source_text_len": 138926,
+  "fetched_at": "2026-05-01T05:07:07.274570+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

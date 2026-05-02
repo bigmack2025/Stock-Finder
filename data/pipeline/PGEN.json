@@ -1,0 +1,36 @@
+{
+  "ticker": "PGEN",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Gene therapy",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "CAR-T cell therapy": 34,
+    "TCR cell therapy": 2,
+    "Gene therapy": 10,
+    "Gene editing": 3,
+    "Cell therapy (other)": 4,
+    "Vaccine": 9
+  },
+  "ta_counts": {
+    "Oncology": 95,
+    "Immunology/I&I": 3,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 25,
+    "Infectious disease": 2
+  },
+  "filing_filed": "2026-03-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1356090/000135609026000009/pgen-20251231.htm",
+  "source_text_len": 118055,
+  "fetched_at": "2026-05-01T05:05:51.433143+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

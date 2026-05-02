@@ -1,0 +1,26 @@
+{
+  "ticker": "OKUR",
+  "modalities": [
+    "Small molecule",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Antibody-drug conjugate": 1,
+    "Small molecule": 8,
+    "Diagnostics/devices": 3
+  },
+  "ta_counts": {
+    "Oncology": 172,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1637715/000119312526104147/okur-20251231.htm",
+  "source_text_len": 126358,
+  "fetched_at": "2026-05-01T05:12:58.245398+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

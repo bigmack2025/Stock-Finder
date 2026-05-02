@@ -1,0 +1,33 @@
+{
+  "ticker": "IBIO",
+  "modalities": [
+    "Vaccine",
+    "Monoclonal antibody",
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 6,
+    "Bispecific antibody": 6,
+    "Antibody-drug conjugate": 1,
+    "CAR-T cell therapy": 1,
+    "Vaccine": 17,
+    "Peptide therapeutic": 1
+  },
+  "ta_counts": {
+    "Oncology": 57,
+    "Metabolic/Obesity": 32,
+    "Cardiovascular": 1,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2025-09-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1420720/000155837025011888/ibio-20250630x10k.htm",
+  "source_text_len": 71385,
+  "fetched_at": "2026-05-01T05:11:59.523979+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

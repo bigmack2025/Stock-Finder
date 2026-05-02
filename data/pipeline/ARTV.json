@@ -1,0 +1,34 @@
+{
+  "ticker": "ARTV",
+  "modalities": [
+    "Monoclonal antibody",
+    "CAR-T cell therapy",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Immunology/I&I",
+    "Oncology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 62,
+    "Bispecific antibody": 3,
+    "Antibody-drug conjugate": 1,
+    "CAR-T cell therapy": 41,
+    "Gene therapy": 4,
+    "Gene editing": 1
+  },
+  "ta_counts": {
+    "Oncology": 36,
+    "Immunology/I&I": 114,
+    "Metabolic/Obesity": 4,
+    "Rare disease": 2
+  },
+  "filing_filed": "2026-03-10",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1817241/000119312526100135/artv-20251231.htm",
+  "source_text_len": 100000,
+  "fetched_at": "2026-05-01T05:11:05.893644+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

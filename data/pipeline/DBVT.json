@@ -1,0 +1,33 @@
+{
+  "ticker": "DBVT",
+  "modalities": [
+    "Diagnostics/devices",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Immunology/I&I",
+    "Oncology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Monoclonal antibody": 4,
+    "Vaccine": 1,
+    "Small molecule": 1,
+    "Diagnostics/devices": 7
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Neurology/CNS": 2,
+    "Immunology/I&I": 3,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 10,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1613780/000162828026021504/dbvt-20251231.htm",
+  "source_text_len": 180930,
+  "fetched_at": "2026-05-01T05:05:49.631275+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

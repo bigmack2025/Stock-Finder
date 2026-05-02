@@ -1,0 +1,34 @@
+{
+  "ticker": "CTXR",
+  "modalities": [
+    "Cell therapy (other)",
+    "CAR-T cell therapy",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "Cell therapy (other)",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Antibody-drug conjugate": 1,
+    "CAR-T cell therapy": 3,
+    "Cell therapy (other)": 7,
+    "Diagnostics/devices": 2
+  },
+  "ta_counts": {
+    "Oncology": 85,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 4,
+    "Infectious disease": 3,
+    "Hematology": 2
+  },
+  "filing_filed": "2025-12-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1506251/000121390025125333/ea0270098-10k_citius.htm",
+  "source_text_len": 127602,
+  "fetched_at": "2026-05-01T05:13:51.798354+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,20 @@
+{
+  "ticker": "CNTB",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Rare disease"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Oncology": 1,
+    "Immunology/I&I": 1,
+    "Rare disease": 6
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1835268/000183526826000013/cntb-20251231.htm",
+  "source_text_len": 420319,
+  "fetched_at": "2026-05-01T05:11:12.986385+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

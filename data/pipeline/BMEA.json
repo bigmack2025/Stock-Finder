@@ -1,0 +1,27 @@
+{
+  "ticker": "BMEA",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 4
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Immunology/I&I": 3,
+    "Metabolic/Obesity": 107,
+    "Rare disease": 23
+  },
+  "filing_filed": "2026-03-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1840439/000119312526121825/bmea-20251231.htm",
+  "source_text_len": 97627,
+  "fetched_at": "2026-05-01T05:11:53.158859+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

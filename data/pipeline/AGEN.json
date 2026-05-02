@@ -1,0 +1,30 @@
+{
+  "ticker": "AGEN",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Bispecific antibody": 1,
+    "Vaccine": 3,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 5,
+    "Immunology/I&I": 2,
+    "Rare disease": 16,
+    "Infectious disease": 2
+  },
+  "filing_filed": "2026-03-16",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1098972/000119312526108632/agen-20251231.htm",
+  "source_text_len": 206613,
+  "fetched_at": "2026-05-01T05:11:51.012428+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

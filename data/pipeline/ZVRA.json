@@ -1,0 +1,28 @@
+{
+  "ticker": "ZVRA",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Neurology/CNS"
+  ],
+  "primary_modality": null,
+  "modality_counts": {
+    "Gene therapy": 1
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Neurology/CNS": 2,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 1,
+    "Rare disease": 66,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-09",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1434647/000143464726000011/zvra-20251231.htm",
+  "source_text_len": 116756,
+  "fetched_at": "2026-05-01T05:07:04.217711+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

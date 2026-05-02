@@ -1,0 +1,29 @@
+{
+  "ticker": "CGON",
+  "modalities": [
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 2,
+    "Vaccine": 1
+  },
+  "ta_counts": {
+    "Oncology": 113,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 1,
+    "Rare disease": 17,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-02-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1991792/000119312526079498/ck0001991792-20251231.htm",
+  "source_text_len": 128597,
+  "fetched_at": "2026-05-01T05:03:04.171927+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

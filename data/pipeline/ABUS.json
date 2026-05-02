@@ -1,0 +1,32 @@
+{
+  "ticker": "ABUS",
+  "modalities": [
+    "Vaccine",
+    "RNAi/siRNA",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [
+    "Infectious disease",
+    "Oncology"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene editing": 2,
+    "RNAi/siRNA": 13,
+    "Antisense oligonucleotide": 1,
+    "mRNA therapeutic": 1,
+    "Vaccine": 16,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Infectious disease": 5
+  },
+  "filing_filed": "2026-03-23",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1447028/000144702826000017/abus-20251231.htm",
+  "source_text_len": 134217,
+  "fetched_at": "2026-05-01T05:06:12.795447+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

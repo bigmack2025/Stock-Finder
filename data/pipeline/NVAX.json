@@ -1,0 +1,26 @@
+{
+  "ticker": "NVAX",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Infectious disease",
+    "Oncology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Vaccine": 191
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Metabolic/Obesity": 2,
+    "Infectious disease": 10
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1000694/000100069426000007/nvax-20251231.htm",
+  "source_text_len": 101900,
+  "fetched_at": "2026-05-01T05:05:10.411754+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

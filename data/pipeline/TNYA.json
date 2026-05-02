@@ -1,0 +1,35 @@
+{
+  "ticker": "TNYA",
+  "modalities": [
+    "Gene therapy",
+    "Small molecule",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Cardiovascular",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 79,
+    "Gene editing": 4,
+    "Cell therapy (other)": 11,
+    "Antisense oligonucleotide": 1,
+    "Small molecule": 22,
+    "Diagnostics/devices": 6
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Metabolic/Obesity": 13,
+    "Cardiovascular": 23,
+    "Rare disease": 46,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-11",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1858848/000119312526102252/tnya-20251231.htm",
+  "source_text_len": 182120,
+  "fetched_at": "2026-05-01T05:09:43.549321+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

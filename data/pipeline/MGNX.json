@@ -1,0 +1,34 @@
+{
+  "ticker": "MGNX",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Monoclonal antibody",
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Hematology"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 9,
+    "Bispecific antibody": 3,
+    "Antibody-drug conjugate": 19,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 62,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 3,
+    "Infectious disease": 1,
+    "Hematology": 3
+  },
+  "filing_filed": "2026-03-09",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1125345/000112534526000017/mgnx-20251231.htm",
+  "source_text_len": 85992,
+  "fetched_at": "2026-05-01T05:11:04.289581+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

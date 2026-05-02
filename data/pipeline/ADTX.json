@@ -1,0 +1,27 @@
+{
+  "ticker": "ADTX",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Oncology",
+    "Immunology/I&I",
+    "Infectious disease"
+  ],
+  "primary_modality": null,
+  "modality_counts": {
+    "Monoclonal antibody": 1
+  },
+  "ta_counts": {
+    "Oncology": 25,
+    "Neurology/CNS": 2,
+    "Immunology/I&I": 10,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 1,
+    "Infectious disease": 5
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1726711/000121390026037529/ea0283141-10k_aditxt.htm",
+  "source_text_len": 47159,
+  "fetched_at": "2026-05-01T05:15:32.623072+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

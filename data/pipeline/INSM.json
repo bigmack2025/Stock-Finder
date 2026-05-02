@@ -1,0 +1,34 @@
+{
+  "ticker": "INSM",
+  "modalities": [
+    "Gene therapy",
+    "Diagnostics/devices",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Cardiovascular"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 4,
+    "Gene therapy": 14,
+    "Cell therapy (other)": 2,
+    "Small molecule": 2,
+    "Diagnostics/devices": 10
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Neurology/CNS": 6,
+    "Cardiovascular": 5,
+    "Rare disease": 77,
+    "Infectious disease": 4
+  },
+  "filing_filed": "2026-02-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1104506/000110450626000009/insm-20251231.htm",
+  "source_text_len": 164468,
+  "fetched_at": "2026-05-01T05:02:33.229146+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

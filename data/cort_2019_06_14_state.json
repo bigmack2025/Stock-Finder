@@ -1,0 +1,18 @@
+{
+  "ticker": "CORT",
+  "name": "Corcept Therapeutics Incorporated",
+  "query_date": "2019-06-14",
+  "primary_modality": "General Biotech",
+  "modalities": "['General Biotech']",
+  "available": true,
+  "mkt_cap_m": 1191.7211205072404,
+  "revenue_m": 251.247,
+  "cash_m": 49.65,
+  "debt_m": null,
+  "rd_m": 75.247,
+  "shares_outstanding": 115031000.0,
+  "operating_cash_flow": 115665000.0,
+  "has_revenue": 1,
+  "size_band": "small",
+  "source": "SEC EDGAR 10-Q (balance sheet as of 2019-03-31, filed 2019-05-09) + yfinance close"
+}

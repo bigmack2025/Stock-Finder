@@ -1,0 +1,26 @@
+{
+  "ticker": "ELAB",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Cardiovascular",
+    "Rare disease"
+  ],
+  "primary_modality": null,
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Cell therapy (other)": 1
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Metabolic/Obesity": 96,
+    "Cardiovascular": 3,
+    "Rare disease": 2
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1840563/000121390026035937/ea0282650-10k_pmgc.htm",
+  "source_text_len": 88586,
+  "fetched_at": "2026-05-01T05:15:24.776068+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

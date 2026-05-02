@@ -1,0 +1,27 @@
+{
+  "ticker": "JUNS",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": null,
+  "modality_counts": {
+    "Antibody-drug conjugate": 1,
+    "Gene therapy": 1,
+    "Gene editing": 1
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Neurology/CNS": 66,
+    "Metabolic/Obesity": 4,
+    "Rare disease": 18
+  },
+  "filing_filed": "2026-04-01",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1679628/000149315226014687/form10-k.htm",
+  "source_text_len": 84370,
+  "fetched_at": "2026-05-01T05:13:59.747265+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

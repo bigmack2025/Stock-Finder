@@ -1,0 +1,30 @@
+{
+  "ticker": "IKT",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Infectious disease"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 2,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 6,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 1,
+    "Rare disease": 41,
+    "Infectious disease": 3
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1750149/000119312526126371/ikt-20251231.htm",
+  "source_text_len": 104914,
+  "fetched_at": "2026-05-01T05:08:25.021431+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

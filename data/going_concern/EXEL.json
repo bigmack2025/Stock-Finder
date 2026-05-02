@@ -1,0 +1,9 @@
+{
+  "ticker": "EXEL",
+  "flagged": false,
+  "evidence": null,
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/939767/000093976726000021/exel-20260102.htm",
+  "filed": "2026-02-10",
+  "fetched_at": "2026-05-01T04:56:57.144715+00:00",
+  "status": "ok"
+}

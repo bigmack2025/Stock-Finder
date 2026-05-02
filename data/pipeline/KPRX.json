@@ -1,0 +1,30 @@
+{
+  "ticker": "KPRX",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Ophthalmology",
+    "Rare disease",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Small molecule": 4
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Immunology/I&I": 14,
+    "Metabolic/Obesity": 8,
+    "Ophthalmology": 36,
+    "Rare disease": 29,
+    "Infectious disease": 9
+  },
+  "filing_filed": "2026-03-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1372514/000137251426000024/kprx-20251231.htm",
+  "source_text_len": 72351,
+  "fetched_at": "2026-05-01T05:14:35.369730+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "JANX",
+  "modalities": [
+    "Monoclonal antibody",
+    "CAR-T cell therapy",
+    "Antibody-drug conjugate"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 10,
+    "Bispecific antibody": 2,
+    "Antibody-drug conjugate": 3,
+    "CAR-T cell therapy": 9,
+    "Vaccine": 2,
+    "Small molecule": 2,
+    "Radiotherapeutic": 3
+  },
+  "ta_counts": {
+    "Oncology": 242,
+    "Immunology/I&I": 24,
+    "Rare disease": 46
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1817713/000119312526076918/janx-20251231.htm",
+  "source_text_len": 475679,
+  "fetched_at": "2026-05-01T05:06:14.795446+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

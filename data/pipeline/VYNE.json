@@ -1,0 +1,29 @@
+{
+  "ticker": "VYNE",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Immunology/I&I",
+    "Oncology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Small molecule": 7
+  },
+  "ta_counts": {
+    "Oncology": 7,
+    "Immunology/I&I": 12,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 2,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-02-27",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1566044/000156604426000002/vyne-20251231.htm",
+  "source_text_len": 91250,
+  "fetched_at": "2026-05-01T05:13:50.189034+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

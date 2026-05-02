@@ -1,0 +1,30 @@
+{
+  "ticker": "OBIO",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Cardiovascular",
+    "Oncology",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Diagnostics/devices": 37
+  },
+  "ta_counts": {
+    "Oncology": 10,
+    "Metabolic/Obesity": 7,
+    "Cardiovascular": 57,
+    "Ophthalmology": 2,
+    "Rare disease": 1,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1814114/000110465926026754/obio-20251231x10k.htm",
+  "source_text_len": 293351,
+  "fetched_at": "2026-05-01T05:08:27.657860+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

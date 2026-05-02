@@ -1,0 +1,9 @@
+{
+  "ticker": "SMMT",
+  "flagged": false,
+  "evidence": null,
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1599298/000159929826000015/smmt-20251231.htm",
+  "filed": "2026-02-23",
+  "fetched_at": "2026-05-01T04:47:57.046041+00:00",
+  "status": "ok"
+}

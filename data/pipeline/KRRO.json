@@ -1,0 +1,26 @@
+{
+  "ticker": "KRRO",
+  "modalities": [
+    "Gene therapy",
+    "Gene editing"
+  ],
+  "therapeutic_areas": [
+    "Rare disease"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 3,
+    "Gene editing": 3,
+    "Antisense oligonucleotide": 1,
+    "Vaccine": 1
+  },
+  "ta_counts": {
+    "Rare disease": 26
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1703647/000119312526104156/krro-20251231.htm",
+  "source_text_len": 199301,
+  "fetched_at": "2026-05-01T05:11:35.860850+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,31 @@
+{
+  "ticker": "XBIO",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Cell therapy (other)",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "CAR-T cell therapy": 17,
+    "Gene therapy": 2,
+    "Cell therapy (other)": 5,
+    "Small molecule": 3
+  },
+  "ta_counts": {
+    "Oncology": 91,
+    "Immunology/I&I": 2,
+    "Rare disease": 27
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1534525/000168316826001737/xenetic_i10k-123125.htm",
+  "source_text_len": 115340,
+  "fetched_at": "2026-05-01T05:14:48.000748+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

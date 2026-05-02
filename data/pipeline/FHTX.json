@@ -1,0 +1,32 @@
+{
+  "ticker": "FHTX",
+  "modalities": [
+    "Protein degrader",
+    "Small molecule",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Protein degrader",
+  "modality_counts": {
+    "Gene editing": 4,
+    "Small molecule": 6,
+    "Protein degrader": 8,
+    "Diagnostics/devices": 5
+  },
+  "ta_counts": {
+    "Oncology": 102,
+    "Neurology/CNS": 3,
+    "Immunology/I&I": 1,
+    "Rare disease": 19
+  },
+  "filing_filed": "2026-03-11",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1822462/000162828026016814/fhtx-20251231.htm",
+  "source_text_len": 130495,
+  "fetched_at": "2026-05-01T05:08:02.360220+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "OGEN",
+  "modalities": [
+    "Vaccine",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Oncology"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Vaccine": 3,
+    "Diagnostics/devices": 2
+  },
+  "ta_counts": {
+    "Oncology": 7,
+    "Neurology/CNS": 8,
+    "Metabolic/Obesity": 1,
+    "Ophthalmology": 1,
+    "Rare disease": 15,
+    "Infectious disease": 1,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-16",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1174940/000149315226010282/form10-k.htm",
+  "source_text_len": 109695,
+  "fetched_at": "2026-05-01T05:15:11.959209+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,34 @@
+{
+  "ticker": "TPST",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Small molecule",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Hematology"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 3,
+    "Antibody-drug conjugate": 1,
+    "CAR-T cell therapy": 70,
+    "Vaccine": 1,
+    "Small molecule": 19
+  },
+  "ta_counts": {
+    "Oncology": 109,
+    "Immunology/I&I": 5,
+    "Metabolic/Obesity": 3,
+    "Rare disease": 16,
+    "Hematology": 6
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1544227/000119312526130490/tpst-20251231.htm",
+  "source_text_len": 122515,
+  "fetched_at": "2026-05-01T05:13:16.063691+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

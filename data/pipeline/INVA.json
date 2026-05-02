@@ -1,0 +1,26 @@
+{
+  "ticker": "INVA",
+  "modalities": [
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Infectious disease",
+    "Rare disease"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 4
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 2,
+    "Infectious disease": 13
+  },
+  "filing_filed": "2026-02-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1080014/000119312526071776/inva-20251231.htm",
+  "source_text_len": 122424,
+  "fetched_at": "2026-05-01T05:05:09.290250+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

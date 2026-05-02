@@ -1,0 +1,39 @@
+{
+  "ticker": "HURA",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Vaccine",
+    "Oncolytic virus"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Hematology"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 4,
+    "Antibody-drug conjugate": 28,
+    "CAR-T cell therapy": 1,
+    "Gene editing": 1,
+    "Cell therapy (other)": 3,
+    "mRNA therapeutic": 2,
+    "Vaccine": 11,
+    "Small molecule": 5,
+    "Oncolytic virus": 7,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 313,
+    "Immunology/I&I": 4,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 24,
+    "Hematology": 10
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1498382/000119312526134950/hura-20251231.htm",
+  "source_text_len": 193665,
+  "fetched_at": "2026-05-01T05:11:56.539634+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

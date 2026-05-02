@@ -1,0 +1,36 @@
+{
+  "ticker": "RGNX",
+  "modalities": [
+    "Gene therapy",
+    "Monoclonal antibody",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Ophthalmology"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "Gene therapy": 141,
+    "Gene editing": 1,
+    "Cell therapy (other)": 2,
+    "RNAi/siRNA": 1,
+    "Vaccine": 1
+  },
+  "ta_counts": {
+    "Oncology": 6,
+    "Neurology/CNS": 19,
+    "Metabolic/Obesity": 9,
+    "Cardiovascular": 2,
+    "Ophthalmology": 13,
+    "Rare disease": 52
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1590877/000119312526094013/rgnx-20251231.htm",
+  "source_text_len": 157898,
+  "fetched_at": "2026-05-01T05:07:23.416080+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

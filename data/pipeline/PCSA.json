@@ -1,0 +1,23 @@
+{
+  "ticker": "PCSA",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Oncology": 133,
+    "Metabolic/Obesity": 9,
+    "Rare disease": 19,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-18",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1533743/000149315226011204/form10-k.htm",
+  "source_text_len": 113787,
+  "fetched_at": "2026-05-01T05:14:39.676910+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

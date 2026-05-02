@@ -1,0 +1,25 @@
+{
+  "ticker": "CYTK",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Cardiovascular"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 8,
+    "Protein degrader": 1
+  },
+  "ta_counts": {
+    "Metabolic/Obesity": 1,
+    "Cardiovascular": 29,
+    "Rare disease": 1
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1061983/000119312526076495/cytk-20251231.htm",
+  "source_text_len": 57945,
+  "fetched_at": "2026-05-01T05:02:54.603426+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

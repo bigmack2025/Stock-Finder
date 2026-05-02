@@ -1,0 +1,31 @@
+{
+  "ticker": "DAWN",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Monoclonal antibody",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 5,
+    "Antibody-drug conjugate": 16,
+    "Small molecule": 4,
+    "Protein degrader": 1,
+    "Diagnostics/devices": 3
+  },
+  "ta_counts": {
+    "Oncology": 179,
+    "Neurology/CNS": 1,
+    "Rare disease": 39
+  },
+  "filing_filed": "2026-02-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1845337/000119312526066956/dawn-20251231.htm",
+  "source_text_len": 171310,
+  "fetched_at": "2026-05-01T05:03:59.632817+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

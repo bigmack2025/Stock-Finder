@@ -1,0 +1,34 @@
+{
+  "ticker": "STTK",
+  "modalities": [
+    "Bispecific antibody",
+    "Monoclonal antibody",
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Bispecific antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 5,
+    "Bispecific antibody": 22,
+    "Gene therapy": 2,
+    "Cell therapy (other)": 1,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 7,
+    "Immunology/I&I": 2,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 65,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1680367/000162828026014989/sttk-20251231.htm",
+  "source_text_len": 163856,
+  "fetched_at": "2026-05-01T05:07:39.408813+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

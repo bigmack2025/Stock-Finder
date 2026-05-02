@@ -1,0 +1,27 @@
+{
+  "ticker": "GUTS",
+  "modalities": [
+    "Gene therapy",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Oncology"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 87,
+    "Diagnostics/devices": 21
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Metabolic/Obesity": 32,
+    "Rare disease": 1
+  },
+  "filing_filed": "2026-03-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1572616/000119312526121793/guts-20251231.htm",
+  "source_text_len": 270816,
+  "fetched_at": "2026-05-01T05:12:11.884648+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

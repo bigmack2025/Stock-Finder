@@ -1,0 +1,28 @@
+{
+  "ticker": "QTTB",
+  "modalities": [
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 5,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Immunology/I&I": 15,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 47,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-10",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1661998/000119312526099339/qttb-20251231.htm",
+  "source_text_len": 143072,
+  "fetched_at": "2026-05-01T05:12:24.916094+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

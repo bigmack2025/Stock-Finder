@@ -1,0 +1,18 @@
+{
+  "ticker": "DYAI",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Vaccine": 3
+  },
+  "ta_counts": {},
+  "filing_filed": "2026-03-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1213809/000149315226012672/form10-k.htm",
+  "source_text_len": 89758,
+  "fetched_at": "2026-05-01T05:13:21.784440+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,33 @@
+{
+  "ticker": "AVBP",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Diagnostics/devices",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Bispecific antibody": 2,
+    "Antibody-drug conjugate": 54,
+    "Small molecule": 4,
+    "Diagnostics/devices": 6
+  },
+  "ta_counts": {
+    "Oncology": 137,
+    "Neurology/CNS": 21,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 30,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1868279/000110465926024127/avbp-20251231x10k.htm",
+  "source_text_len": 219212,
+  "fetched_at": "2026-05-01T05:05:59.968000+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

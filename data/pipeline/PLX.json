@@ -1,0 +1,34 @@
+{
+  "ticker": "PLX",
+  "modalities": [
+    "Antisense oligonucleotide",
+    "Gene therapy",
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Metabolic/Obesity",
+    "Oncology"
+  ],
+  "primary_modality": "Antisense oligonucleotide",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 3,
+    "Antisense oligonucleotide": 5,
+    "Vaccine": 2,
+    "Small molecule": 2
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 3,
+    "Cardiovascular": 1,
+    "Rare disease": 25
+  },
+  "filing_filed": "2026-03-18",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1006281/000110465926029858/plx-20251231x10k.htm",
+  "source_text_len": 114956,
+  "fetched_at": "2026-05-01T05:09:36.638898+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

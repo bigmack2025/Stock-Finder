@@ -1,0 +1,30 @@
+{
+  "ticker": "GOSS",
+  "modalities": [
+    "Diagnostics/devices",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Cardiovascular",
+    "Oncology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Small molecule": 4,
+    "Diagnostics/devices": 5
+  },
+  "ta_counts": {
+    "Oncology": 4,
+    "Metabolic/Obesity": 2,
+    "Cardiovascular": 10,
+    "Rare disease": 45,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-17",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1728117/000172811726000017/goss-20251231.htm",
+  "source_text_len": 144851,
+  "fetched_at": "2026-05-01T05:11:28.061953+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,29 @@
+{
+  "ticker": "FOLD",
+  "modalities": [
+    "Gene therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Gene therapy": 19,
+    "Small molecule": 3,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 1,
+    "Neurology/CNS": 1,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 51
+  },
+  "filing_filed": "2026-02-20",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1178879/000117887926000005/fold-20251231.htm",
+  "source_text_len": 102591,
+  "fetched_at": "2026-05-01T05:03:11.086677+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

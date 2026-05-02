@@ -1,0 +1,27 @@
+{
+  "ticker": "KALA",
+  "modalities": [
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Ophthalmology"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Gene therapy": 1,
+    "Cell therapy (other)": 1,
+    "Diagnostics/devices": 4
+  },
+  "ta_counts": {
+    "Metabolic/Obesity": 1,
+    "Ophthalmology": 9,
+    "Rare disease": 38
+  },
+  "filing_filed": "2026-04-15",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1479419/000110465926043782/kala-20251231x10k.htm",
+  "source_text_len": 96203,
+  "fetched_at": "2026-05-01T05:14:30.598174+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

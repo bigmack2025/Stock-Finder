@@ -1,0 +1,34 @@
+{
+  "ticker": "SLN",
+  "modalities": [
+    "RNAi/siRNA",
+    "mRNA therapeutic"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Metabolic/Obesity",
+    "Oncology"
+  ],
+  "primary_modality": "RNAi/siRNA",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "Gene therapy": 1,
+    "RNAi/siRNA": 90,
+    "Antisense oligonucleotide": 1,
+    "mRNA therapeutic": 2
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 10,
+    "Cardiovascular": 2,
+    "Rare disease": 55,
+    "Infectious disease": 1
+  },
+  "filing_filed": "2026-03-05",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1479615/000119312526092591/sln-20251231.htm",
+  "source_text_len": 133877,
+  "fetched_at": "2026-05-01T05:08:14.303501+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

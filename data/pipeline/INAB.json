@@ -1,0 +1,31 @@
+{
+  "ticker": "INAB",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 1,
+    "CAR-T cell therapy": 29,
+    "Gene therapy": 1,
+    "Cell therapy (other)": 7
+  },
+  "ta_counts": {
+    "Oncology": 232,
+    "Immunology/I&I": 13,
+    "Rare disease": 20,
+    "Hematology": 5
+  },
+  "filing_filed": "2026-03-12",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1740279/000119312526104181/inab-20251231.htm",
+  "source_text_len": 184596,
+  "fetched_at": "2026-05-01T05:13:53.514077+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

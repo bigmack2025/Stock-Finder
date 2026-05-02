@@ -1,0 +1,27 @@
+{
+  "ticker": "ALMS",
+  "modalities": [
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Neurology/CNS",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 4,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Neurology/CNS": 21,
+    "Immunology/I&I": 18,
+    "Metabolic/Obesity": 1,
+    "Dermatology": 1
+  },
+  "filing_filed": "2026-03-19",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1847367/000184736726000006/alms-20251231x10k.htm",
+  "source_text_len": 34850,
+  "fetched_at": "2026-05-01T05:03:35.501069+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,25 @@
+{
+  "ticker": "VCEL",
+  "modalities": [
+    "Diagnostics/devices",
+    "Cell therapy (other)"
+  ],
+  "therapeutic_areas": [
+    "Rare disease"
+  ],
+  "primary_modality": "Diagnostics/devices",
+  "modality_counts": {
+    "Cell therapy (other)": 2,
+    "Vaccine": 1,
+    "Diagnostics/devices": 8
+  },
+  "ta_counts": {
+    "Rare disease": 5
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/887359/000162828026012013/vcel-20251231.htm",
+  "source_text_len": 95032,
+  "fetched_at": "2026-05-01T05:04:58.756885+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,27 @@
+{
+  "ticker": "ARWR",
+  "modalities": [
+    "RNAi/siRNA"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Neurology/CNS",
+    "Rare disease"
+  ],
+  "primary_modality": "RNAi/siRNA",
+  "modality_counts": {
+    "RNAi/siRNA": 41,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Neurology/CNS": 9,
+    "Metabolic/Obesity": 19,
+    "Rare disease": 3
+  },
+  "filing_filed": "2025-11-25",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/879407/000087940725000029/arwr-20250930.htm",
+  "source_text_len": 31773,
+  "fetched_at": "2026-05-01T05:02:50.053441+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

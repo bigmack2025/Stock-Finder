@@ -1,0 +1,36 @@
+{
+  "ticker": "FBIO",
+  "modalities": [
+    "CAR-T cell therapy",
+    "Gene therapy",
+    "Oncolytic virus"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Infectious disease"
+  ],
+  "primary_modality": "CAR-T cell therapy",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "CAR-T cell therapy": 16,
+    "Gene therapy": 12,
+    "Cell therapy (other)": 1,
+    "Vaccine": 3,
+    "Oncolytic virus": 4
+  },
+  "ta_counts": {
+    "Oncology": 29,
+    "Neurology/CNS": 4,
+    "Immunology/I&I": 1,
+    "Rare disease": 24,
+    "Infectious disease": 7,
+    "Dermatology": 5
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1429260/000110465926037874/fbio-20251231x10k.htm",
+  "source_text_len": 92196,
+  "fetched_at": "2026-05-01T05:11:37.174491+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,32 @@
+{
+  "ticker": "INMB",
+  "modalities": [
+    "Gene therapy"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Oncology",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Gene therapy",
+  "modality_counts": {
+    "Antibody-drug conjugate": 1,
+    "Gene therapy": 2,
+    "Cell therapy (other)": 1,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 29,
+    "Neurology/CNS": 9,
+    "Metabolic/Obesity": 2,
+    "Rare disease": 67,
+    "Infectious disease": 1,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1711754/000121390026036370/ea0279078-10k_inmune.htm",
+  "source_text_len": 151297,
+  "fetched_at": "2026-05-01T05:13:09.989210+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

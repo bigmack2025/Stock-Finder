@@ -1,0 +1,29 @@
+{
+  "ticker": "PRLD",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Protein degrader",
+    "Diagnostics/devices"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "Antibody-drug conjugate": 13,
+    "Protein degrader": 4,
+    "Diagnostics/devices": 3
+  },
+  "ta_counts": {
+    "Oncology": 55,
+    "Rare disease": 20
+  },
+  "filing_filed": "2026-03-10",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1678660/000119312526099428/prld-20251231.htm",
+  "source_text_len": 103884,
+  "fetched_at": "2026-05-01T05:08:20.361809+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

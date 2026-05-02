@@ -1,0 +1,31 @@
+{
+  "ticker": "ZYME",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Monoclonal antibody",
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Immunology/I&I"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 17,
+    "Bispecific antibody": 17,
+    "Antibody-drug conjugate": 34,
+    "Small molecule": 3
+  },
+  "ta_counts": {
+    "Oncology": 70,
+    "Immunology/I&I": 4,
+    "Rare disease": 16
+  },
+  "filing_filed": "2026-03-02",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1937653/000193765326000015/zyme-20251231.htm",
+  "source_text_len": 131570,
+  "fetched_at": "2026-05-01T05:04:50.259902+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

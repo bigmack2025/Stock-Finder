@@ -1,0 +1,34 @@
+{
+  "loaded_at_utc": "2026-05-01T05:16:34.003092+00:00",
+  "n_companies": 722,
+  "n_us": 595,
+  "n_intl": 127,
+  "n_with_mkt_cap": 595,
+  "n_with_revenue": 352,
+  "modalities": [
+    "Oncology",
+    "Gene/Cell Therapy",
+    "RNA/Antisense",
+    "Neurology",
+    "Immunology",
+    "Rare Disease",
+    "Metabolic",
+    "Cardiovascular",
+    "Ophthalmology",
+    "Vaccines",
+    "Dermatology",
+    "AI/Platform",
+    "Psychedelics/CNS",
+    "Biosimilars",
+    "General Biotech"
+  ],
+  "size_band_ordinal": {
+    "unknown": 0,
+    "micro": 1,
+    "small": 2,
+    "mid": 3,
+    "large": 4,
+    "mega": 5
+  },
+  "source_xlsx": "Public Biotech Stocks Master List.xlsx"
+}

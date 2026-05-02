@@ -1,0 +1,20 @@
+{
+  "ticker": "ICCC",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Vaccine": 13
+  },
+  "ta_counts": {
+    "Metabolic/Obesity": 1
+  },
+  "filing_filed": "2026-03-30",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/811641/000143774926010339/iccc20251231_10k.htm",
+  "source_text_len": 23800,
+  "fetched_at": "2026-05-01T05:12:33.188937+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

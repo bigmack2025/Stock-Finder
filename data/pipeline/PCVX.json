@@ -1,0 +1,28 @@
+{
+  "ticker": "PCVX",
+  "modalities": [
+    "Vaccine"
+  ],
+  "therapeutic_areas": [
+    "Infectious disease",
+    "Rare disease",
+    "Oncology"
+  ],
+  "primary_modality": "Vaccine",
+  "modality_counts": {
+    "Vaccine": 279
+  },
+  "ta_counts": {
+    "Oncology": 3,
+    "Metabolic/Obesity": 2,
+    "Cardiovascular": 1,
+    "Rare disease": 4,
+    "Infectious disease": 6
+  },
+  "filing_filed": "2026-02-24",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1649094/000164909426000007/pcvx-20251231.htm",
+  "source_text_len": 214162,
+  "fetched_at": "2026-05-01T05:02:47.916172+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

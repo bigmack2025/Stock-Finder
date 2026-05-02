@@ -1,0 +1,24 @@
+{
+  "ticker": "ONC",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Vaccine": 1,
+    "Small molecule": 2,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 7
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1651308/000162828026011946/bgne-20251231.htm",
+  "source_text_len": 313466,
+  "fetched_at": "2026-05-01T05:02:31.896614+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

@@ -1,0 +1,23 @@
+{
+  "ticker": "LEXX",
+  "modalities": [],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Cardiovascular",
+    "Neurology/CNS"
+  ],
+  "primary_modality": null,
+  "modality_counts": {},
+  "ta_counts": {
+    "Neurology/CNS": 6,
+    "Metabolic/Obesity": 66,
+    "Cardiovascular": 23,
+    "Infectious disease": 2
+  },
+  "filing_filed": "2025-11-28",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1348362/000164033425002225/lxrp_10k.htm",
+  "source_text_len": 53996,
+  "fetched_at": "2026-05-01T05:13:47.109263+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

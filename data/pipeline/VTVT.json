@@ -1,0 +1,33 @@
+{
+  "ticker": "VTVT",
+  "modalities": [
+    "Small molecule",
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Metabolic/Obesity",
+    "Oncology",
+    "Neurology/CNS"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Monoclonal antibody": 2,
+    "Small molecule": 6,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 11,
+    "Neurology/CNS": 6,
+    "Immunology/I&I": 4,
+    "Metabolic/Obesity": 39,
+    "Rare disease": 4,
+    "Dermatology": 1,
+    "Hematology": 2
+  },
+  "filing_filed": "2026-03-10",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1641489/000164148926000010/vtvt-20251231.htm",
+  "source_text_len": 91278,
+  "fetched_at": "2026-05-01T05:07:24.448227+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

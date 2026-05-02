@@ -1,0 +1,33 @@
+{
+  "ticker": "ZLAB",
+  "modalities": [
+    "Antibody-drug conjugate",
+    "Monoclonal antibody",
+    "Bispecific antibody"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Infectious disease",
+    "Rare disease"
+  ],
+  "primary_modality": "Antibody-drug conjugate",
+  "modality_counts": {
+    "Monoclonal antibody": 4,
+    "Bispecific antibody": 2,
+    "Antibody-drug conjugate": 11,
+    "Small molecule": 1,
+    "Diagnostics/devices": 2
+  },
+  "ta_counts": {
+    "Oncology": 71,
+    "Immunology/I&I": 1,
+    "Rare disease": 2,
+    "Infectious disease": 6
+  },
+  "filing_filed": "2026-02-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1704292/000170429226000015/zlab-20251231.htm",
+  "source_text_len": 100415,
+  "fetched_at": "2026-05-01T05:04:00.549669+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

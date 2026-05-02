@@ -1,0 +1,31 @@
+{
+  "ticker": "CMMB",
+  "modalities": [
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Metabolic/Obesity",
+    "Oncology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 16,
+    "Small molecule": 1
+  },
+  "ta_counts": {
+    "Oncology": 7,
+    "Immunology/I&I": 7,
+    "Metabolic/Obesity": 20,
+    "Cardiovascular": 3,
+    "Rare disease": 33,
+    "Dermatology": 2,
+    "Hematology": 2
+  },
+  "filing_filed": "2023-03-20",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1534248/000117891323001041/zk2329403.htm",
+  "source_text_len": 172359,
+  "fetched_at": "2026-05-01T05:14:15.575105+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

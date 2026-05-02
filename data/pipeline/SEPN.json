@@ -1,0 +1,25 @@
+{
+  "ticker": "SEPN",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 9
+  },
+  "ta_counts": {
+    "Neurology/CNS": 1,
+    "Metabolic/Obesity": 8,
+    "Rare disease": 26
+  },
+  "filing_filed": "2026-03-09",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1984086/000119312526098507/sepn-20251231.htm",
+  "source_text_len": 385198,
+  "fetched_at": "2026-05-01T05:05:46.369035+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

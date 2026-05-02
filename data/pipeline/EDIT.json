@@ -1,0 +1,28 @@
+{
+  "ticker": "EDIT",
+  "modalities": [
+    "Gene editing",
+    "Gene therapy",
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Rare disease"
+  ],
+  "primary_modality": "Gene editing",
+  "modality_counts": {
+    "Gene therapy": 3,
+    "Gene editing": 31,
+    "Small molecule": 2
+  },
+  "ta_counts": {
+    "Immunology/I&I": 1,
+    "Metabolic/Obesity": 1,
+    "Rare disease": 32
+  },
+  "filing_filed": "2026-03-09",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1650664/000165066426000017/edit-20251231.htm",
+  "source_text_len": 179600,
+  "fetched_at": "2026-05-01T05:09:42.383879+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

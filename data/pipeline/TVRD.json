@@ -1,0 +1,28 @@
+{
+  "ticker": "TVRD",
+  "modalities": [
+    "Small molecule"
+  ],
+  "therapeutic_areas": [
+    "Oncology",
+    "Rare disease",
+    "Metabolic/Obesity"
+  ],
+  "primary_modality": "Small molecule",
+  "modality_counts": {
+    "Small molecule": 6
+  },
+  "ta_counts": {
+    "Oncology": 64,
+    "Metabolic/Obesity": 5,
+    "Cardiovascular": 1,
+    "Rare disease": 21,
+    "Dermatology": 2
+  },
+  "filing_filed": "2026-03-31",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1346830/000110465926037729/tvrd-20251231x10k.htm",
+  "source_text_len": 158186,
+  "fetched_at": "2026-05-01T05:13:07.988428+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}

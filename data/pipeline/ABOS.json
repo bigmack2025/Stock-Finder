@@ -1,0 +1,28 @@
+{
+  "ticker": "ABOS",
+  "modalities": [
+    "Monoclonal antibody"
+  ],
+  "therapeutic_areas": [
+    "Rare disease",
+    "Neurology/CNS",
+    "Oncology"
+  ],
+  "primary_modality": "Monoclonal antibody",
+  "modality_counts": {
+    "Monoclonal antibody": 11,
+    "Diagnostics/devices": 1
+  },
+  "ta_counts": {
+    "Oncology": 2,
+    "Neurology/CNS": 7,
+    "Rare disease": 10,
+    "Hematology": 1
+  },
+  "filing_filed": "2026-03-26",
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1576885/000162828026021413/abos-20251231.htm",
+  "source_text_len": 107414,
+  "fetched_at": "2026-05-01T05:09:40.369389+00:00",
+  "method": "lexicon",
+  "status": "ok"
+}
