@@ -403,17 +403,16 @@ hit run. You'll see today's $5–8B mid-cap clinical biotechs ranked by cheapnes
     )
     display["Flags"] = display.apply(misuse_flags.short_flag_string, axis=1)
 
+    # === COMPACT TABLE — 6 most-useful columns ===
     st.dataframe(
-        display[["Anchor", "ticker", "name", "region", "primary_modality", "Pipeline (10-K)", "size_band",
-                 "Mkt Cap", "Cash", "EV", "Net cash / mc", "EV / Cash", "Runway (mo)",
-                 "Cheapness", "Flags", "EDGAR"]]
-        .rename(columns={"ticker": "Ticker", "name": "Company", "region": "Region",
-                         "primary_modality": "Modality", "size_band": "Size"}),
+        display[["Anchor", "ticker", "name", "Mkt Cap", "Cash", "Cheapness", "Flags"]]
+        .rename(columns={"ticker": "Ticker", "name": "Company", "Cash": "Cash on hand"}),
         hide_index=True,
         use_container_width=True,
         column_config={
-            "Cheapness": st.column_config.ProgressColumn("Cheapness percentile", min_value=0, max_value=100, format="%.1f"),
-            "EDGAR": st.column_config.LinkColumn("Filings", display_text="10-Ks →"),
+            "Anchor": st.column_config.TextColumn("★", width="small", help="★ marks the north-star company you anchored on"),
+            "Cheapness": st.column_config.ProgressColumn("Cheapness", min_value=0, max_value=100, format="%.1f", help="Higher = cheaper relative to this peer set. Percentile within the pool."),
+            "Cash on hand": st.column_config.TextColumn("Cash on hand", help="Most recent reported cash + equivalents from yfinance"),
             "Flags": st.column_config.TextColumn(
                 "⚠️",
                 help="🆕 fresh IPO (cash inflated)  •  🛑 going-concern  •  🐚 reverse-merger shell  •  ⚠️ sub-$10M mkt cap  •  📅 your catalyst note",
@@ -422,43 +421,135 @@ hit run. You'll see today's $5–8B mid-cap clinical biotechs ranked by cheapnes
         },
     )
 
-    # Per-row explanation for the warnings
-    flagged = flags_df.loc[flags_df["any_warning"]]
-    if len(flagged) > 0:
-        with st.expander(f"⚠️ {len(flagged)} candidates have warning flags — what they mean"):
-            for _, fr in flagged.iterrows():
-                reasons = [
-                    fr.get("fresh_ipo_reason"),
-                    fr.get("going_concern_reason"),
-                    fr.get("reverse_merger_shell_reason"),
-                    fr.get("sub_ten_mkt_cap_reason"),
-                    fr.get("near_term_catalyst_reason"),
-                ]
-                reasons = [r for r in reasons if r]
-                if reasons:
-                    st.markdown(f"- **{fr['ticker']}** {misuse_flags.short_flag_string(fr)} — {' · '.join(reasons)}")
+    # === COMPANY PEEK PANEL — full details for selected ticker ===
+    st.markdown("---")
+    st.subheader("🔍 Company peek")
+    st.caption("Pick any ticker from the results to see full financials, 10-K extracted modalities, per-signal cheapness breakdown, and warnings.")
 
-    # ----- Save to watchlist (persists to SQLite) -----
-    st.subheader("Save to watchlist")
-    save_choice = st.multiselect(
-        "Pick names to save",
-        [f"{r['ticker']} — {r['name']}" for _, r in result.iterrows() if not r["is_anchor"]],
-        key="anchor_save",
-    )
-    note = st.text_input(
-        "Note (optional — mention catalysts and they'll get a 📅 flag next time)",
-        key="anchor_note",
-        placeholder="e.g. Ph2 readout June 2026 — mTOR inhibitor in NSCLC",
-    )
-    if st.button("Save selected"):
-        for s in save_choice:
-            tk, name = s.split(" — ", 1)
-            src = f"anchor:{ns_ticker}" + (f"@{year_value}" if year_value else "")
-            userdb.add_watchlist(username, tk, name=name, source=src, note=note)
-            if note:
-                userdb.set_note(username, tk, note)
-        st.success(f"Saved {len(save_choice)} names to your watchlist.")
-        st.rerun()
+    peek_options = [f"{r['ticker']} — {r['name']}" for _, r in display.iterrows()]
+    peek_default = next((i for i, opt in enumerate(peek_options) if not display.iloc[i]["is_anchor"]), 0)
+    peek_choice = st.selectbox("Ticker to inspect", peek_options, index=peek_default, key=f"peek_{ns_ticker}_{year_value}_{date_value}")
+    peek_ticker = peek_choice.split(" — ")[0]
+    peek_row = display.loc[display["ticker"] == peek_ticker].iloc[0]
+    peek_flags = flags_df.loc[flags_df["ticker"] == peek_ticker].iloc[0]
+    universe_row = universe.loc[universe["ticker"] == peek_ticker]
+    peek_universe = universe_row.iloc[0] if not universe_row.empty else None
+
+    pk1, pk2 = st.columns([2, 1])
+
+    with pk1:
+        st.markdown(f"### {peek_row['ticker']} — {peek_row['name']}")
+        anchor_note = " ★ (this is your anchor)" if peek_row["is_anchor"] else ""
+        st.caption(f"Region: {peek_row['region']} · Size: {peek_row['size_band']} · Modality (xlsx): {peek_row['primary_modality']}{anchor_note}")
+
+        # Financial grid
+        f1, f2, f3, f4 = st.columns(4)
+        f1.metric("Market cap", peek_row["Mkt Cap"])
+        f2.metric("Cash on hand", peek_row["Cash"])
+        debt_val = peek_row.get("debt_m")
+        f3.metric("Debt", fmt_money(debt_val) if pd.notna(debt_val) else "—")
+        f4.metric("EV", peek_row["EV"])
+
+        f5, f6, f7, f8 = st.columns(4)
+        f5.metric("Net cash / mkt cap", f"{peek_row['Net cash / mc']:.2f}" if pd.notna(peek_row["Net cash / mc"]) else "—",
+                  help=">1 means market values business below cash")
+        f6.metric("EV / Cash", f"{peek_row['EV / Cash']:.2f}" if pd.notna(peek_row["EV / Cash"]) else "—",
+                  help="<1 means EV is less than cash")
+        runway_v = peek_row.get("Runway (mo)")
+        f7.metric("Runway (mo)", f"{runway_v:.0f}" if pd.notna(runway_v) else "—",
+                  help="Cash / monthly burn, capped at 60")
+        f8.metric("Cheapness", f"{peek_row['Cheapness']:.1f}",
+                  help="Percentile within this peer set; higher = cheaper")
+
+        # 10-K extracted modalities
+        if peek_universe is not None:
+            rich_mods = list(peek_universe["rich_modalities"]) if peek_universe["rich_modalities"] is not None else []
+            rich_tas = list(peek_universe["rich_therapeutic_areas"]) if peek_universe["rich_therapeutic_areas"] is not None else []
+            if rich_mods or rich_tas:
+                st.markdown("**🧬 Pipeline (extracted from latest 10-K Item 1):**")
+                if rich_mods:
+                    st.markdown(f"- Modalities: {' · '.join(rich_mods)}")
+                if rich_tas:
+                    st.markdown(f"- Therapeutic areas: {' · '.join(rich_tas)}")
+                pipeline_filed = peek_universe.get("pipeline_filed")
+                if pipeline_filed:
+                    st.caption(f"Source: 10-K filed {pipeline_filed}")
+
+        # Warnings detail
+        if peek_flags.get("any_warning"):
+            st.markdown("**⚠️ Warning flags:**")
+            warning_lines = []
+            if peek_flags.get("fresh_ipo"):
+                warning_lines.append(f"🆕 **Fresh IPO** — {peek_flags.get('fresh_ipo_reason') or 'recently public'}")
+            if peek_flags.get("going_concern"):
+                warning_lines.append(f"🛑 **Going-concern flag** — {peek_flags.get('going_concern_reason') or 'auditor noted substantial doubt'}")
+            if peek_flags.get("reverse_merger_shell"):
+                warning_lines.append(f"🐚 **Reverse-merger shell** — {peek_flags.get('reverse_merger_shell_reason') or 'mostly cash, no real biz'}")
+            if peek_flags.get("sub_ten_mkt_cap"):
+                warning_lines.append(f"⚠️ **Sub-$10M market cap** — {peek_flags.get('sub_ten_mkt_cap_reason') or 'distressed zone'}")
+            if peek_flags.get("near_term_catalyst"):
+                warning_lines.append(f"📅 **Near-term catalyst (your note)** — {peek_flags.get('near_term_catalyst_reason') or 'see watchlist'}")
+            for line in warning_lines:
+                st.markdown(f"- {line}")
+
+    with pk2:
+        # Save / EDGAR / catalyst note actions
+        st.markdown("**Actions**")
+        st.markdown(f"[📂 View 10-K filings on EDGAR]({edgar_link(peek_ticker)})")
+        if not peek_row["is_anchor"]:
+            peek_note = st.text_input(
+                "Catalyst note",
+                value=userdb.get_note(username, peek_ticker) or "",
+                placeholder="e.g. Ph2 readout June 2026",
+                key=f"peek_note_{peek_ticker}",
+            )
+            if st.button("💾 Save to watchlist", key=f"peek_save_{peek_ticker}", use_container_width=True):
+                src = f"anchor:{ns_ticker}" + (f"@{year_value}" if year_value else (f"@{date_value}" if date_value else ""))
+                userdb.add_watchlist(username, peek_ticker, name=peek_row["name"], source=src, note=peek_note)
+                if peek_note:
+                    userdb.set_note(username, peek_ticker, peek_note)
+                st.success(f"Saved {peek_ticker}.")
+                st.rerun()
+
+        # Per-signal z-score breakdown
+        st.markdown("---")
+        st.markdown("**Cheapness signals (z-scored vs peer pool)**")
+        sig_rows = []
+        for sig_label, sig_col in [
+            ("Net cash / mc", "z_net_cash_to_mc"),
+            ("Inv EV / Cash", "z_inv_ev_cash"),
+            ("Peer-rel EV", "z_peer_log_ev_resid"),
+            ("Peer-rel EV/Cash", "z_peer_log_ev_cash_resid"),
+            ("Runway", "z_runway_months"),
+        ]:
+            v = peek_row.get(sig_col)
+            if pd.notna(v):
+                sig_rows.append({"signal": sig_label, "z-score": round(float(v), 2)})
+        if sig_rows:
+            st.dataframe(pd.DataFrame(sig_rows), hide_index=True, use_container_width=True,
+                         column_config={"z-score": st.column_config.ProgressColumn("z (-3 to +3)", min_value=-3, max_value=3, format="%.2f")})
+
+    # ----- Bulk save (legacy, kept for power users) -----
+    with st.expander("Bulk save multiple tickers"):
+        save_choice = st.multiselect(
+            "Pick names to save",
+            [f"{r['ticker']} — {r['name']}" for _, r in result.iterrows() if not r["is_anchor"]],
+            key="anchor_save",
+        )
+        note = st.text_input(
+            "Shared note for all (optional)",
+            key="anchor_note",
+            placeholder="e.g. small Ph2 oncology, near-cash, watch for ASCO readout",
+        )
+        if st.button("Save all selected"):
+            for s in save_choice:
+                tk, name = s.split(" — ", 1)
+                src = f"anchor:{ns_ticker}" + (f"@{year_value}" if year_value else "")
+                userdb.add_watchlist(username, tk, name=name, source=src, note=note)
+                if note:
+                    userdb.set_note(username, tk, note)
+            st.success(f"Saved {len(save_choice)} names.")
+            st.rerun()
 
 
 # ============================ SCREENER TAB =============================
@@ -482,14 +573,25 @@ with tab_screener:
     size_pick = c3.selectbox("Size band", [None, "micro", "small", "mid", "large", "mega"], index=0, format_func=lambda x: x or "All")
     top_n_screen = st.number_input("Show top N", min_value=10, max_value=100, value=25, step=5)
 
-    if st.button("Run screen"):
-        result = safe_call(mispricing.free_screen,
-                          modality=modality_pick, region=region_pick, size_band=size_pick,
-                          top_n=int(top_n_screen), fetch=False)
+    if st.button("Run screen") or st.session_state.get("screen_result_keep") is True:
+        # Persist results across reruns so the peek panel works
+        if "screen_result_cache" not in st.session_state or st.session_state.get("screen_result_keep") is not True:
+            with st.spinner("Scoring slice..."):
+                result = safe_call(mispricing.free_screen,
+                                  modality=modality_pick, region=region_pick, size_band=size_pick,
+                                  top_n=int(top_n_screen), fetch=False)
+            st.session_state.screen_result_cache = result
+            st.session_state.screen_result_keep = True
+        else:
+            result = st.session_state.screen_result_cache
 
         if result["cheapness_score"].notna().sum() == 0:
-            st.warning("No valuations data for this slice. Pre-warm with `python valuations.py --all`.")
+            st.warning("No valuations data for this slice. The nightly refresh job will populate the cache, or run `python valuations.py --all` locally.")
         else:
+            # Compute misuse flags + display
+            mkt_caps = dict(zip(result["ticker"], result["mkt_cap_m_yf"]))
+            scr_flags_df = misuse_flags.compute_flags_batch(result["ticker"].tolist(), mkt_caps=mkt_caps, username=username)
+
             display = result.copy()
             display["Mkt Cap"] = display["mkt_cap_m_yf"].apply(fmt_money)
             display["Cash"] = display["cash_m"].apply(fmt_money)
@@ -497,16 +599,81 @@ with tab_screener:
             display["Net cash / mc"] = display["net_cash_to_mc"].round(2)
             display["EV / Cash"] = display["ev_cash_ratio"].round(2)
             display["Cheapness"] = display["cheapness_score"].round(1)
-            display["EDGAR"] = display["ticker"].apply(edgar_link)
+            display = display.merge(
+                scr_flags_df[["ticker", "any_warning", "fresh_ipo", "going_concern", "reverse_merger_shell", "sub_ten_mkt_cap", "near_term_catalyst"]],
+                on="ticker", how="left",
+            )
+            display["Flags"] = display.apply(misuse_flags.short_flag_string, axis=1)
+
+            # === COMPACT TABLE ===
             st.dataframe(
-                display[["ticker", "name", "region", "primary_modality", "size_band",
-                         "Mkt Cap", "Cash", "EV", "Net cash / mc", "EV / Cash", "Cheapness", "EDGAR"]],
+                display[["ticker", "name", "Mkt Cap", "Cash", "Cheapness", "Flags"]]
+                .rename(columns={"ticker": "Ticker", "name": "Company", "Cash": "Cash on hand"}),
                 hide_index=True, use_container_width=True,
                 column_config={
-                    "Cheapness": st.column_config.ProgressColumn("Cheapness percentile", min_value=0, max_value=100, format="%.1f"),
-                    "EDGAR": st.column_config.LinkColumn("Filings", display_text="10-Ks →"),
+                    "Cheapness": st.column_config.ProgressColumn("Cheapness", min_value=0, max_value=100, format="%.1f", help="Higher = cheaper relative to this slice"),
+                    "Cash on hand": st.column_config.TextColumn("Cash on hand", help="Most recent reported cash + equivalents"),
+                    "Flags": st.column_config.TextColumn("⚠️", help="🆕 fresh IPO  •  🛑 going-concern  •  🐚 shell  •  ⚠️ sub-$10M  •  📅 catalyst note", width="small"),
                 },
             )
+
+            # === COMPANY PEEK PANEL ===
+            st.markdown("---")
+            st.subheader("🔍 Company peek")
+            scr_peek_options = [f"{r['ticker']} — {r['name']}" for _, r in display.iterrows()]
+            scr_peek_choice = st.selectbox("Ticker to inspect", scr_peek_options, key="scr_peek")
+            scr_peek_ticker = scr_peek_choice.split(" — ")[0]
+            scr_peek_row = display.loc[display["ticker"] == scr_peek_ticker].iloc[0]
+            scr_peek_flags = scr_flags_df.loc[scr_flags_df["ticker"] == scr_peek_ticker].iloc[0]
+            scr_peek_uni = universe.loc[universe["ticker"] == scr_peek_ticker]
+            scr_peek_uni = scr_peek_uni.iloc[0] if not scr_peek_uni.empty else None
+
+            sp1, sp2 = st.columns([2, 1])
+            with sp1:
+                st.markdown(f"### {scr_peek_row['ticker']} — {scr_peek_row['name']}")
+                st.caption(f"Region: {scr_peek_row['region']} · Size: {scr_peek_row['size_band']} · Modality (xlsx): {scr_peek_row['primary_modality']}")
+
+                f1, f2, f3, f4 = st.columns(4)
+                f1.metric("Market cap", scr_peek_row["Mkt Cap"])
+                f2.metric("Cash on hand", scr_peek_row["Cash"])
+                f3.metric("EV", scr_peek_row["EV"])
+                f4.metric("Cheapness", f"{scr_peek_row['Cheapness']:.1f}")
+
+                f5, f6 = st.columns(2)
+                f5.metric("Net cash / mkt cap", f"{scr_peek_row['Net cash / mc']:.2f}" if pd.notna(scr_peek_row['Net cash / mc']) else "—")
+                f6.metric("EV / Cash", f"{scr_peek_row['EV / Cash']:.2f}" if pd.notna(scr_peek_row['EV / Cash']) else "—")
+
+                if scr_peek_uni is not None:
+                    rich_mods = list(scr_peek_uni["rich_modalities"]) if scr_peek_uni["rich_modalities"] is not None else []
+                    rich_tas = list(scr_peek_uni["rich_therapeutic_areas"]) if scr_peek_uni["rich_therapeutic_areas"] is not None else []
+                    if rich_mods or rich_tas:
+                        st.markdown("**🧬 Pipeline (from latest 10-K Item 1):**")
+                        if rich_mods:
+                            st.markdown(f"- Modalities: {' · '.join(rich_mods)}")
+                        if rich_tas:
+                            st.markdown(f"- Therapeutic areas: {' · '.join(rich_tas)}")
+
+                if scr_peek_flags.get("any_warning"):
+                    st.markdown("**⚠️ Warning flags:**")
+                    if scr_peek_flags.get("fresh_ipo"):
+                        st.markdown(f"- 🆕 Fresh IPO — {scr_peek_flags.get('fresh_ipo_reason') or ''}")
+                    if scr_peek_flags.get("going_concern"):
+                        st.markdown(f"- 🛑 Going-concern — {scr_peek_flags.get('going_concern_reason') or ''}")
+                    if scr_peek_flags.get("reverse_merger_shell"):
+                        st.markdown(f"- 🐚 Reverse-merger shell — {scr_peek_flags.get('reverse_merger_shell_reason') or ''}")
+                    if scr_peek_flags.get("sub_ten_mkt_cap"):
+                        st.markdown(f"- ⚠️ Sub-$10M market cap — {scr_peek_flags.get('sub_ten_mkt_cap_reason') or ''}")
+
+            with sp2:
+                st.markdown("**Actions**")
+                st.markdown(f"[📂 EDGAR filings]({edgar_link(scr_peek_ticker)})")
+                scr_peek_note = st.text_input("Catalyst note", value=userdb.get_note(username, scr_peek_ticker) or "", key=f"scr_peek_note_{scr_peek_ticker}")
+                if st.button("💾 Save to watchlist", key=f"scr_save_{scr_peek_ticker}", use_container_width=True):
+                    userdb.add_watchlist(username, scr_peek_ticker, name=scr_peek_row["name"], source="screener", note=scr_peek_note)
+                    if scr_peek_note:
+                        userdb.set_note(username, scr_peek_ticker, scr_peek_note)
+                    st.success(f"Saved {scr_peek_ticker}.")
+                    st.rerun()
 
 
 # ============================ BACKTEST TAB =============================
