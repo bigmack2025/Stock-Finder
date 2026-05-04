@@ -540,6 +540,17 @@ hit run. You'll see today's $5–8B mid-cap clinical biotechs ranked by cheapnes
         anchor_note = " ★ (this is your anchor)" if peek_row["is_anchor"] else ""
         st.caption(f"Region: {peek_row['region']} · Size: {peek_row['size_band']} · Modality (xlsx): {peek_row['primary_modality']}{anchor_note}")
 
+        # === PROMINENT GOING-CONCERN BANNER — most severe warning, surfaced first ===
+        if peek_flags.get("going_concern"):
+            evidence = peek_flags.get("going_concern_reason") or "Auditor flagged substantial doubt"
+            st.error(
+                f"🛑 **GOING-CONCERN FLAG** — the auditor of {peek_row['ticker']}'s most recent 10-K "
+                f"noted **substantial doubt** about the company's ability to continue as a going concern. "
+                f"This means the auditor doesn't believe the company can survive 12+ months without raising capital. "
+                f"Cheapness signals can mislead here — sub-cash valuations are often *justified* for going-concern names.\n\n"
+                f"**Evidence from filing:** {evidence}"
+            )
+
         # Financial grid
         f1, f2, f3, f4 = st.columns(4)
         f1.metric("Market cap", peek_row["Mkt Cap"])
@@ -772,6 +783,14 @@ with tab_screener:
             with sp1:
                 st.markdown(f"### {scr_peek_row['ticker']} — {scr_peek_row['name']}")
                 st.caption(f"Region: {scr_peek_row['region']} · Size: {scr_peek_row['size_band']} · Modality (xlsx): {scr_peek_row['primary_modality']}")
+
+                if scr_peek_flags.get("going_concern"):
+                    ev = scr_peek_flags.get("going_concern_reason") or "Auditor flagged substantial doubt"
+                    st.error(
+                        f"🛑 **GOING-CONCERN FLAG** — auditor of {scr_peek_row['ticker']}'s most recent 10-K noted "
+                        f"**substantial doubt** about ability to continue. Cheapness can mislead here — sub-cash "
+                        f"valuations are often justified for going-concern names.\n\n**Evidence:** {ev}"
+                    )
 
                 f1, f2, f3, f4 = st.columns(4)
                 f1.metric("Market cap", scr_peek_row["Mkt Cap"])
