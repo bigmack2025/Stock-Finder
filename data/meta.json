@@ -1,10 +1,10 @@
 {
-  "loaded_at_utc": "2026-05-01T05:16:34.003092+00:00",
-  "n_companies": 722,
-  "n_us": 595,
-  "n_intl": 127,
-  "n_with_mkt_cap": 595,
-  "n_with_revenue": 352,
+  "loaded_at_utc": "2026-05-03T18:00:24.905523+00:00",
+  "n_companies": 796,
+  "n_us": 655,
+  "n_intl": 141,
+  "n_with_mkt_cap": 669,
+  "n_with_revenue": 423,
   "modalities": [
     "Oncology",
     "Gene/Cell Therapy",

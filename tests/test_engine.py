@@ -57,10 +57,14 @@ def test_modalities_present():
 # Similarity engine — golden archetypes
 # ---------------------------------------------------------------------------
 
-def test_vrtx_peer_set_includes_argx():
-    """Vertex (mega-cap with revenue) → ARGX should be top peer."""
+def test_vrtx_peer_set_is_mega_cap_drug_makers():
+    """Vertex (mega-cap, has revenue) → top peers should be mega-cap drug-makers
+    (other large biotechs OR Big Pharma). With pharma loaded, expect names like
+    BMY, GILD, REGN, AMGN, GSK, SNY, NVO, PFE."""
     df = engine.rank("VRTX", top_n=10)
-    assert "ARGX" in df["ticker"].values, "ARGX should be in VRTX top-10 peers"
+    expected_peers = {"BMY", "GILD", "REGN", "AMGN", "GSK", "SNY", "NVO", "PFE", "ARGX", "MRK", "AZN", "LLY", "JNJ", "ABBV"}
+    found = set(df["ticker"].values) & expected_peers
+    assert len(found) >= 4, f"expected ≥4 mega-cap drug-maker peers in VRTX top-10, found {found}"
 
 
 def test_alny_peer_set_is_rna_dominated():

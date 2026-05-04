@@ -1,0 +1,9 @@
+{
+  "ticker": "ZTS",
+  "flagged": false,
+  "evidence": null,
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1555280/000155528026000011/zts-20251231.htm",
+  "filed": "2026-02-12",
+  "fetched_at": "2026-05-03T18:00:50.215987+00:00",
+  "status": "ok"
+}

@@ -25,6 +25,7 @@ import mispricing
 import valuations
 import userdb
 import misuse_flags
+import custom_tickers as ct
 
 ROOT = Path(__file__).parent
 DATA = ROOT / "data"
@@ -131,6 +132,12 @@ def cached_available_years(ticker: str) -> list[int]:
     return available_years(ticker)
 
 
+@st.cache_data(show_spinner=False, ttl=86400)
+def cached_recent_filings(ticker: str, limit: int = 8) -> list[dict]:
+    from historical import recent_filings
+    return recent_filings(ticker, limit=limit)
+
+
 def safe_call(fn, *args, **kwargs):
     """Wrap a UI-triggering call so a thrown exception shows a friendly message
     instead of a stack trace, but the trace still lands in the server log."""
@@ -176,25 +183,116 @@ if health_path.exists():
 
 st.sidebar.markdown("---")
 
-# Watchlist (persisted via SQLite)
+# Watchlist (persisted via JSON)
 wl_rows = userdb.list_watchlist(username)
 st.sidebar.subheader(f"Watchlist ({len(wl_rows)})")
 if wl_rows:
     wl_df = pd.DataFrame(wl_rows)
-    st.sidebar.dataframe(wl_df, hide_index=True, use_container_width=True)
+    st.sidebar.dataframe(wl_df[["ticker", "name", "added_at"]], hide_index=True, use_container_width=True)
+
+    # === RICH CSV EXPORT ===
+    # Joins universe + valuations + flags + cheapness signals so the export
+    # is actually useful (current cash, mkt cap, EV, modality, warnings).
+    @st.cache_data(show_spinner=False, ttl=300)
+    def _build_rich_export(rows: tuple) -> bytes:
+        """rows = tuple of (ticker, name, source, note, added_at) tuples for cache stability."""
+        wl = pd.DataFrame([{"ticker": r[0], "name": r[1], "source": r[2], "note": r[3], "added_at": r[4]} for r in rows])
+        # Pull current valuations + universe context
+        try:
+            val_cache = pd.read_parquet(val_path) if val_path.exists() else pd.DataFrame(columns=["ticker"])
+        except Exception:
+            val_cache = pd.DataFrame(columns=["ticker"])
+        val_cache = val_cache.copy()
+        if "marketCap" in val_cache.columns:
+            val_cache["mkt_cap_m"] = val_cache["marketCap"] / 1e6
+            val_cache["cash_m"] = val_cache["totalCash"] / 1e6
+            val_cache["debt_m"] = val_cache["totalDebt"] / 1e6
+            val_cache["ev_m"] = val_cache["enterpriseValue"] / 1e6
+            val_cache["price"] = val_cache["currentPrice"]
+
+        uni_lite = universe[["ticker", "primary_modality", "size_band", "region", "industry"]].copy()
+
+        out = (wl
+               .merge(uni_lite, on="ticker", how="left")
+               .merge(val_cache[[c for c in ["ticker", "mkt_cap_m", "cash_m", "debt_m", "ev_m", "price", "fetched_at"] if c in val_cache.columns]], on="ticker", how="left"))
+
+        # Friendly column ordering
+        out["edgar_url"] = out["ticker"].apply(edgar_link)
+        out = out.rename(columns={
+            "name": "company",
+            "mkt_cap_m": "mkt_cap_$M",
+            "cash_m": "cash_$M",
+            "debt_m": "debt_$M",
+            "ev_m": "ev_$M",
+            "fetched_at": "valuations_fetched_at",
+        })
+        ordered_cols = [c for c in [
+            "ticker", "company", "primary_modality", "size_band", "region", "industry",
+            "mkt_cap_$M", "cash_$M", "debt_$M", "ev_$M", "price",
+            "source", "note", "added_at",
+            "valuations_fetched_at", "edgar_url",
+        ] if c in out.columns]
+        return out[ordered_cols].to_csv(index=False).encode()
+
+    rows_tuple = tuple((r["ticker"], r["name"], r.get("source") or "", r.get("note") or "", r["added_at"]) for r in wl_rows)
     st.sidebar.download_button(
-        "Download CSV",
-        wl_df.to_csv(index=False).encode(),
+        "📥 Download enriched CSV",
+        _build_rich_export(rows_tuple),
         f"watchlist_{username}.csv",
         "text/csv",
         use_container_width=True,
+        help="Includes ticker, company, modality, size, region, current mkt cap / cash / debt / EV, your note, added timestamp, and EDGAR link",
     )
+
     rm_pick = st.sidebar.selectbox("Remove a name", options=[""] + wl_df["ticker"].tolist())
     if rm_pick and st.sidebar.button(f"Remove {rm_pick}"):
         userdb.remove_watchlist(username, rm_pick)
         st.rerun()
 else:
     st.sidebar.caption("No companies saved yet.")
+
+st.sidebar.markdown("---")
+
+# === REQUEST A TICKER — let users add stocks not in our universe ===
+st.sidebar.subheader("➕ Request a ticker")
+st.sidebar.caption(
+    "Add a biotech/pharma ticker we missed. Validates against yfinance, "
+    "then it shows up in the Anchor + Screener dropdowns."
+)
+new_ticker_input = st.sidebar.text_input("Ticker symbol", placeholder="e.g. ACAD, GH, SLN.L", key="new_ticker_input")
+if st.sidebar.button("Add to universe", use_container_width=True, disabled=not new_ticker_input):
+    with st.sidebar:
+        with st.spinner(f"Validating {new_ticker_input.upper()}..."):
+            result = ct.add_ticker(new_ticker_input.upper(), requested_by=username)
+    if result["ok"]:
+        rec = result["record"]
+        st.sidebar.success(f"✓ Added **{rec['ticker']}** — {rec['name']}")
+        st.sidebar.caption(f"Mkt cap: ${rec['mkt_cap_m']:,.0f}M · Region: {rec['region']} · Industry: {rec['industry']}")
+        if rec.get("non_pharma_warning"):
+            st.sidebar.warning(rec["non_pharma_warning"])
+        # Clear the universe cache so the new ticker shows up
+        cached_universe.clear()
+        st.sidebar.info("Refresh the page (or pick a different anchor) to see it in the dropdowns.")
+    else:
+        st.sidebar.error(result["error"])
+
+# Show current custom additions
+custom_list = ct.list_custom_tickers()
+if custom_list:
+    with st.sidebar.expander(f"Currently added ({len(custom_list)})"):
+        for c in custom_list[-10:]:  # show last 10
+            st.markdown(f"- **{c['ticker']}** — {c.get('name', '')[:40]}  \n  *added by {c.get('requested_by', '?')}*")
+        if st.button("Clear all custom additions", key="clear_custom"):
+            for c in custom_list:
+                ct.remove_custom_ticker(c["ticker"])
+            cached_universe.clear()
+            st.rerun()
+
+st.sidebar.caption(
+    "⚠️ Custom additions persist in this Streamlit container but may reset "
+    "when Streamlit recycles the app (every ~10 min idle). Add Supabase "
+    "for permanent storage."
+)
 
 st.sidebar.markdown("---")
 st.sidebar.error(
@@ -492,6 +590,48 @@ hit run. You'll see today's $5–8B mid-cap clinical biotechs ranked by cheapnes
             for line in warning_lines:
                 st.markdown(f"- {line}")
 
+        # === What's happening — recent SEC filings ===
+        with st.expander("📰 What's happening — recent SEC filings"):
+            recent = safe_call(cached_recent_filings, peek_ticker, 8)
+            if recent:
+                form_emoji = {
+                    "8-K": "⚡", "8-K/A": "⚡",
+                    "10-K": "📄", "10-K/A": "📄",
+                    "10-Q": "📊", "10-Q/A": "📊",
+                    "S-1": "🚀", "S-1/A": "🚀",
+                    "S-3": "💵", "S-3/A": "💵",
+                    "424B5": "💵", "424B3": "💵",
+                    "DEF 14A": "🗳", "PRE 14A": "🗳",
+                    "SC 13G": "👥", "SC 13G/A": "👥", "SC 13D": "👥", "SC 13D/A": "👥",
+                    "4": "🧑‍💼",  # insider buying/selling Form 4
+                }
+                form_label = {
+                    "8-K": "Material event",
+                    "10-K": "Annual report",
+                    "10-Q": "Quarterly report",
+                    "S-1": "IPO registration",
+                    "S-3": "Shelf registration",
+                    "424B5": "Prospectus supplement (offering)",
+                    "424B3": "Prospectus supplement",
+                    "DEF 14A": "Definitive proxy",
+                    "SC 13G": "Passive 5%+ ownership",
+                    "SC 13D": "Active 5%+ ownership",
+                    "4": "Insider transaction",
+                }
+                for f in recent:
+                    emoji = form_emoji.get(f["form"], "•")
+                    label = form_label.get(f["form"], "")
+                    desc = f.get("primary_doc_desc") or label
+                    line = f"- {emoji} **{f['form']}** · {f['filing_date']}"
+                    if desc:
+                        line += f" — {desc}"
+                    if f.get("edgar_url"):
+                        line += f" · [view]({f['edgar_url']})"
+                    st.markdown(line)
+                st.caption("⚡ = material event (could be a Ph2/Ph3 readout, FDA action, M&A); 💵 = potential dilution; 🧑‍💼 = insider transactions")
+            else:
+                st.caption("No recent filings retrieved (could be a non-US filer or an EDGAR fetch error).")
+
     with pk2:
         # Save / EDGAR / catalyst note actions
         st.markdown("**Actions**")
@@ -663,6 +803,20 @@ with tab_screener:
                         st.markdown(f"- 🐚 Reverse-merger shell — {scr_peek_flags.get('reverse_merger_shell_reason') or ''}")
                     if scr_peek_flags.get("sub_ten_mkt_cap"):
                         st.markdown(f"- ⚠️ Sub-$10M market cap — {scr_peek_flags.get('sub_ten_mkt_cap_reason') or ''}")
+
+                with st.expander("📰 What's happening — recent SEC filings"):
+                    scr_recent = safe_call(cached_recent_filings, scr_peek_ticker, 8)
+                    if scr_recent:
+                        for f in scr_recent:
+                            line = f"- **{f['form']}** · {f['filing_date']}"
+                            desc = f.get("primary_doc_desc")
+                            if desc:
+                                line += f" — {desc}"
+                            if f.get("edgar_url"):
+                                line += f" · [view]({f['edgar_url']})"
+                            st.markdown(line)
+                    else:
+                        st.caption("No recent filings retrieved.")
 
             with sp2:
                 st.markdown("**Actions**")

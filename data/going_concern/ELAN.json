@@ -1,0 +1,9 @@
+{
+  "ticker": "ELAN",
+  "flagged": false,
+  "evidence": null,
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/1739104/000173910426000012/elan-20251231.htm",
+  "filed": "2026-02-24",
+  "fetched_at": "2026-05-03T18:00:52.276786+00:00",
+  "status": "ok"
+}

@@ -1,0 +1,9 @@
+{
+  "ticker": "BIIB",
+  "flagged": false,
+  "evidence": null,
+  "filing_url": "https://www.sec.gov/Archives/edgar/data/875045/000087504526000013/biib-20251231.htm",
+  "filed": "2026-02-06",
+  "fetched_at": "2026-05-03T18:00:43.736117+00:00",
+  "status": "ok"
+}

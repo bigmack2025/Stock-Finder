@@ -149,16 +149,30 @@ def _facts_path(ticker: str) -> Path:
 def _load_facts(ticker: str, max_age_days: int = 7) -> dict | None:
     p = _facts_path(ticker)
     if p.exists() and (time.time() - p.stat().st_mtime) < max_age_days * 86400:
-        return json.loads(p.read_text())
+        # Defensive: cached file may be corrupt (partial download, bad write).
+        # Treat parse failures as cache-miss and re-fetch.
+        try:
+            return json.loads(p.read_text())
+        except (json.JSONDecodeError, OSError):
+            try:
+                p.unlink()  # delete the corrupt cache so we refetch cleanly
+            except OSError:
+                pass
     cik = get_cik(ticker)
     if not cik:
         return None
     data = _http_get_json(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json")
     if data is None:
         # Mark as 'tried but unavailable' with a small file so we don't refetch hot
-        p.write_text(json.dumps({"_unavailable": True, "ticker": ticker, "fetched_at": datetime.now(timezone.utc).isoformat()}))
+        try:
+            p.write_text(json.dumps({"_unavailable": True, "ticker": ticker, "fetched_at": datetime.now(timezone.utc).isoformat()}))
+        except OSError:
+            pass
         return None
-    p.write_text(json.dumps(data))
+    try:
+        p.write_text(json.dumps(data))
+    except OSError:
+        pass
     return data
 
 
@@ -488,6 +502,68 @@ def get_snapshot_at_date(ticker: str, query_date: str) -> dict | None:
         "log_revenue": log_revenue,
         "size_band": _size_band(mkt_cap_m),
     }
+
+
+def recent_filings(ticker: str, limit: int = 10, form_filter: list[str] | None = None) -> list[dict]:
+    """Return recent SEC filings for `ticker` from the EDGAR submissions API.
+
+    Each entry: {form, filing_date, accession, primary_doc, primary_doc_desc, edgar_url}.
+
+    `form_filter` if provided keeps only those forms (e.g. ['8-K', '10-Q']).
+    Defaults to all forms.
+
+    Cached for 24h per ticker (filings update daily).
+    """
+    cache_dir = HIST_DIR / "filings"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    cache_path = cache_dir / f"{ticker.upper()}.json"
+
+    cached = None
+    if cache_path.exists() and (time.time() - cache_path.stat().st_mtime) < 86400:
+        try:
+            cached = json.loads(cache_path.read_text())
+        except (json.JSONDecodeError, OSError):
+            cached = None
+
+    if cached is None:
+        cik = get_cik(ticker)
+        if not cik:
+            return []
+        data = _http_get_json(f"https://data.sec.gov/submissions/CIK{cik}.json")
+        if not data:
+            return []
+        recent = data.get("filings", {}).get("recent", {})
+        forms = recent.get("form", [])
+        dates = recent.get("filingDate", [])
+        accs = recent.get("accessionNumber", [])
+        docs = recent.get("primaryDocument", [])
+        descs = recent.get("primaryDocDescription", [])
+        cik_int = int(cik)
+        out: list[dict] = []
+        for i, form in enumerate(forms):
+            acc = accs[i] if i < len(accs) else ""
+            doc = docs[i] if i < len(docs) else ""
+            desc = descs[i] if i < len(descs) else ""
+            date = dates[i] if i < len(dates) else ""
+            acc_clean = acc.replace("-", "")
+            edgar_url = f"https://www.sec.gov/Archives/edgar/data/{cik_int}/{acc_clean}/{doc}" if acc and doc else ""
+            out.append({
+                "form": form,
+                "filing_date": date,
+                "accession": acc,
+                "primary_doc": doc,
+                "primary_doc_desc": desc,
+                "edgar_url": edgar_url,
+            })
+        cached = out
+        try:
+            cache_path.write_text(json.dumps(cached))
+        except OSError:
+            pass
+
+    if form_filter:
+        cached = [f for f in cached if f["form"] in form_filter]
+    return cached[:limit]
 
 
 def available_years(ticker: str) -> list[int]:

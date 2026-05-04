@@ -188,12 +188,96 @@ def _load_international(wb) -> list[dict]:
     return rows
 
 
+# Strict US + Europe filter for pharma sheets — drug-makers only.
+US_EU_COUNTRIES = {
+    "USA", "UK", "Switzerland", "Denmark", "France", "Spain", "Ireland",
+    "Germany", "Italy", "Netherlands", "Belgium", "Sweden", "Norway",
+    "Finland", "Austria", "Portugal", "Iceland",
+}
+
+
+def _load_pharma_sheet(wb, sheet_name: str, source_label: str) -> list[dict]:
+    """Loader for Big Pharma + Specialty Pharma sheets. Filters to US + Europe.
+    These are drug-makers — they're added to the universe alongside biotechs so
+    the engine can find pharma peers / anchors."""
+    rows: list[dict] = []
+    if sheet_name not in wb.sheetnames:
+        return rows
+    ws = wb[sheet_name]
+    headers = [c.value for c in ws[1]]
+    if "Country" not in headers:
+        return rows
+    for raw in ws.iter_rows(min_row=2, values_only=True):
+        if not raw[0]:
+            continue
+        rec = dict(zip(headers, raw))
+        country = str(rec.get("Country") or "").strip()
+        # Strict US + Europe filter
+        if country not in US_EU_COUNTRIES:
+            continue
+        rows.append({
+            "ticker": str(rec["Ticker"]).strip(),
+            "name": rec["Company Name"],
+            "mkt_cap_m": rec.get("Mkt Cap ($M)"),
+            "revenue_m": rec.get("Revenue ($M)"),
+            "stage_raw": "Has revenue",   # pharma: assume revenue
+            "subsector_raw": "General Biotech",  # placeholder; pipeline_extractor refines
+            "industry": rec.get("Industry") or sheet_name,
+            "region": "US" if country == "USA" else "Europe",
+            "exchange_hint": country,
+            "notes": None,
+            "source_sheet": source_label,
+        })
+    return rows
+
+
 def load_universe(xlsx_path: Path = XLSX_DEFAULT) -> pd.DataFrame:
-    """Read US Biotech + International sheets, normalize, return DataFrame."""
+    """Read all relevant sheets — biotechs + drug-making pharma — return DataFrame.
+
+    Sheets loaded:
+      - US Biotech       (US-listed biotechs, full set)
+      - International    (HK/EU/etc., from Notes column)
+      - Big Pharma       — US + Europe only (drug-makers)
+      - Specialty Pharma — US + Europe only (drug-makers)
+
+    Diagnostics & Tools sheet is intentionally NOT loaded — those are equipment
+    companies, not drug-makers, and don't make sense as anchors/peers for the
+    mispricing thesis.
+    """
     wb = openpyxl.load_workbook(xlsx_path, data_only=True)
 
-    rows = _load_us_biotech(wb) + _load_international(wb)
+    rows = (
+        _load_us_biotech(wb)
+        + _load_international(wb)
+        + _load_pharma_sheet(wb, "Big Pharma", "Big Pharma")
+        + _load_pharma_sheet(wb, "Specialty Pharma", "Specialty Pharma")
+    )
+
+    # Add user-submitted custom tickers (request-a-ticker feature)
+    custom_path = ROOT / "data" / "custom_tickers.json"
+    if custom_path.exists():
+        try:
+            custom = json.loads(custom_path.read_text())
+            for entry in custom:
+                rows.append({
+                    "ticker": str(entry["ticker"]).strip().upper(),
+                    "name": entry.get("name") or entry["ticker"],
+                    "mkt_cap_m": entry.get("mkt_cap_m"),
+                    "revenue_m": entry.get("revenue_m"),
+                    "stage_raw": entry.get("stage_raw"),
+                    "subsector_raw": entry.get("subsector_raw") or "General Biotech",
+                    "industry": entry.get("industry") or "User-added",
+                    "region": entry.get("region") or "US",
+                    "exchange_hint": None,
+                    "notes": entry.get("notes") or "User-added",
+                    "source_sheet": "Custom (user-added)",
+                })
+        except Exception:
+            pass
+
     df = pd.DataFrame(rows)
+    # De-dup if a ticker appears in multiple sheets (xlsx + custom additions)
+    df = df.drop_duplicates(subset="ticker", keep="first").reset_index(drop=True)
 
     # Numerics
     df["mkt_cap_m"] = pd.to_numeric(df["mkt_cap_m"], errors="coerce")
