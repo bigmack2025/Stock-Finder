@@ -456,7 +456,10 @@ hit run. You'll see today's $5–8B mid-cap clinical biotechs ranked by cheapnes
     # Compute misuse flags for the candidate names
     candidate_tickers = result["ticker"].tolist()
     mkt_caps = dict(zip(result["ticker"], result["mkt_cap_m_yf"]))
-    flags_df = misuse_flags.compute_flags_batch(candidate_tickers, mkt_caps=mkt_caps, username=username)
+    names_map = dict(zip(result["ticker"], result["name"]))
+    flags_df = misuse_flags.compute_flags_batch(
+        candidate_tickers, mkt_caps=mkt_caps, names=names_map, username=username,
+    )
 
     # Display
     display = result.copy()
@@ -496,7 +499,12 @@ hit run. You'll see today's $5–8B mid-cap clinical biotechs ranked by cheapnes
 
     # Merge flags
     display = display.merge(
-        flags_df[["ticker", "any_warning", "warning_count", "fresh_ipo", "going_concern", "reverse_merger_shell", "sub_ten_mkt_cap", "near_term_catalyst"]],
+        flags_df[[
+            "ticker", "any_warning", "warning_count",
+            "fresh_ipo", "going_concern", "reverse_merger_shell", "sub_ten_mkt_cap",
+            "upcoming_catalyst", "user_catalyst_note", "any_catalyst", "near_term_catalyst",
+            "insider_buying",
+        ]],
         on="ticker", how="left",
     )
     display["Flags"] = display.apply(misuse_flags.short_flag_string, axis=1)
@@ -513,7 +521,11 @@ hit run. You'll see today's $5–8B mid-cap clinical biotechs ranked by cheapnes
             "Cash on hand": st.column_config.TextColumn("Cash on hand", help="Most recent reported cash + equivalents from yfinance"),
             "Flags": st.column_config.TextColumn(
                 "⚠️",
-                help="🆕 fresh IPO (cash inflated)  •  🛑 going-concern  •  🐚 reverse-merger shell  •  ⚠️ sub-$10M mkt cap  •  📅 your catalyst note",
+                help=(
+                    "🛑 going-concern  •  🆕 fresh IPO  •  🐚 reverse-merger shell  •  "
+                    "⚠️ sub-$10M mkt cap  •  💰 insider buying (Form 4, last 90d)  •  "
+                    "📅 upcoming Ph2/Ph3 readout (clinicaltrials.gov)"
+                ),
                 width="small",
             ),
         },
@@ -529,7 +541,17 @@ hit run. You'll see today's $5–8B mid-cap clinical biotechs ranked by cheapnes
     peek_choice = st.selectbox("Ticker to inspect", peek_options, index=peek_default, key=f"peek_{ns_ticker}_{year_value}_{date_value}")
     peek_ticker = peek_choice.split(" — ")[0]
     peek_row = display.loc[display["ticker"] == peek_ticker].iloc[0]
-    peek_flags = flags_df.loc[flags_df["ticker"] == peek_ticker].iloc[0]
+    # Lazily populate insider_buying + upcoming_catalyst for the selected ticker
+    # only (the batch flags above run in lazy_signals=True mode for fast table
+    # render). One ticker = fast; cache fills in over time.
+    peek_flags_full = misuse_flags.compute_flags(
+        peek_ticker,
+        mkt_cap_m=peek_row.get("mkt_cap_m_yf"),
+        username=username,
+        company_name=peek_row["name"],
+        lazy_signals=False,
+    )
+    peek_flags = pd.Series(peek_flags_full)
     universe_row = universe.loc[universe["ticker"] == peek_ticker]
     peek_universe = universe_row.iloc[0] if not universe_row.empty else None
 
@@ -550,6 +572,47 @@ hit run. You'll see today's $5–8B mid-cap clinical biotechs ranked by cheapnes
                 f"Cheapness signals can mislead here — sub-cash valuations are often *justified* for going-concern names.\n\n"
                 f"**Evidence from filing:** {evidence}"
             )
+
+        # === INSIDER-BUYING BANNER — positive signal, surfaced near top ===
+        if peek_flags.get("insider_buying"):
+            ev = peek_flags.get("insider_buying_reason") or "Insiders bought open-market shares"
+            st.success(
+                f"💰 **INSIDER BUYING** — {ev}. "
+                f"Open-market purchases by execs/directors (SEC Form 4) are one of the few "
+                f"signals with documented edge in micro/small-cap biotech — insiders rarely "
+                f"buy their own stock unless they think it's mispriced or a catalyst is near."
+            )
+
+        # === UPCOMING CATALYST PANEL — clinicaltrials.gov data ===
+        if peek_flags.get("upcoming_catalyst"):
+            cat_summary = peek_flags.get("upcoming_catalyst_reason") or "Upcoming clinical readout"
+            with st.container():
+                st.info(f"📅 **{cat_summary}**")
+                # Pull the full trial list for inline display
+                try:
+                    import catalysts as _cat
+                    cat_data = _cat.upcoming(peek_ticker, peek_row["name"])
+                    trials = cat_data.get("trials") or []
+                    if trials:
+                        with st.expander(f"See all {len(trials)} upcoming/recent Phase 2-3 trials"):
+                            for t in trials[:8]:
+                                phase = (t.get("phase") or "").replace("PHASE", "Ph").replace("_PHASE", "/")
+                                pcd = t.get("_pcd_date") or t.get("primary_completion_date") or "?"
+                                pcd_short = pcd[:7] if pcd and len(pcd) >= 7 else pcd
+                                cond = (t.get("conditions") or [""])[0]
+                                title = t.get("brief_title") or t.get("official_title") or t.get("nct", "")
+                                line = f"- **{pcd_short}** · {phase} · {title[:80]}"
+                                if cond:
+                                    line += f" · _{cond[:50]}_"
+                                if t.get("url"):
+                                    line += f" · [view]({t['url']})"
+                                st.markdown(line)
+                            st.caption(
+                                "Primary-completion date is when the **primary endpoint** is measured — "
+                                "top-line readouts typically land 0-3 months after."
+                            )
+                except Exception:
+                    pass
 
         # Financial grid
         f1, f2, f3, f4 = st.columns(4)
@@ -584,21 +647,30 @@ hit run. You'll see today's $5–8B mid-cap clinical biotechs ranked by cheapnes
                 if pipeline_filed:
                     st.caption(f"Source: 10-K filed {pipeline_filed}")
 
-        # Warnings detail
-        if peek_flags.get("any_warning"):
-            st.markdown("**⚠️ Warning flags:**")
-            warning_lines = []
+        # Warnings + positive signals — full detail list
+        all_signals_visible = (
+            peek_flags.get("any_warning")
+            or peek_flags.get("insider_buying")
+            or peek_flags.get("any_catalyst")
+        )
+        if all_signals_visible:
+            st.markdown("**Flags & signals:**")
+            lines = []
             if peek_flags.get("fresh_ipo"):
-                warning_lines.append(f"🆕 **Fresh IPO** — {peek_flags.get('fresh_ipo_reason') or 'recently public'}")
+                lines.append(f"🆕 **Fresh IPO** — {peek_flags.get('fresh_ipo_reason') or 'recently public'}")
             if peek_flags.get("going_concern"):
-                warning_lines.append(f"🛑 **Going-concern flag** — {peek_flags.get('going_concern_reason') or 'auditor noted substantial doubt'}")
+                lines.append(f"🛑 **Going-concern flag** — {peek_flags.get('going_concern_reason') or 'auditor noted substantial doubt'}")
             if peek_flags.get("reverse_merger_shell"):
-                warning_lines.append(f"🐚 **Reverse-merger shell** — {peek_flags.get('reverse_merger_shell_reason') or 'mostly cash, no real biz'}")
+                lines.append(f"🐚 **Reverse-merger shell** — {peek_flags.get('reverse_merger_shell_reason') or 'mostly cash, no real biz'}")
             if peek_flags.get("sub_ten_mkt_cap"):
-                warning_lines.append(f"⚠️ **Sub-$10M market cap** — {peek_flags.get('sub_ten_mkt_cap_reason') or 'distressed zone'}")
-            if peek_flags.get("near_term_catalyst"):
-                warning_lines.append(f"📅 **Near-term catalyst (your note)** — {peek_flags.get('near_term_catalyst_reason') or 'see watchlist'}")
-            for line in warning_lines:
+                lines.append(f"⚠️ **Sub-$10M market cap** — {peek_flags.get('sub_ten_mkt_cap_reason') or 'distressed zone'}")
+            if peek_flags.get("insider_buying"):
+                lines.append(f"💰 **Insider buying (Form 4)** — {peek_flags.get('insider_buying_reason') or 'recent open-market purchases'}")
+            if peek_flags.get("upcoming_catalyst"):
+                lines.append(f"📅 **Upcoming clinical catalyst** — {peek_flags.get('upcoming_catalyst_reason') or 'trial readout in next 18mo'}")
+            if peek_flags.get("user_catalyst_note"):
+                lines.append(f"📝 **Your catalyst note** — {peek_flags.get('user_catalyst_note_reason') or 'see watchlist'}")
+            for line in lines:
                 st.markdown(f"- {line}")
 
         # === What's happening — recent SEC filings ===
@@ -741,7 +813,10 @@ with tab_screener:
         else:
             # Compute misuse flags + display
             mkt_caps = dict(zip(result["ticker"], result["mkt_cap_m_yf"]))
-            scr_flags_df = misuse_flags.compute_flags_batch(result["ticker"].tolist(), mkt_caps=mkt_caps, username=username)
+            scr_names_map = dict(zip(result["ticker"], result["name"]))
+            scr_flags_df = misuse_flags.compute_flags_batch(
+                result["ticker"].tolist(), mkt_caps=mkt_caps, names=scr_names_map, username=username,
+            )
 
             display = result.copy()
             display["Mkt Cap"] = display["mkt_cap_m_yf"].apply(fmt_money)
@@ -751,7 +826,12 @@ with tab_screener:
             display["EV / Cash"] = display["ev_cash_ratio"].round(2)
             display["Cheapness"] = display["cheapness_score"].round(1)
             display = display.merge(
-                scr_flags_df[["ticker", "any_warning", "fresh_ipo", "going_concern", "reverse_merger_shell", "sub_ten_mkt_cap", "near_term_catalyst"]],
+                scr_flags_df[[
+                    "ticker", "any_warning",
+                    "fresh_ipo", "going_concern", "reverse_merger_shell", "sub_ten_mkt_cap",
+                    "upcoming_catalyst", "user_catalyst_note", "any_catalyst", "near_term_catalyst",
+                    "insider_buying",
+                ]],
                 on="ticker", how="left",
             )
             display["Flags"] = display.apply(misuse_flags.short_flag_string, axis=1)
@@ -764,7 +844,14 @@ with tab_screener:
                 column_config={
                     "Cheapness": st.column_config.ProgressColumn("Cheapness", min_value=0, max_value=100, format="%.1f", help="Higher = cheaper relative to this slice"),
                     "Cash on hand": st.column_config.TextColumn("Cash on hand", help="Most recent reported cash + equivalents"),
-                    "Flags": st.column_config.TextColumn("⚠️", help="🆕 fresh IPO  •  🛑 going-concern  •  🐚 shell  •  ⚠️ sub-$10M  •  📅 catalyst note", width="small"),
+                    "Flags": st.column_config.TextColumn(
+                        "⚠️",
+                        help=(
+                            "🛑 going-concern  •  🆕 fresh IPO  •  🐚 shell  •  ⚠️ sub-$10M  •  "
+                            "💰 insider buying (Form 4, last 90d)  •  📅 upcoming Ph2/Ph3 readout"
+                        ),
+                        width="small",
+                    ),
                 },
             )
 
@@ -775,7 +862,15 @@ with tab_screener:
             scr_peek_choice = st.selectbox("Ticker to inspect", scr_peek_options, key="scr_peek")
             scr_peek_ticker = scr_peek_choice.split(" — ")[0]
             scr_peek_row = display.loc[display["ticker"] == scr_peek_ticker].iloc[0]
-            scr_peek_flags = scr_flags_df.loc[scr_flags_df["ticker"] == scr_peek_ticker].iloc[0]
+            # Full-fetch flags for selected ticker only (lazy fill)
+            scr_peek_flags_full = misuse_flags.compute_flags(
+                scr_peek_ticker,
+                mkt_cap_m=scr_peek_row.get("mkt_cap_m_yf"),
+                username=username,
+                company_name=scr_peek_row["name"],
+                lazy_signals=False,
+            )
+            scr_peek_flags = pd.Series(scr_peek_flags_full)
             scr_peek_uni = universe.loc[universe["ticker"] == scr_peek_ticker]
             scr_peek_uni = scr_peek_uni.iloc[0] if not scr_peek_uni.empty else None
 
@@ -791,6 +886,38 @@ with tab_screener:
                         f"**substantial doubt** about ability to continue. Cheapness can mislead here — sub-cash "
                         f"valuations are often justified for going-concern names.\n\n**Evidence:** {ev}"
                     )
+
+                if scr_peek_flags.get("insider_buying"):
+                    ev = scr_peek_flags.get("insider_buying_reason") or "Insiders bought open-market shares"
+                    st.success(
+                        f"💰 **INSIDER BUYING** — {ev}. "
+                        f"Open-market purchases by execs/directors (SEC Form 4) are one of the few signals "
+                        f"with documented edge in micro/small-cap biotech."
+                    )
+
+                if scr_peek_flags.get("upcoming_catalyst"):
+                    cat_summary = scr_peek_flags.get("upcoming_catalyst_reason") or "Upcoming clinical readout"
+                    st.info(f"📅 **{cat_summary}**")
+                    try:
+                        import catalysts as _cat
+                        cat_data = _cat.upcoming(scr_peek_ticker, scr_peek_row["name"])
+                        trials = cat_data.get("trials") or []
+                        if trials:
+                            with st.expander(f"See all {len(trials)} upcoming/recent Phase 2-3 trials"):
+                                for t in trials[:8]:
+                                    phase = (t.get("phase") or "").replace("PHASE", "Ph").replace("_PHASE", "/")
+                                    pcd = t.get("_pcd_date") or t.get("primary_completion_date") or "?"
+                                    pcd_short = pcd[:7] if pcd and len(pcd) >= 7 else pcd
+                                    cond = (t.get("conditions") or [""])[0]
+                                    title = t.get("brief_title") or t.get("official_title") or t.get("nct", "")
+                                    line = f"- **{pcd_short}** · {phase} · {title[:80]}"
+                                    if cond:
+                                        line += f" · _{cond[:50]}_"
+                                    if t.get("url"):
+                                        line += f" · [view]({t['url']})"
+                                    st.markdown(line)
+                    except Exception:
+                        pass
 
                 f1, f2, f3, f4 = st.columns(4)
                 f1.metric("Market cap", scr_peek_row["Mkt Cap"])
@@ -812,8 +939,13 @@ with tab_screener:
                         if rich_tas:
                             st.markdown(f"- Therapeutic areas: {' · '.join(rich_tas)}")
 
-                if scr_peek_flags.get("any_warning"):
-                    st.markdown("**⚠️ Warning flags:**")
+                _scr_any = (
+                    scr_peek_flags.get("any_warning")
+                    or scr_peek_flags.get("insider_buying")
+                    or scr_peek_flags.get("any_catalyst")
+                )
+                if _scr_any:
+                    st.markdown("**Flags & signals:**")
                     if scr_peek_flags.get("fresh_ipo"):
                         st.markdown(f"- 🆕 Fresh IPO — {scr_peek_flags.get('fresh_ipo_reason') or ''}")
                     if scr_peek_flags.get("going_concern"):
@@ -822,6 +954,12 @@ with tab_screener:
                         st.markdown(f"- 🐚 Reverse-merger shell — {scr_peek_flags.get('reverse_merger_shell_reason') or ''}")
                     if scr_peek_flags.get("sub_ten_mkt_cap"):
                         st.markdown(f"- ⚠️ Sub-$10M market cap — {scr_peek_flags.get('sub_ten_mkt_cap_reason') or ''}")
+                    if scr_peek_flags.get("insider_buying"):
+                        st.markdown(f"- 💰 Insider buying — {scr_peek_flags.get('insider_buying_reason') or ''}")
+                    if scr_peek_flags.get("upcoming_catalyst"):
+                        st.markdown(f"- 📅 Upcoming catalyst — {scr_peek_flags.get('upcoming_catalyst_reason') or ''}")
+                    if scr_peek_flags.get("user_catalyst_note"):
+                        st.markdown(f"- 📝 Your catalyst note — {scr_peek_flags.get('user_catalyst_note_reason') or ''}")
 
                 with st.expander("📰 What's happening — recent SEC filings"):
                     scr_recent = safe_call(cached_recent_filings, scr_peek_ticker, 8)
@@ -1023,12 +1161,14 @@ Similarity is the substrate; cheapness is the output.
 year's state from SEC EDGAR XBRL. Modality tags are still today's (M4 fixes
 this). XBRL coverage starts ~2010; pre-2010 needs HTML parsing (M5).
 
-**Misuse flags on each result:**
+**Flags & signals on each result:**
+- 🛑 going-concern — auditor flagged solvency risk (live 10-K text indexer)
 - 🆕 fresh IPO — first 10-K within last 18 months, IPO cash makes everything look fake-cheap
-- 🛑 going-concern — auditor flagged solvency risk *(M5: live from 10-K text indexer)*
 - 🐚 reverse-merger shell — mostly cash, no real biz
 - ⚠️ sub-$10M mkt cap — distressed zone
-- 📅 your catalyst note — you've added a note containing trial/FDA keywords
+- 💰 insider buying — execs/directors bought open-market stock in last 90 days at material size (SEC Form 4)
+- 📅 upcoming catalyst — Phase 2/3 trial with primary completion date in next 18 months (clinicaltrials.gov)
+- 📝 your catalyst note — you've added a note containing trial/FDA keywords
 
 **What's still missing** (in PLAN.md): pipeline-aware modality (M4 LLM extraction over 10-K Item 1),
 calibrated weights (M3 peer-pair labeling tool), survivor-bias dead-company list (M5),

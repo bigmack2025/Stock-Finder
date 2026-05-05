@@ -17,10 +17,19 @@ Flags emitted:
     Latest 10-K text contains the phrase "going concern". Auditor flag —
     indicates real solvency risk regardless of cash position.
 
-  near_term_catalyst
-    A user-editable note exists for this ticker mentioning common catalyst
-    keywords (Phase, readout, FDA, BLA, PDUFA, NDA, top-line, AdCom). This
-    is a passive/manual flag for now; M5 wires it to a real catalyst feed.
+  upcoming_catalyst
+    Company has a Phase 2/3 trial with a primary-completion date in the
+    next 18 months (or just-completed in last 90 days). Source: clinicaltrials.gov.
+
+  user_catalyst_note
+    User has a free-text note for this ticker mentioning catalyst keywords
+    (Phase, readout, FDA, BLA, PDUFA, NDA, top-line, AdCom). Manual override
+    that complements the auto-pulled clinical-trial flag.
+
+  insider_buying
+    Insiders bought stock on the open market in the last 90 days at material
+    size (≥2 distinct insiders, OR single buyer ≥$250K, OR total ≥$500K).
+    Source: SEC Form 4 filings.
 
   reverse_merger_shell
     Heuristic: cash > 0.7 × assets AND R&D < $5M AND no revenue. Indicates
@@ -32,8 +41,8 @@ Flags emitted:
 
 Public API:
 
-    flags = compute_flags(ticker)  -> dict[str, bool|str]
-    flags = compute_flags_batch([tickers])  -> DataFrame
+    flags = compute_flags(ticker, mkt_cap_m=..., username=..., company_name=...)
+    flags = compute_flags_batch(tickers, mkt_caps=..., names=..., username=...)
 """
 
 from __future__ import annotations
@@ -124,17 +133,69 @@ def _user_catalyst_note_flag(username: str | None, ticker: str) -> tuple[bool, s
     return False, None
 
 
+def _upcoming_catalyst_flag(ticker: str, company_name: str | None, cached_only: bool = False) -> tuple[bool, str | None]:
+    """Phase 2/3 trial with primary completion in next 18 months (or just-completed
+    in last 90 days). Source: clinicaltrials.gov via catalysts.py."""
+    if not company_name:
+        return False, None
+    try:
+        import catalysts
+        summary = catalysts.short_summary(ticker, company_name, cached_only=cached_only)
+        if summary:
+            return True, summary
+    except Exception:
+        pass
+    return False, None
+
+
+def _insider_buying_flag(ticker: str, cached_only: bool = False) -> tuple[bool, str | None]:
+    """Insiders bought open-market shares in last 90 days at material size.
+    Source: SEC Form 4 filings via insider_buying.py."""
+    try:
+        import insider_buying
+        ev = insider_buying.short_evidence(ticker, cached_only=cached_only)
+        if ev:
+            return True, ev
+    except Exception:
+        pass
+    return False, None
+
+
 # ---------------------------------------------------------------------------
 # Public entry
 # ---------------------------------------------------------------------------
 
-def compute_flags(ticker: str, mkt_cap_m: float | None = None, username: str | None = None) -> dict:
-    """Compute all flags for one ticker. Returns dict with bool flags + reason strings."""
+def compute_flags(
+    ticker: str,
+    mkt_cap_m: float | None = None,
+    username: str | None = None,
+    company_name: str | None = None,
+    lazy_signals: bool = False,
+) -> dict:
+    """Compute all flags for one ticker. Returns dict with bool flags + reason strings.
+
+    `lazy_signals=True` skips network calls for `insider_buying` and
+    `upcoming_catalyst` — those are returned from cache only, or False if
+    no cache exists yet. Used by the batch path so the screener table renders
+    in <2s instead of ~3 minutes on a cold cache. The Company Peek panel
+    populates them on demand (per-ticker = fast).
+    """
     fresh_b, fresh_r = _fresh_ipo_flag(ticker)
     rm_b, rm_r = _reverse_merger_shell_flag(ticker)
     tiny_b, tiny_r = _sub_ten_mkt_cap_flag(ticker, mkt_cap_m)
-    cat_b, cat_r = _user_catalyst_note_flag(username, ticker)
+    note_b, note_r = _user_catalyst_note_flag(username, ticker)
     gc_b, gc_r = _going_concern_flag(ticker)
+    cat_b, cat_r = _upcoming_catalyst_flag(ticker, company_name, cached_only=lazy_signals)
+    ins_b, ins_r = _insider_buying_flag(ticker, cached_only=lazy_signals)
+
+    # Combined "any catalyst signal" — surfaces in tables / sorts.
+    any_catalyst = bool(cat_b or note_b)
+    if cat_b and note_b:
+        catalyst_reason = f"{cat_r} · note: {note_r}"
+    else:
+        catalyst_reason = cat_r or note_r
+
+    severity_warnings = [fresh_b, rm_b, tiny_b, gc_b]
 
     return {
         "ticker": ticker,
@@ -146,43 +207,88 @@ def compute_flags(ticker: str, mkt_cap_m: float | None = None, username: str | N
         "reverse_merger_shell_reason": rm_r,
         "sub_ten_mkt_cap": tiny_b,
         "sub_ten_mkt_cap_reason": tiny_r,
-        "near_term_catalyst": cat_b,
-        "near_term_catalyst_reason": cat_r,
-        "any_warning": any([fresh_b, rm_b, tiny_b, gc_b]),
-        "warning_count": sum([fresh_b, rm_b, tiny_b, gc_b]),
+        # New unified catalyst flags
+        "upcoming_catalyst": cat_b,
+        "upcoming_catalyst_reason": cat_r,
+        "user_catalyst_note": note_b,
+        "user_catalyst_note_reason": note_r,
+        "any_catalyst": any_catalyst,
+        "catalyst_reason": catalyst_reason,
+        # Backwards-compat alias used by older app.py code paths
+        "near_term_catalyst": any_catalyst,
+        "near_term_catalyst_reason": catalyst_reason,
+        # Insider buying (Form 4)
+        "insider_buying": ins_b,
+        "insider_buying_reason": ins_r,
+        # Roll-ups
+        "any_warning": any(severity_warnings),
+        "warning_count": sum(severity_warnings),
+        "any_positive_signal": any([cat_b, note_b, ins_b]),
     }
 
 
 def compute_flags_batch(
     tickers: list[str],
     mkt_caps: dict[str, float] | None = None,
+    names: dict[str, str] | None = None,
     username: str | None = None,
+    lazy_signals: bool = True,  # default lazy — table render must be fast
 ) -> pd.DataFrame:
+    """Compute flags for many tickers. Defaults to lazy-signal mode so the
+    screener/anchor table renders fast even on a cold cache. The Company Peek
+    panel populates insider_buying and upcoming_catalyst on demand."""
     mkt_caps = mkt_caps or {}
-    rows = [compute_flags(t, mkt_cap_m=mkt_caps.get(t), username=username) for t in tickers]
+    names = names or {}
+    rows = [
+        compute_flags(
+            t,
+            mkt_cap_m=mkt_caps.get(t),
+            username=username,
+            company_name=names.get(t),
+            lazy_signals=lazy_signals,
+        )
+        for t in tickers
+    ]
     return pd.DataFrame(rows)
 
 
 def short_flag_string(flags_row: dict | pd.Series) -> str:
-    """Compact warning emoji string for tables: 🆕 (fresh IPO), 🛑 (going concern),
-    🐚 (shell), ⚠️ (sub-$10M), 📅 (catalyst note).
+    """Compact flag emoji string for tables.
+
+    Severity (red flags first): 🛑 going concern, 🆕 fresh IPO, 🐚 shell, ⚠️ tiny.
+    Positive signals after: 💰 insider buying, 📅 upcoming catalyst.
     """
     s = ""
-    if flags_row.get("fresh_ipo"):
-        s += "🆕"
     if flags_row.get("going_concern"):
         s += "🛑"
+    if flags_row.get("fresh_ipo"):
+        s += "🆕"
     if flags_row.get("reverse_merger_shell"):
         s += "🐚"
     if flags_row.get("sub_ten_mkt_cap"):
         s += "⚠️"
-    if flags_row.get("near_term_catalyst"):
+    if flags_row.get("insider_buying"):
+        s += "💰"
+    if flags_row.get("any_catalyst") or flags_row.get("near_term_catalyst"):
         s += "📅"
     return s
 
 
+FLAGS_LEGEND = (
+    "🛑 going-concern  ·  🆕 fresh IPO  ·  🐚 reverse-merger shell  ·  "
+    "⚠️ sub-$10M mkt cap  ·  💰 insider buying (Form 4)  ·  📅 upcoming catalyst"
+)
+
+
 if __name__ == "__main__":
     # Smoke test
-    for tk in ["VRTX", "KURA", "ALXO", "SMMT"]:
-        f = compute_flags(tk)
-        print(f"{tk}: warnings={f['warning_count']}  flags={short_flag_string(f) or 'clean'}  reasons={[v for k, v in f.items() if k.endswith('_reason') and v]}")
+    samples = [
+        ("VRTX", "Vertex Pharmaceuticals"),
+        ("KURA", "Kura Oncology"),
+        ("ALXO", "ALX Oncology"),
+        ("SMMT", "Summit Therapeutics"),
+    ]
+    for tk, name in samples:
+        f = compute_flags(tk, company_name=name)
+        active = [k.replace("_reason", "") for k, v in f.items() if k.endswith("_reason") and v]
+        print(f"{tk:6}  flags={short_flag_string(f) or 'clean':12}  active={active}")
